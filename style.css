@@ -78,13 +78,13 @@ nav{
   margin:5px;
   transition: all 0.3s ease;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:1024px){
   .navList{
     width: 60%;
     transition: transform 0.5s ease;
   }
 }
-@media screen and (max-width:512px){
+@media screen and (max-width:768px){
   body{
     overflow-x: hidden;
   }
