@@ -25,7 +25,7 @@ const Project = (props) => {
   console.log(props, project);
   console.log(project.imgURL);
   return (
-    <div className="m-[5rem] rounded-md border-white flex flex-col md:flex-row justify-between bg-gradient-to-b from-purple-700 to-indigo-900 p-6 drop-shadow-xl">
+    <div className="m-[10%] rounded-md border-white flex flex-col md:flex-row justify-between bg-gradient-to-b from-purple-700 to-indigo-900 p-6 drop-shadow-xl">
       <div className="shrink-0 grow-1 flex flex-col w-[100%] md:w-[30%] m-2 place-self-center ">
         <img
           src={project.imgURL}

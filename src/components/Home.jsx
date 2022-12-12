@@ -22,9 +22,9 @@ const Home = () => {
 
       {/*About Section*/}
       <div  id="about" className="relative bottom-6"></div>
-      <div className=" mx-20 mb-32 mt-16">
+      <div className=" mx-2 mb-32 mt-16">
         <h1 className="text-white decoration-pink-500 underline font-extrabold text-6xl text-center mb-8 underline-offset-2">About Me</h1>
-        <p className="text-gray-200 text-xl mb-16 drop-shadow-2xl">
+        <p className="text-gray-200 mx-24 text-xl mb-16 drop-shadow-2xl">
           I'm a 3rd year at University of California, Irvine where I am
           currently studying to earn two degrees in computer science and
           computer-game science. To start off, I am someone who loves to create
@@ -40,7 +40,7 @@ const Home = () => {
         <h1 className="text-white text-center font-bold text-4xl underline decoration-pink-600">
           My Skills
         </h1>
-        <div className="skills flex flex-row justify-evenly border-white  bg-gray-900 rounded-md mt-4">
+        <div className="skills mx-[5%] flex flex-row justify-evenly border-white  bg-gray-900 rounded-md mt-4">
           <div className="flex flex-col">
             <h1>Languages</h1>
             <p>Python ★</p>
@@ -83,7 +83,6 @@ const Home = () => {
 
       {/*Artwork*/}
       <div className="p-[30%]">
-        <Artwork></Artwork>
       </div>
     </div>
   );
