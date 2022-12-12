@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/portfolio-react/static/css/main.caaabfa4.css",
+    "main.js": "/portfolio-react/static/js/main.f871ba96.js",
+    "static/media/musicalmadness.gif": "/portfolio-react/static/media/musicalmadness.c6f4216ca4a758c7c4f5.gif",
+    "static/media/toonshader.gif": "/portfolio-react/static/media/toonshader.5c115e844c455d95d0d2.gif",
+    "static/media/Toon_Shader.pdf": "/portfolio-react/static/media/Toon_Shader.1956bd6e276b67c37d7e.pdf",
+    "static/media/phantomhallowseve.png": "/portfolio-react/static/media/phantomhallowseve.9703156437260d714991.png",
+    "static/media/art1.jpeg": "/portfolio-react/static/media/art1.fa17e4a04931ddb0c3f3.jpeg",
+    "static/media/Bui_Hung.pdf": "/portfolio-react/static/media/Bui_Hung.e0618333acbcb1373a93.pdf",
+    "static/media/itchio-logo-textless-white.png": "/portfolio-react/static/media/itchio-logo-textless-white.3801a82ec3efe8e53609.png",
+    "static/media/patientzero.jpeg": "/portfolio-react/static/media/patientzero.20c6918c4cf497225467.jpeg",
+    "index.html": "/portfolio-react/index.html",
+    "main.caaabfa4.css.map": "/portfolio-react/static/css/main.caaabfa4.css.map",
+    "main.f871ba96.js.map": "/portfolio-react/static/js/main.f871ba96.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.caaabfa4.css",
+    "static/js/main.f871ba96.js"
+  ]
+}
