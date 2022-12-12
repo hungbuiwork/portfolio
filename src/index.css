@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+@layer base {
+  body {
+    @apply font-[Montserrat];
+    @apply scroll-smooth;
+    @apply bg-gray-800;
+  }
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  .skills .flex-col {
+    @apply mb-5 mx-2;
+  }
+  .skills h1 {
+    @apply text-white font-bold text-xl my-3;
+  }
+  .skills img {
+    @apply w-24;
+  }
+  .skills p {
+    @apply text-gray-300 text-sm md:text-lg my-2;
+  }
+
+  .side-nav {
+    @apply w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 hover:rounded-md;
+  }
+  .top-nav {
+    @apply text-gray-400 hover:text-white hover:font-extrabold border-transparent hover:border-emerald-500 border-b-4 h-8 duration-100;
+  }
+}
