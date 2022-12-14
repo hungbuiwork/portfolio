@@ -17,6 +17,18 @@
 }
 
 @layer components {
+  .tab {
+    @apply w-[50%] text-white table
+  }
+  .tab p{
+    @apply font-bold text-xl h-full w-full table-cell align-middle text-center shadow-2xl
+  }
+  .purple-gradient{
+    @apply bg-gradient-to-b from-purple-700 to-transparent
+  }
+  .blue-gradient{
+    @apply bg-gradient-to-b from-blue-500 to-transparent
+  }
   .skills .flex-col {
     @apply mb-5 mx-2;
   }
@@ -31,7 +43,7 @@
   }
 
   .side-nav {
-    @apply w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 hover:rounded-md;
+    @apply w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 hover:rounded-md drop-shadow;
   }
   .top-nav {
     @apply text-gray-400 hover:text-white hover:font-extrabold border-transparent hover:border-emerald-500 border-b-4 h-8 duration-100;

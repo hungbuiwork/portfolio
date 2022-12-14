@@ -17,7 +17,7 @@ const Navbar = () => {
       {/*menu*/}
       <ul className="hidden md:flex">
         <li className="top-nav">
-          <a>Home</a>
+          <a href="#home">Home</a>
         </li>
         <li className="top-nav">
           <a href="#about">About</a>
@@ -26,7 +26,7 @@ const Navbar = () => {
           <a href="#projects">Projects</a>
         </li>
         <li className="top-nav">
-          <a>Art</a>
+          <a href="#art">Art</a>
         </li>
         <li className="top-nav">
           <a href={Resume} target="_blank">
@@ -53,25 +53,37 @@ const Navbar = () => {
         }
       >
         <li className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 text-2xl">
-          Home
+          <a href="#home" onClick={handleClick}>
+            Home
+          </a>
         </li>
         <li className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 text-2xl">
-          <a href="#about" onClick={handleClick} >About</a>
+          <a href="#about" onClick={handleClick}>
+            About
+          </a>
         </li>
         <li className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 text-2xl">
-          <a href="#projects" onClick={handleClick} >Projects</a>
+          <a href="#projects" onClick={handleClick}>
+            Projects
+          </a>
         </li>
         <li className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 text-2xl">
-          Art
+          <a href="#art" onClick={handleClick}>
+            Art
+          </a>
         </li>
         <li className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 text-2xl">
-          <a href={Resume} target="_blank" onClick={handleClick} >
+          <a href={Resume} target="_blank" onClick={handleClick}>
             Resume
           </a>
         </li>
       </ul>
 
-      <div className={nav ? "hidden" : "flex fixed flex-col top-[35%] left-0"}>
+      <div
+        className={
+          nav ? "hidden" : "flex fixed flex-col bottom-[10%] left-0 z-20"
+        }
+      >
         <ul>
           <li className="side-nav bg-red-500">
             <a

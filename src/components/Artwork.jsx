@@ -3,7 +3,7 @@ import art1 from "../assets/art/art1.jpeg";
 const Artwork = (props) => {
   const art = props.artwork;
   return (
-    <div className="group w-full h-auto drop-shadow-lg">
+    <div className="group w-full h-auto drop-shadow-lg relative">
       <img src={art1} className=""></img>
       <div className="duration-300 opacity-0 group-hover:opacity-100 flex absolute top-0 left-0 w-full h-full text-center flex-col justify-between bg-gradient-to-t from-white to-white/[.1]">
         <div className="grow-0 h-[80%] overflow-hidden p-3 bg-r">

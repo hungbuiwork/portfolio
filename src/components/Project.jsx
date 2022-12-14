@@ -1,5 +1,4 @@
 import React from "react";
-import projects from "../data/projectdata";
 
 function Skill(skill) {
   return (
@@ -22,22 +21,25 @@ function Button(button) {
 
 const Project = (props) => {
   const project = props.project;
-  console.log(props, project);
-  console.log(project.imgURL);
+  const color = props.color;
+  console.log(color);
   return (
-    <div className="m-[10%] rounded-md border-white flex flex-col md:flex-row justify-between bg-gradient-to-b from-purple-700 to-indigo-900 p-6 drop-shadow-xl">
+    <div className={"m-[10%] rounded-md border-white flex flex-col md:flex-row justify-between p-6 drop-shadow-2xl " + color}>
       <div className="shrink-0 grow-1 flex flex-col w-[100%] md:w-[30%] m-2 place-self-center ">
         <img
           src={project.imgURL}
-          className="h-auto w-[320px] rounded-md place-self-center"
+          className="h-auto w-[320px] rounded-md place-self-center aspect-square object-cover shadow-inner"
         ></img>
         <div className="flex flex-wrap place-content-center">
           {project.skills.map((skill) => Skill(skill))}
         </div>
       </div>
-      <div className="shrink-1 flex flex-col justify-evenly mx-8">
+      <div className="shrink-1 flex flex-col justify-evenly mx-8 place-self-center">
         <div>
           <h1 className="text-white text-4xl font-bold">{project.title}</h1>
+          <p className={!project.date ? "hidden" : "text-gray-300"}>
+            {project.date}
+          </p>
           <p className={!project.roles ? "hidden" : "text-gray-400"}>
             Roles: {project.roles}
           </p>
