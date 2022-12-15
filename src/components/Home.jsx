@@ -115,12 +115,15 @@ const Home = () => {
           {softwareProjects.map((project) => (
             <Project project={project} color = " blue-gradient"></Project>
           ))}
+          <h1 className="text-white font-bold text-center">More projects will be added soon</h1>
+      
         </div>
       </div>
 
       {/*Artwork*/}
       <div id="art" className="relative bottom-40"></div>
       <div className="p-[30%]">
+        <h1 className="text-white font-bold text-center">Artwork will be added soon</h1>
       </div>
     </div>
   );
