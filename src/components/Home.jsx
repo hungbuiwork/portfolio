@@ -123,7 +123,7 @@ const Home = () => {
       {/*Artwork*/}
       <div id="art" className="relative bottom-40"></div>
       <div className="p-[30%]">
-        <h1 className="text-white font-bold text-center">Artwork will be added soon</h1>
+        <h1 className="text-white font-bold text-center">Artwork will be added soon !</h1>
       </div>
     </div>
   );

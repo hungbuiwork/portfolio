@@ -7,9 +7,10 @@ function App() {
       <div>
         <Navbar></Navbar>
         <Switch>
-          <Route exact path="/" component={Home}></Route>
+          <Route path="/portfolio" component={Home}></Route>
+          <Route path="/portfolio/projects.html" component={Home}></Route>
         </Switch>
-        <Redirect to = "/"></Redirect>
+        <Redirect to = "/portfolio"></Redirect>
       </div>
     </BrowserRouter>
   );
