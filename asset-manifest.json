@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.88dc02e5.css",
-    "main.js": "/portfolio-react/static/js/main.00d36d63.js",
-    "static/media/website.gif": "/portfolio-react/static/media/website.73c18bb57cf2c6f9c7e7.gif",
-    "static/media/phantomhallowseve.gif": "/portfolio-react/static/media/phantomhallowseve.022e8d3c61b6a1965a2e.gif",
-    "static/media/musicalmadness.gif": "/portfolio-react/static/media/musicalmadness.c6f4216ca4a758c7c4f5.gif",
-    "static/media/toonshader.gif": "/portfolio-react/static/media/toonshader.5c115e844c455d95d0d2.gif",
-    "static/media/Toon_Shader.pdf": "/portfolio-react/static/media/Toon_Shader.1956bd6e276b67c37d7e.pdf",
-    "static/media/art1.jpeg": "/portfolio-react/static/media/art1.fa17e4a04931ddb0c3f3.jpeg",
-    "static/media/Bui_Hung.pdf": "/portfolio-react/static/media/Bui_Hung.e0618333acbcb1373a93.pdf",
-    "static/media/itchio-logo-textless-white.png": "/portfolio-react/static/media/itchio-logo-textless-white.3801a82ec3efe8e53609.png",
-    "static/media/patientzero.jpeg": "/portfolio-react/static/media/patientzero.20c6918c4cf497225467.jpeg",
-    "index.html": "/portfolio-react/index.html",
-    "main.88dc02e5.css.map": "/portfolio-react/static/css/main.88dc02e5.css.map",
-    "main.00d36d63.js.map": "/portfolio-react/static/js/main.00d36d63.js.map"
+    "main.css": "/portfolio/static/css/main.88dc02e5.css",
+    "main.js": "/portfolio/static/js/main.bae1bb4b.js",
+    "static/media/website.gif": "/portfolio/static/media/website.73c18bb57cf2c6f9c7e7.gif",
+    "static/media/phantomhallowseve.gif": "/portfolio/static/media/phantomhallowseve.022e8d3c61b6a1965a2e.gif",
+    "static/media/musicalmadness.gif": "/portfolio/static/media/musicalmadness.c6f4216ca4a758c7c4f5.gif",
+    "static/media/toonshader.gif": "/portfolio/static/media/toonshader.5c115e844c455d95d0d2.gif",
+    "static/media/Toon_Shader.pdf": "/portfolio/static/media/Toon_Shader.1956bd6e276b67c37d7e.pdf",
+    "static/media/art1.jpeg": "/portfolio/static/media/art1.fa17e4a04931ddb0c3f3.jpeg",
+    "static/media/Bui_Hung.pdf": "/portfolio/static/media/Bui_Hung.e0618333acbcb1373a93.pdf",
+    "static/media/itchio-logo-textless-white.png": "/portfolio/static/media/itchio-logo-textless-white.3801a82ec3efe8e53609.png",
+    "static/media/patientzero.jpeg": "/portfolio/static/media/patientzero.20c6918c4cf497225467.jpeg",
+    "index.html": "/portfolio/index.html",
+    "main.88dc02e5.css.map": "/portfolio/static/css/main.88dc02e5.css.map",
+    "main.bae1bb4b.js.map": "/portfolio/static/js/main.bae1bb4b.js.map"
   },
   "entrypoints": [
     "static/css/main.88dc02e5.css",
-    "static/js/main.00d36d63.js"
+    "static/js/main.bae1bb4b.js"
   ]
 }
