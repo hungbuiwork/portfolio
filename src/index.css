@@ -8,7 +8,7 @@
   body {
     @apply font-[Montserrat];
     @apply scroll-smooth;
-    @apply bg-gray-800;
+    @apply bg-dark-1;
   }
   li {
     @apply px-4;
@@ -17,6 +17,13 @@
 }
 
 @layer components {
+  .bg-dark-2{
+    @apply bg-[#090b0f]
+  }
+  .bg-dark-1{
+    @apply bg-[#0e1016]
+  }
+
   .tab {
     @apply w-[50%] text-white table
   }
@@ -43,7 +50,7 @@
   }
 
   .side-nav {
-    @apply w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 hover:rounded-md drop-shadow;
+    @apply w-[160px] h-[60px] ml-[-100px] hover:ml-[-10px] flex justify-between items-center  duration-300 hover:rounded-md drop-shadow;
   }
   .top-nav {
     @apply text-gray-400 hover:text-white hover:font-extrabold border-transparent hover:border-emerald-500 border-b-4 h-8 duration-100;

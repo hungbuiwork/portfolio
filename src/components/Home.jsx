@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="w-full h-screen bg-gradient-to-t from-gray-900 to-gray-800"
+      className="w-full h-screen bg-gradient-to-t from-[#090b0f] to-[#0e1016]"
     >
       {/*Landing Section*/}
       <div id="home" className="relative bottom-6"></div>
@@ -64,7 +64,7 @@ const Home = () => {
         <h1 className="text-white text-center font-bold text-4xl underline decoration-pink-600">
           My Skills
         </h1>
-        <div className="skills mx-[5%] flex flex-row justify-evenly border-white  bg-gray-900 rounded-md mt-4">
+        <div className="skills mx-[5%] flex flex-row justify-evenly border-white  bg-dark-2 rounded-md mt-4">
           <div className="flex flex-col">
             <h1>Languages</h1>
             <p>Python ★</p>
@@ -92,16 +92,16 @@ const Home = () => {
 
       {/*Projects Section*/}
       <div id="projects" className="relative bottom-4"></div>
-      <div className="mx-auto flex flex-wrap bg-gray-900 text-center place-content-center">
+      <div className="mx-auto flex flex-wrap bg-dark-2 text-center place-content-center">
         <h1 className="text-6xl font-bold text-white underline decoration-purple-700 mt-16">
           Projects
         </h1>
         {/*Tabs*/}
-        <div className="flex justify-center h-16 w-full mt-6 mx-[20%] bg-black rounded-3xl drop-shadow-2xl">
-          <div onClick = {()=> settabMode(0)} className={"duration-200 tab rounded-l-3xl " + (tabMode == 0?"bg-purple-500":"bg-purple-500/[0.2] hover:bg-purple-500/[0.4] text-white/[0.7]")}>
+        <div className="flex justify-center h-16 w-full mt-6 mx-[20%] bg-black rounded-3xl drop-shadow-2xl relative">
+          <div onClick = {()=> settabMode(0)} className={"duration-200 tab rounded-l-3xl h-full w-full " + (tabMode == 0?"bg-purple-500":"bg-purple-500/[0.2] hover:bg-purple-500/[0.4] text-white/[0.7]")}>
             <p>Game Dev</p>
           </div>
-          <div onClick = {() => settabMode(1)} className={"duration-200 tab rounded-r-3xl " + (tabMode == 1?"bg-blue-500":"bg-blue-500/[0.2] hover:bg-blue-500/[0.4] text-white/[0.7]")}>
+          <div onClick = {() => settabMode(1)} className={"duration-200 tab rounded-r-3xl h-full w-full " + (tabMode == 1?"bg-blue-500":"bg-blue-500/[0.2] hover:bg-blue-500/[0.4] text-white/[0.7]")}>
             <p>Software</p>
           </div>
         </div>
