@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c4692c36.css",
-    "main.js": "/portfolio/static/js/main.e65e1d92.js",
+    "main.css": "/portfolio/static/css/main.a69734aa.css",
+    "main.js": "/portfolio/static/js/main.1a3e6bde.js",
     "static/media/website.gif": "/portfolio/static/media/website.73c18bb57cf2c6f9c7e7.gif",
     "static/media/phantomhallowseve.gif": "/portfolio/static/media/phantomhallowseve.022e8d3c61b6a1965a2e.gif",
     "static/media/musicalmadness.gif": "/portfolio/static/media/musicalmadness.c6f4216ca4a758c7c4f5.gif",
@@ -12,11 +12,11 @@
     "static/media/itchio-logo-textless-white.png": "/portfolio/static/media/itchio-logo-textless-white.3801a82ec3efe8e53609.png",
     "static/media/patientzero.jpeg": "/portfolio/static/media/patientzero.20c6918c4cf497225467.jpeg",
     "index.html": "/portfolio/index.html",
-    "main.c4692c36.css.map": "/portfolio/static/css/main.c4692c36.css.map",
-    "main.e65e1d92.js.map": "/portfolio/static/js/main.e65e1d92.js.map"
+    "main.a69734aa.css.map": "/portfolio/static/css/main.a69734aa.css.map",
+    "main.1a3e6bde.js.map": "/portfolio/static/js/main.1a3e6bde.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4692c36.css",
-    "static/js/main.e65e1d92.js"
+    "static/css/main.a69734aa.css",
+    "static/js/main.1a3e6bde.js"
   ]
 }
