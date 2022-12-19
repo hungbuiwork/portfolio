@@ -29,9 +29,9 @@ const Navbar = () => {
           <li className="top-nav">
             <a href="#art">Art</a>
           </li>
-          <li className="top-nav">
-            <a href={Resume} target="_blank">
-              Resume
+          <li className="top-nav border-2 border-white rounded-md">
+            <a href= "#contact">
+              Contact Me
             </a>
           </li>
         </ul>
@@ -73,9 +73,9 @@ const Navbar = () => {
               Art
             </a>
           </li>
-          <li className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 text-2xl">
-            <a href={Resume} target="_blank" onClick={handleClick}>
-              Resume
+          <li className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 text-2xl border-2 border-white rounded-md">
+            <a href="#contact"  onClick={handleClick}>
+              Contact Me
             </a>
           </li>
         </ul>

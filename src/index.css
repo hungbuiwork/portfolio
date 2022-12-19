@@ -17,6 +17,13 @@
 }
 
 @layer components {
+  .me{
+    background-image: url('./assets/art/me_2.jpg')
+  }
+  .sporo{
+    background-image: linear-gradient(to top, rgba(8, 1, 38, 0.081), rgba(39, 11, 121, 0.855)), url('./assets/thumbnails/sporo.gif');
+    background-position: left;
+  }
   .bg-dark-2{
     @apply bg-[#090b0f]
   }
@@ -53,6 +60,6 @@
     @apply w-[160px] h-[60px] ml-[-100px] hover:ml-[-10px] flex justify-between items-center  duration-300 hover:rounded-md drop-shadow;
   }
   .top-nav {
-    @apply text-gray-400 hover:text-white hover:font-extrabold border-transparent hover:border-emerald-500 border-b-4 h-8 duration-100;
+    @apply text-gray-400 hover:text-white hover:font-extrabold border-transparent hover:border-emerald-500 border-b-4 h-8 duration-100 mx-3;
   }
 }
