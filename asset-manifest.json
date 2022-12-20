@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.37eed2b3.css",
-    "main.js": "/portfolio/static/js/main.f946d32b.js",
+    "main.css": "/portfolio/static/css/main.810a0344.css",
+    "main.js": "/portfolio/static/js/main.3bb1758c.js",
     "static/media/sporo.gif": "/portfolio/static/media/sporo.c36911667986e02acf42.gif",
     "static/media/website.gif": "/portfolio/static/media/website.73c18bb57cf2c6f9c7e7.gif",
     "static/media/phantomhallowseve.gif": "/portfolio/static/media/phantomhallowseve.022e8d3c61b6a1965a2e.gif",
@@ -24,11 +24,11 @@
     "static/media/patientzero.jpeg": "/portfolio/static/media/patientzero.20c6918c4cf497225467.jpeg",
     "static/media/musicalMadness_map.jpeg": "/portfolio/static/media/musicalMadness_map.29532625c9c6d4d1dd7c.jpeg",
     "index.html": "/portfolio/index.html",
-    "main.37eed2b3.css.map": "/portfolio/static/css/main.37eed2b3.css.map",
-    "main.f946d32b.js.map": "/portfolio/static/js/main.f946d32b.js.map"
+    "main.810a0344.css.map": "/portfolio/static/css/main.810a0344.css.map",
+    "main.3bb1758c.js.map": "/portfolio/static/js/main.3bb1758c.js.map"
   },
   "entrypoints": [
-    "static/css/main.37eed2b3.css",
-    "static/js/main.f946d32b.js"
+    "static/css/main.810a0344.css",
+    "static/js/main.3bb1758c.js"
   ]
 }
