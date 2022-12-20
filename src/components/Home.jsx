@@ -20,14 +20,14 @@ const Home = () => {
       {/*Landing Section*/}
       <div id="home" className="relative bottom-6"></div>
       <div className="mx-full px-8 flex flex-col justify-center h-[100%] sporo bg-cover">
-        <div className="place-self-center w-[80%]">
-          <p className="text-emerald-400  text-3xl md:text-4xl font-bold">
+        <div className="place-self-center w-[60%]">
+          <p className="text-emerald-400  text-3xl md:text-4xl font-bold text-shadow">
             Hey, I'm{" "}
           </p>
-          <h1 className="text-white text-6xl md:text-8xl font-bold text-center m-8 place-self-center">
+          <h1 className="text-white text-[10vw] font-bold text-center m-8 place-self-center text-shadow">
             Hung Bui
           </h1>
-          <h2 className="text-emerald-400 font-bold text-xl md:text-3xl text-end text-gray-300">
+          <h2 className="text-emerald-400 font-bold text-xl md:text-3xl text-end drop-shadow-sm text-shadow">
             Software<br></br>Game Dev<br></br>Digital Art
           </h2>
         </div>
@@ -47,7 +47,7 @@ const Home = () => {
                 University of California, Irvine
               </span>
               <br></br>
-              Computer Science(B.S.) & Computer Game Science(B.S.)<br></br>
+              Computer Science (B.S.) & Computer Game Science (B.S.)<br></br>
               <br></br>
               GPA: 3.97<br></br>
               Sep 2020 -{" "}

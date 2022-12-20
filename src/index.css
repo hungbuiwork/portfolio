@@ -17,6 +17,9 @@
 }
 
 @layer components {
+  .text-shadow{
+    text-shadow: 0 0 16px #485bbc;
+  }
   .me{
     background-image: url('./assets/art/me_2.jpg')
   }
