@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.2267db44.css",
-    "main.js": "/portfolio/static/js/main.94c91b79.js",
+    "main.js": "/portfolio/static/js/main.4426cbdb.js",
     "static/media/sporo.gif": "/portfolio/static/media/sporo.c36911667986e02acf42.gif",
     "static/media/website.gif": "/portfolio/static/media/website.73c18bb57cf2c6f9c7e7.gif",
     "static/media/phantomhallowseve.gif": "/portfolio/static/media/phantomhallowseve.022e8d3c61b6a1965a2e.gif",
@@ -12,6 +12,7 @@
     "static/media/wheelbarrow.png": "/portfolio/static/media/wheelbarrow.6b5526c4779e20dbfaa2.png",
     "static/media/House.png": "/portfolio/static/media/House.d568db6da4fb8a914bcd.png",
     "static/media/Gravestone.png": "/portfolio/static/media/Gravestone.88420d0391bdf6e98134.png",
+    "static/media/website-art.gif": "/portfolio/static/media/website-art.cabb7afdca8e60c6985a.gif",
     "static/media/Toon_Shader.pdf": "/portfolio/static/media/Toon_Shader.1956bd6e276b67c37d7e.pdf",
     "static/media/hand.png": "/portfolio/static/media/hand.471076cad1e4ec6ec826.png",
     "static/media/art5.jpeg": "/portfolio/static/media/art5.2182ab7faa23c71033f4.jpeg",
@@ -34,10 +35,10 @@
     "static/media/musicalMadness_map.jpeg": "/portfolio/static/media/musicalMadness_map.29532625c9c6d4d1dd7c.jpeg",
     "index.html": "/portfolio/index.html",
     "main.2267db44.css.map": "/portfolio/static/css/main.2267db44.css.map",
-    "main.94c91b79.js.map": "/portfolio/static/js/main.94c91b79.js.map"
+    "main.4426cbdb.js.map": "/portfolio/static/js/main.4426cbdb.js.map"
   },
   "entrypoints": [
     "static/css/main.2267db44.css",
-    "static/js/main.94c91b79.js"
+    "static/js/main.4426cbdb.js"
   ]
 }
