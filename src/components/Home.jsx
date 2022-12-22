@@ -135,12 +135,12 @@ const Home = () => {
 
         <div className={tabMode == 0 ? "" : "hidden"}>
           {gameProjects.map((project) => (
-            <Project project={project} color=" purple-gradient"></Project>
+            <Project project={project} color=" purple-gradient" key = {project.title}></Project>
           ))}
         </div>
         <div className={tabMode == 1 ? "" : "hidden"}>
           {softwareProjects.map((project) => (
-            <Project project={project} color=" blue-gradient"></Project>
+            <Project project={project} color=" blue-gradient" key = {project.title}></Project>
           ))}
           <h1 className="text-white font-bold text-center">
             More projects will be added soon
@@ -149,18 +149,20 @@ const Home = () => {
       </div>
 
       {/*Artwork*/}
-      <div id="art" className="relative bottom-40"></div>
-      <h1 className="text-white text-center font-bold text-5xl underline decoration-blue-500 py-8">Artwork</h1>
+      <div id="art" className="relative bottom-32"></div>
+      <div className="bg-dark-2">
+      <h1 className="text-white text-center font-bold text-5xl underline decoration-blue-500 py-16">Artwork</h1>
       <div className="px-[10%] md:px-[15%] lg:px=[[20%]">
         <div className="text-white font-bold text-center">
           <Carousel artwork = {threeDArt}></Carousel>
           <Carousel artwork = {digitalArt}></Carousel>
         </div>
       </div>
+      </div>
 
       {/*Contact Me*/}
-      <div id="contact" className="relative bottom-40"></div>
-      <div className="bg-dark-2 h-screen w-full">
+      <div id="contact" className="relative bottom-20"></div>
+      <div className="bg-dark-1 h-screen w-full">
         <h1 className="text-white text-center font-bold text-4xl underline decoration-emerald-500 py-6">
           <a href="mailto: hungbuiwork@gmail.com ">Contact Me</a>
         </h1>

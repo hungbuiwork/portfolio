@@ -2,14 +2,14 @@ import React, { useState } from "react";
 
 function Skill(skill) {
   return (
-    <div className="rounded-md px-2 m-1 text-center border-2 bg-emerald-500 text-white font-semibold">
+    <div key = {skill} className="rounded-md px-2 m-1 text-center border-2 bg-emerald-500 text-white font-semibold">
       {skill}
     </div>
   );
 }
 function Button(button) {
   return (
-    <a
+    <a key = {button.label}
       href={button.url}
       target="_blank"
       className="rounded-md text-2xl px-8 py-4 mx-4  my-2 text-center border-2  text-white font-semibold hover:bg-white hover:text-slate-900 duration-300"
@@ -21,7 +21,7 @@ function Button(button) {
 
 function Detail(detail) {
   return (
-    <div className="mb-10 clear-both md:text-lg">
+    <div key = {detail.title} className="mb-10 clear-both md:text-lg">
       <h1 className="font-bold text-xl mb-4">{detail?.title}</h1>
       <div className=" text-gray-300">
         <img

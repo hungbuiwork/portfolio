@@ -26,6 +26,10 @@
   .text-shadow{
     text-shadow: 0 0 16px #485bbc;
   }
+
+.text-shadow-2{
+  text-shadow: 0 0 16px black;
+}
   .me{
     background-image: url('./assets/art/me_2.jpg');
     box-shadow: 16 16 64px #0000003f;
