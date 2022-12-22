@@ -38,6 +38,7 @@ const projects = [
   },
   {
     imgURL: require("../assets/thumbnails/patientzero.jpeg"),
+    size: 19,
     date: "SEP 2021 - APRIL 2022",
     roles: "Programmer, VFX",
     skills: ["Unity", "C#"],
@@ -45,6 +46,7 @@ const projects = [
     title: "Hughes Media & Design Lab: Patient Zero",
     details: details.patientZero,
     buttons: [
+      {label: "Hughes Lab & Media", url: "https://hughesmedia.bio.uci.edu"},
       { label: "Itch.io", url: "https://amily.itch.io/patient-zero" },
       {
         label: "Source Code",

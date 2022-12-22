@@ -42,7 +42,6 @@ const Project = (props) => {
   const project = props.project;
   const color = props.color;
   const [showingDetails, setShowingDetails] = useState(false);
-  console.log(color);
   return (
     <div
       className={"m-[10%] rounded-md border-white p-6 drop-shadow-2xl" + color}

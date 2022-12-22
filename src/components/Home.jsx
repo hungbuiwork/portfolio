@@ -6,6 +6,8 @@ import softwareProjects from "../data/projectdata_software.jsx";
 import Artwork from "./Artwork";
 import ResumeGames from "../assets/resumes/HungBuiResumeGames.pdf";
 import ResumeSoftware from "../assets/resumes/HungBuiResumeSoftware.pdf";
+import Carousel from "./Carousel";
+import {digitalArt, threeDArt} from "../data/artdata_digital";
 
 const Home = () => {
   const [tabMode, settabMode] = useState(0);
@@ -148,10 +150,12 @@ const Home = () => {
 
       {/*Artwork*/}
       <div id="art" className="relative bottom-40"></div>
-      <div className="p-[30%]">
-        <h1 className="text-white font-bold text-center">
-          Artwork will be added soon !
-        </h1>
+      <h1 className="text-white text-center font-bold text-5xl underline decoration-blue-500 py-8">Artwork</h1>
+      <div className="px-[10%] md:px-[15%] lg:px=[[20%]">
+        <div className="text-white font-bold text-center">
+          <Carousel artwork = {threeDArt}></Carousel>
+          <Carousel artwork = {digitalArt}></Carousel>
+        </div>
       </div>
 
       {/*Contact Me*/}

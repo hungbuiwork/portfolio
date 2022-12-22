@@ -17,11 +17,19 @@
 }
 
 @layer components {
+  .carousel-side{
+    filter: drop-shadow(0 0 16px rgb(0, 0, 0)) brightness(70%)
+  }
+  .carousel-active{
+    filter: drop-shadow(0 0 32px rgb(92, 92, 197))
+  }
   .text-shadow{
     text-shadow: 0 0 16px #485bbc;
   }
   .me{
-    background-image: url('./assets/art/me_2.jpg')
+    background-image: url('./assets/art/me_2.jpg');
+    box-shadow: 16 16 64px #0000003f;
+
   }
   .sporo{
     background-image: linear-gradient(to top, rgba(8, 1, 38, 0.081), rgba(39, 11, 121, 0.855)), url('./assets/thumbnails/sporo.gif');
