@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.810a0344.css",
-    "main.js": "/portfolio/static/js/main.3c3dcc01.js",
+    "main.css": "/portfolio/static/css/main.ecbd1ff8.css",
+    "main.js": "/portfolio/static/js/main.2b5cfadc.js",
     "static/media/sporo.gif": "/portfolio/static/media/sporo.c36911667986e02acf42.gif",
     "static/media/website.gif": "/portfolio/static/media/website.73c18bb57cf2c6f9c7e7.gif",
     "static/media/phantomhallowseve.gif": "/portfolio/static/media/phantomhallowseve.022e8d3c61b6a1965a2e.gif",
@@ -9,10 +9,19 @@
     "static/media/musicalMadness_drum.gif": "/portfolio/static/media/musicalMadness_drum.4480c4bf780d97ca5c8c.gif",
     "static/media/toonshader.gif": "/portfolio/static/media/toonshader.5c115e844c455d95d0d2.gif",
     "static/media/patientZero_tooltip.gif": "/portfolio/static/media/patientZero_tooltip.0c1aab117670a969f03f.gif",
+    "static/media/wheelbarrow.png": "/portfolio/static/media/wheelbarrow.6b5526c4779e20dbfaa2.png",
+    "static/media/House.png": "/portfolio/static/media/House.d568db6da4fb8a914bcd.png",
+    "static/media/Gravestone.png": "/portfolio/static/media/Gravestone.88420d0391bdf6e98134.png",
     "static/media/Toon_Shader.pdf": "/portfolio/static/media/Toon_Shader.1956bd6e276b67c37d7e.pdf",
+    "static/media/hand.png": "/portfolio/static/media/hand.471076cad1e4ec6ec826.png",
+    "static/media/art5.jpeg": "/portfolio/static/media/art5.2182ab7faa23c71033f4.jpeg",
     "static/media/JokeBrowser.gif": "/portfolio/static/media/JokeBrowser.099f3a568a38fc6d4d3a.gif",
+    "static/media/mermaidboy.jpg": "/portfolio/static/media/mermaidboy.f06d6ed9ce83d2b3e97c.jpg",
+    "static/media/art8.jpeg": "/portfolio/static/media/art8.084f692cd215fea4936c.jpeg",
+    "static/media/art6.jpeg": "/portfolio/static/media/art6.5231e5b63a81315d3927.jpeg",
     "static/media/me_2.jpg": "/portfolio/static/media/me_2.f55ad521a82d911b196b.jpg",
     "static/media/art1.jpeg": "/portfolio/static/media/art1.fa17e4a04931ddb0c3f3.jpeg",
+    "static/media/sporoIsland.jpeg": "/portfolio/static/media/sporoIsland.3cf647efd6b88049208a.jpeg",
     "static/media/jokeBrowser_ui.jpeg": "/portfolio/static/media/jokeBrowser_ui.6a9dd313863bc351b44f.jpeg",
     "static/media/Bui_Hung.pdf": "/portfolio/static/media/Bui_Hung.e0618333acbcb1373a93.pdf",
     "static/media/HungBuiResumeGames.pdf": "/portfolio/static/media/HungBuiResumeGames.cd61573e654868be3af4.pdf",
@@ -24,11 +33,11 @@
     "static/media/patientzero.jpeg": "/portfolio/static/media/patientzero.20c6918c4cf497225467.jpeg",
     "static/media/musicalMadness_map.jpeg": "/portfolio/static/media/musicalMadness_map.29532625c9c6d4d1dd7c.jpeg",
     "index.html": "/portfolio/index.html",
-    "main.810a0344.css.map": "/portfolio/static/css/main.810a0344.css.map",
-    "main.3c3dcc01.js.map": "/portfolio/static/js/main.3c3dcc01.js.map"
+    "main.ecbd1ff8.css.map": "/portfolio/static/css/main.ecbd1ff8.css.map",
+    "main.2b5cfadc.js.map": "/portfolio/static/js/main.2b5cfadc.js.map"
   },
   "entrypoints": [
-    "static/css/main.810a0344.css",
-    "static/js/main.3c3dcc01.js"
+    "static/css/main.ecbd1ff8.css",
+    "static/js/main.2b5cfadc.js"
   ]
 }
