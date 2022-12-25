@@ -37,7 +37,7 @@ const Carousel = (prop) => {
           <FaCaretLeft size={30}></FaCaretLeft>
         </button>
       <div className="flex justify-center place-items-center rounded-xl p-6 border-4 border-gray-900 h-[60vw] md:h-[45vw]">
-        <div  onClick={() => changeIndex(-1)} className="w-[30%] hover:w-[35%] hover:cursor-pointer duration-300 relative left-6 rounded-xl overflow-hidden carousel-side">
+        <div  onClick={() => changeIndex(-1)} className="w-[30%] hover:w-[45%] hover:cursor-pointer duration-300 relative left-6 rounded-xl overflow-hidden carousel-side">
           <Artwork art={art[trueIndex(index - 1)]}></Artwork>
         </div>
         <div className="w-[65%]  z-10 hover:w-[120%] duration-300 carousel-active">
@@ -45,7 +45,7 @@ const Carousel = (prop) => {
             <Artwork art={art[index]} className=""></Artwork>
           </div>
         </div>
-        <div  onClick={() => changeIndex(1)} className="w-[30%] hover:w-[35%] hover:cursor-pointer duration-300 relative right-6 rounded-xl overflow-hidden carousel-side">
+        <div  onClick={() => changeIndex(1)} className="w-[30%] hover:w-[45%] hover:cursor-pointer duration-300 relative right-6 rounded-xl overflow-hidden carousel-side">
           <Artwork art={art[trueIndex(index + 1)]}></Artwork>
         </div>
       </div>

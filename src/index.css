@@ -21,14 +21,14 @@
     filter: drop-shadow(0 0 16px rgb(0, 0, 0)) brightness(70%)
   }
   .carousel-active{
-    filter: drop-shadow(0 0 16px rgb(92, 92, 197))
+    filter: drop-shadow(0 0 32px rgb(119, 119, 237))
   }
   .text-shadow{
-    text-shadow: 0 0 16px #485bbc;
+    text-shadow: 0 0 32px #485bbc,  0 0 16px #8997dc;
   }
 
 .text-shadow-2{
-  text-shadow: 0 0 16px black;
+  text-shadow: 0 0 16px rgb(25, 6, 46);
 }
   .me{
     background-image: url('./assets/art/me_2.jpg');
