@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.90fbc539.css",
-    "main.js": "/portfolio/static/js/main.8abcf54c.js",
+    "main.css": "/portfolio/static/css/main.55d6f949.css",
+    "main.js": "/portfolio/static/js/main.d21494aa.js",
     "static/media/sporo.gif": "/portfolio/static/media/sporo.c36911667986e02acf42.gif",
     "static/media/website.gif": "/portfolio/static/media/website.73c18bb57cf2c6f9c7e7.gif",
     "static/media/phantomhallowseve.gif": "/portfolio/static/media/phantomhallowseve.022e8d3c61b6a1965a2e.gif",
@@ -24,9 +24,9 @@
     "static/media/art1.jpeg": "/portfolio/static/media/art1.fa17e4a04931ddb0c3f3.jpeg",
     "static/media/sporoIsland.jpeg": "/portfolio/static/media/sporoIsland.3cf647efd6b88049208a.jpeg",
     "static/media/jokeBrowser_ui.jpeg": "/portfolio/static/media/jokeBrowser_ui.6a9dd313863bc351b44f.jpeg",
+    "static/media/HungBuiResumeGames.pdf": "/portfolio/static/media/HungBuiResumeGames.ab16308bbb146faa21e8.pdf",
     "static/media/Bui_Hung.pdf": "/portfolio/static/media/Bui_Hung.e0618333acbcb1373a93.pdf",
-    "static/media/HungBuiResumeGames.pdf": "/portfolio/static/media/HungBuiResumeGames.cd61573e654868be3af4.pdf",
-    "static/media/HungBuiResumeSoftware.pdf": "/portfolio/static/media/HungBuiResumeSoftware.e7fd40a2b2c4e78315b2.pdf",
+    "static/media/HungBuiResumeSoftware.pdf": "/portfolio/static/media/HungBuiResumeSoftware.1ec2c1995881d90edf2f.pdf",
     "static/media/toonShader_scene.jpeg": "/portfolio/static/media/toonShader_scene.15f2bdf68e52193d32f6.jpeg",
     "static/media/musicalMadness_architecture.jpeg": "/portfolio/static/media/musicalMadness_architecture.0945f32ca83fe017869b.jpeg",
     "static/media/toonShader_house.jpeg": "/portfolio/static/media/toonShader_house.3b6e518b787d68c63975.jpeg",
@@ -34,11 +34,11 @@
     "static/media/patientzero.jpeg": "/portfolio/static/media/patientzero.20c6918c4cf497225467.jpeg",
     "static/media/musicalMadness_map.jpeg": "/portfolio/static/media/musicalMadness_map.29532625c9c6d4d1dd7c.jpeg",
     "index.html": "/portfolio/index.html",
-    "main.90fbc539.css.map": "/portfolio/static/css/main.90fbc539.css.map",
-    "main.8abcf54c.js.map": "/portfolio/static/js/main.8abcf54c.js.map"
+    "main.55d6f949.css.map": "/portfolio/static/css/main.55d6f949.css.map",
+    "main.d21494aa.js.map": "/portfolio/static/js/main.d21494aa.js.map"
   },
   "entrypoints": [
-    "static/css/main.90fbc539.css",
-    "static/js/main.8abcf54c.js"
+    "static/css/main.55d6f949.css",
+    "static/js/main.d21494aa.js"
   ]
 }
