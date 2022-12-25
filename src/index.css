@@ -8,7 +8,7 @@
   body {
     @apply font-[Montserrat];
     @apply scroll-smooth;
-    @apply bg-dark-1;
+    @apply bg-dark-2;
   }
   li {
     @apply px-4;
@@ -21,7 +21,7 @@
     filter: drop-shadow(0 0 16px rgb(0, 0, 0)) brightness(70%)
   }
   .carousel-active{
-    filter: drop-shadow(0 0 32px rgb(92, 92, 197))
+    filter: drop-shadow(0 0 16px rgb(92, 92, 197))
   }
   .text-shadow{
     text-shadow: 0 0 16px #485bbc;
@@ -36,8 +36,9 @@
 
   }
   .sporo{
-    background-image: linear-gradient(to top, rgba(8, 1, 38, 0.081), rgba(39, 11, 121, 0.855)), url('./assets/thumbnails/sporo.gif');
+    background-image: linear-gradient(to top, rgba(8, 1, 38, 0.169), rgba(24, 9, 70, 0.855)), url('./assets/thumbnails/sporo.gif');
     background-position: left;
+    backdrop-filter: brightness(0);
   }
   .bg-dark-2{
     @apply bg-[#090b0f]
@@ -58,8 +59,13 @@
   .blue-gradient{
     @apply bg-gradient-to-b from-blue-500 to-transparent
   }
+  .skills{
+    @apply  mx-[5%] flex flex-row justify-center border-gray-900 border-4 rounded-md mt-4
+  }
+
   .skills .flex-col {
-    @apply mb-5 mx-2;
+    @apply mb-5 mx-2 w-[33%] lg:w-[20%];
+    @apply text-center;
   }
   .skills h1 {
     @apply text-white font-bold text-xl my-3;

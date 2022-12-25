@@ -19,6 +19,7 @@ const Home = () => {
       name="home"
       className="w-full h-screen bg-gradient-to-t from-[#090b0f] to-[#0e1016]"
     >
+      <div id = "top"></div>
       {/*Landing Section*/}
       <div id="home" className="relative bottom-6"></div>
       <div className="mx-full px-8 flex flex-col justify-center h-[100%] sporo bg-cover">
@@ -30,7 +31,7 @@ const Home = () => {
             Hung Bui
           </h1>
           <h2 className="text-emerald-400 font-bold text-xl md:text-3xl text-end drop-shadow-sm text-shadow">
-            Software<br></br>Game Dev<br></br>Digital Art
+            Software<br></br>Game Dev
           </h2>
         </div>
       </div>
@@ -72,10 +73,10 @@ const Home = () => {
           </p>
         </div>
 
-        <h1 className="text-white text-center font-bold text-4xl underline decoration-pink-600">
+        <h1 className="text-white text-center font-bold text-4xl underline decoration-pink-600 mt-24">
           My Skills
         </h1>
-        <div className="skills mx-[5%] flex flex-row justify-evenly border-white  bg-dark-2 rounded-md mt-4">
+        <div className="skills">
           <div className="flex flex-col">
             <h1>Languages</h1>
             <p>Python ★</p>
@@ -91,13 +92,12 @@ const Home = () => {
             <p>Angular</p>
             <p>SQL</p>
           </div>
-          <div>
+          <div className = "flex flex-col">
             <h1>Game Dev</h1>
             <p>Unity ★</p>
             <p>Unreal</p>
             <p>Shaderlab</p>
           </div>
-          <div className="flex flex-col"></div>
         </div>
       </div>
 
@@ -152,7 +152,7 @@ const Home = () => {
       <div id="art" className="relative bottom-32"></div>
       <div className="bg-dark-2">
       <h1 className="text-white text-center font-bold text-5xl underline decoration-blue-500 py-16">Artwork</h1>
-      <div className="px-[10%] md:px-[15%] lg:px=[[20%]">
+      <div className="px-[0%] md:px-[15%] lg:px=[[20%]">
         <div className="text-white font-bold text-center">
           <Carousel artwork = {threeDArt}></Carousel>
           <Carousel artwork = {digitalArt}></Carousel>

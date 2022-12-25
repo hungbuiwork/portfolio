@@ -32,25 +32,28 @@ const Carousel = (prop) => {
     <div className="w-full pb-8">
       <h1 className="text-2xl md:text-3xl">{title}</h1>
       {Dots(index, listOfIdx)}
-      <div className="flex justify-center place-items-center rounded-xl p-6 border-4 border-gray-900 h-[40vw]">
-        <button className = "duration-200 filter brightness-50 hover:brightness-100" onClick={() => changeIndex(-1)}>
-          <FaCaretLeft size={40}></FaCaretLeft>
+      <div className="flex justify-center place-items-center">
+      <button className = "h-48 duration-200 filter brightness-50 hover:brightness-100" onClick={() => changeIndex(-1)}>
+          <FaCaretLeft size={30}></FaCaretLeft>
         </button>
-        <div className="w-[40%]  relative left-6 rounded-xl overflow-hidden carousel-side">
+      <div className="flex justify-center place-items-center rounded-xl p-6 border-4 border-gray-900 h-[60vw] md:h-[45vw]">
+        <div  onClick={() => changeIndex(-1)} className="w-[30%] hover:w-[35%] hover:cursor-pointer duration-300 relative left-6 rounded-xl overflow-hidden carousel-side">
           <Artwork art={art[trueIndex(index - 1)]}></Artwork>
         </div>
-        <div className="w-[60%]  z-10 hover:w-[100%] duration-300">
-          <div className="shadow-xl rounded-xl overflow-hidden carousel-active">
+        <div className="w-[65%]  z-10 hover:w-[120%] duration-300 carousel-active">
+          <div className="shadow-xl rounded-xl overflow-hidden">
             <Artwork art={art[index]} className=""></Artwork>
           </div>
         </div>
-        <div className="w-[40%]  relative right-6 rounded-xl overflow-hidden carousel-side">
+        <div  onClick={() => changeIndex(1)} className="w-[30%] hover:w-[35%] hover:cursor-pointer duration-300 relative right-6 rounded-xl overflow-hidden carousel-side">
           <Artwork art={art[trueIndex(index + 1)]}></Artwork>
         </div>
-        <button className = "duration-200 filter brightness-50 hover:brightness-100" onClick={() => changeIndex(1)}>
-          <FaCaretRight size={40}></FaCaretRight>
+      </div>
+      <button className = " h-48 duration-200 filter brightness-50 hover:brightness-100" onClick={() => changeIndex(1)}>
+          <FaCaretRight size={30}></FaCaretRight>
         </button>
       </div>
+
       <h2 className="text-lg text-blue-600/[.3] z-20 ">
             ― <span className="text-white"> {art[index].title} </span> ―
           </h2>

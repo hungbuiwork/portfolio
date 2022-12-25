@@ -8,12 +8,12 @@ const Navbar = () => {
   return (
     <div>
       <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-dark-2 bg-opacity-90 backdrop-blur-sm text-gray-300 z-50">
-        <div className="flex nameLogo">
+        <a className="flex nameLogo hover:cursor-pointer" href = "#top">
           <p className="text-6xl font-bold">H</p>
           <p className="text-6xl font-bold relative right-5 hover:right-0 duration-200">
             B
           </p>
-        </div>
+        </a>
 
         {/*menu*/}
         <ul className="hidden md:flex">
