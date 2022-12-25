@@ -37,7 +37,7 @@ const projects = {
   musicalMadness: {
     imgURL: require("../assets/thumbnails/musicalmadness.gif"),
     date: "MARCH 2022 - APRIL 2022",
-    roles: "Project Lead, Programmer, 2D Artist",
+    roles: "Project Lead, Programmer, 2D Art",
     size: 6,
     skills: ["Unity", "C#"],
     desc: "A top-down shooter/dungeon exploration videogame themed around music, that I pitched at UCI's videogame development club. I programmed the procedurally generated dungeon and enemy AI scripts to be maintainable, modular, and reusable. I was a middleground between programming, art, and sound in the creation of this fun, aesthetic, and cohesive experience!",
@@ -106,12 +106,12 @@ const projects = {
     title: "Hughes Media & Design Lab: Patient Zero",
     details: [
       {
+        image: require("../assets/thumbnails/patientZero_tooltip.gif"),
         title: "Background",
         description:
           "It was the fall quarter of 2021, my second year at UCI. I saw that Hughes Media & Design Lab was working on a VR research-based project which simulated a lab in which the player must find out what the disease is. After an interview, I was lucky enough to be able to join the team!",
       },
       {
-        image: require("../assets/thumbnails/patientZero_tooltip.gif"),
         title: "What I implemented",
         description:
           "- A tooltip/hints 3D UI that pops up when the user picks up a tool. I tried to match the design with the aesthetics of the game. A small optimization I did was to reuse the same object, and simply hide it somewhere off the map when not in use.",

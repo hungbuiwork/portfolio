@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import { HiArrowNarrowRight } from "react-icons/hi";
 import Project from "./Project";
 import gameProjects from "../data/projectdata_game.jsx";
 import softwareProjects from "../data/projectdata_software.jsx";
-import Artwork from "./Artwork";
 import ResumeGames from "../assets/resumes/HungBuiResumeGames.pdf";
 import ResumeSoftware from "../assets/resumes/HungBuiResumeSoftware.pdf";
 import Carousel from "./Carousel";
-import {digitalArt, threeDArt} from "../data/artdata_digital";
+import { digitalArt, threeDArt } from "../data/artdata_digital";
+import { HashRouter } from "react-router-dom";
 
 const Home = () => {
   const [tabMode, settabMode] = useState(0);
@@ -19,25 +18,106 @@ const Home = () => {
       name="home"
       className="w-full h-screen bg-gradient-to-t from-[#090b0f] to-[#0e1016]"
     >
-      <div id = "top"></div>
+      <div id="top"></div>
       {/*Landing Section*/}
       <div id="home" className="relative bottom-6"></div>
-      <div className="mx-full px-8 flex flex-col justify-center h-[100%] sporo bg-cover">
+      <div className="mx-full px-2 flex flex-col justify-center h-[100%] sporo bg-cover">
         <div className="place-self-center w-[60%]">
-          <p className="text-emerald-400  text-3xl md:text-4xl font-bold text-shadow">
+          <p className="text-emerald-400  text-2xl md:text-3xl font-bold text-shadow text-left">
             Hey, I'm{" "}
           </p>
-          <h1 className="text-white text-[10vw] font-bold text-center m-8 place-self-center text-shadow">
+          <h1 className="text-white text-[10vw] font-bold text-center  mb-3 place-self-center text-shadow">
             Hung Bui
           </h1>
-          <h2 className="text-emerald-400 font-bold text-xl md:text-3xl text-end drop-shadow-sm text-shadow">
-            Software<br></br>Game Dev
+          <h2 className="text-emerald-400 font-bold text-xl md:text-3xl text-center drop-shadow-sm text-shadow">
+            Game Dev<br></br>Software
           </h2>
+        </div>
+      </div>
+
+      {/*Projects Section*/}
+      <div id="projects" className="relative bottom-4"></div>
+
+      <div className="mx-auto flex flex-wrap bg-dark-2 text-center place-content-center">
+        <h1 className="text-6xl font-bold text-white underline decoration-purple-700 mt-16">
+          Projects
+        </h1>
+        {/*Tabs*/}
+        <div className="flex justify-center h-16 w-full mt-6 mx-[20%] bg-black rounded-3xl drop-shadow-2xl relative">
+          <div
+            onClick={() => settabMode(0)}
+            className={
+              "duration-200 tab rounded-l-3xl h-full w-full " +
+              (tabMode == 0
+                ? "bg-purple-500"
+                : "bg-purple-500/[0.2] hover:bg-purple-500/[0.4] text-white/[0.7]")
+            }
+          >
+            <p>Game Dev</p>
+          </div>
+          <div
+            onClick={() => settabMode(1)}
+            className={
+              "duration-200 tab rounded-r-3xl h-full w-full " +
+              (tabMode == 1
+                ? "bg-blue-500"
+                : "bg-blue-500/[0.2] hover:bg-blue-500/[0.4] text-white/[0.7]")
+            }
+          >
+            <p>Software</p>
+          </div>
+        </div>
+
+        <div className={tabMode == 0 ? "" : "hidden"}>
+          {gameProjects.map((project) => (
+            <Project
+              project={project}
+              color=" purple-gradient"
+              key={project.title}
+            ></Project>
+          ))}
+        </div>
+        <div className={tabMode == 1 ? "" : "hidden"}>
+          {softwareProjects.map((project) => (
+            <Project
+              project={project}
+              color=" blue-gradient"
+              key={project.title}
+            ></Project>
+          ))}
+          <h1 className="text-white font-bold text-center">
+            More projects will be added to the website soon!
+          </h1>
+        </div>
+      </div>
+
+      {/*Artwork*/}
+      <div id="art" className="relative bottom-32"></div>
+      <hr className="border-gray-800"></hr>
+      <div className="bg-dark-2 pb-16">
+        <h1 className="text-white text-center font-bold text-5xl underline decoration-blue-500 pt-16">
+          Artwork
+        </h1>
+        <h2 className="text-gray-400 text-center pt-2 pb-16 mx-[20%] text-xl">
+          Though my{" "}
+          <span className="text-white font-bold">
+            primary passion is programming
+          </span>
+          , I've familiarized myself with 3D modeling software commonly used in
+          game development! Here are some examples of some art I've created for
+          past projects!
+        </h2>
+
+        <div className="px-[0%] md:px-[15%] lg:px=[[20%]">
+          <div className="text-white font-bold text-center">
+            <Carousel artwork={threeDArt}></Carousel>
+          </div>
         </div>
       </div>
 
       {/*About Section*/}
       <div id="about" className="relative bottom-6"></div>
+      <hr className="border-gray-800"></hr>
       <div className=" mx-2 mb-32 mt-16">
         <h1 className="text-white decoration-pink-500 underline font-extrabold text-6xl text-center mb-8 underline-offset-2">
           About Me
@@ -53,8 +133,7 @@ const Home = () => {
               Computer Science (B.S.) & Computer Game Science (B.S.)<br></br>
               <br></br>
               GPA: 3.97<br></br>
-              Sep 2020 -{" "}
-              <span className="text-pink-400 font-bold">Jun 2024</span>
+              Sep 2020 - <span>Jun 2024</span>
               <br></br>
               <br></br>
             </p>
@@ -92,7 +171,7 @@ const Home = () => {
             <p>Angular</p>
             <p>SQL</p>
           </div>
-          <div className = "flex flex-col">
+          <div className="flex flex-col">
             <h1>Game Dev</h1>
             <p>Unity ★</p>
             <p>Unreal</p>
@@ -101,76 +180,17 @@ const Home = () => {
         </div>
       </div>
 
-      {/*Projects Section*/}
-      <div id="projects" className="relative bottom-4"></div>
-      <div className="mx-auto flex flex-wrap bg-dark-2 text-center place-content-center">
-        <h1 className="text-6xl font-bold text-white underline decoration-purple-700 mt-16">
-          Projects
-        </h1>
-        {/*Tabs*/}
-        <div className="flex justify-center h-16 w-full mt-6 mx-[20%] bg-black rounded-3xl drop-shadow-2xl relative">
-          <div
-            onClick={() => settabMode(0)}
-            className={
-              "duration-200 tab rounded-l-3xl h-full w-full " +
-              (tabMode == 0
-                ? "bg-purple-500"
-                : "bg-purple-500/[0.2] hover:bg-purple-500/[0.4] text-white/[0.7]")
-            }
-          >
-            <p>Game Dev</p>
-          </div>
-          <div
-            onClick={() => settabMode(1)}
-            className={
-              "duration-200 tab rounded-r-3xl h-full w-full " +
-              (tabMode == 1
-                ? "bg-blue-500"
-                : "bg-blue-500/[0.2] hover:bg-blue-500/[0.4] text-white/[0.7]")
-            }
-          >
-            <p>Software</p>
-          </div>
-        </div>
-
-        <div className={tabMode == 0 ? "" : "hidden"}>
-          {gameProjects.map((project) => (
-            <Project project={project} color=" purple-gradient" key = {project.title}></Project>
-          ))}
-        </div>
-        <div className={tabMode == 1 ? "" : "hidden"}>
-          {softwareProjects.map((project) => (
-            <Project project={project} color=" blue-gradient" key = {project.title}></Project>
-          ))}
-          <h1 className="text-white font-bold text-center">
-            More projects will be added soon
-          </h1>
-        </div>
-      </div>
-
-      {/*Artwork*/}
-      <div id="art" className="relative bottom-32"></div>
-      <div className="bg-dark-2">
-      <h1 className="text-white text-center font-bold text-5xl underline decoration-blue-500 py-16">Artwork</h1>
-      <div className="px-[0%] md:px-[15%] lg:px=[[20%]">
-        <div className="text-white font-bold text-center">
-          <Carousel artwork = {threeDArt}></Carousel>
-          <Carousel artwork = {digitalArt}></Carousel>
-        </div>
-      </div>
-      </div>
-
       {/*Contact Me*/}
       <div id="contact" className="relative bottom-20"></div>
-      <div className="bg-dark-1 h-screen w-full">
+      <div className="bg-dark-1 pb-16 w-full">
         <h1 className="text-white text-center font-bold text-4xl underline decoration-emerald-500 py-6">
           <a href="mailto: hungbuiwork@gmail.com ">Contact Me</a>
         </h1>
-        <p className="text-gray-400 mr-[5%] text-xl place-self-center mb-6 drop-shadow-2xl text-center  mx-[10%]">
+        <p className="text-gray-400 mr-[5%] text-xl place-self-center mb-6 drop-shadow-2xl text-center  mx-[10%] lg:mx-[20% xl:mx-[25%]">
           I love collaboration, and am always on the hunt on projects to be a
           part of! I am also looking for opportunities/internships to apply my
           skills and learn in a professional setting! I would absolutely love to
-          connect!
+          connect! <br></br>The best way to reach me is through my email: 
         </p>
         <h1 className="text-white text-xl text-center font-bold">
           <a href="mailto: hungbuiwork@gmail.com ">hungbuiwork@gmail.com</a>

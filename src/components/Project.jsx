@@ -29,7 +29,7 @@ function Detail(detail) {
           className={
             !detail.image
               ? "hidden"
-              : "rounded-md aspect-square object-cover w-[40%] md:w-[30%] float-left mx-4 mb-2"
+              : "rounded-md aspect-square object-cover w-[40%] md:w-[30%] lg:w-[20%] xl:w-[15%] float-left mx-4 mb-2"
           }
         ></img>
         <div className="text-left">{detail?.description}</div>
@@ -62,7 +62,7 @@ const Project = (props) => {
             <p className={!project.date ? "hidden" : "text-gray-300"}>
               {project.date}
             </p>
-            <p className={!project.roles ? "hidden" : "text-gray-400"}>
+            <p className={!project.roles ? "hidden" : "text-gray-300"}>
               Roles: {project.roles}
             </p>
           </div>
