@@ -17,6 +17,10 @@
 }
 
 @layer components {
+  .tooltip:hover{
+    z-index: 999;
+  }
+
   .carousel-side{
     filter: drop-shadow(0 0 16px rgb(0, 0, 0)) brightness(70%)
   }

@@ -1,4 +1,35 @@
 const projects = {
+
+  procedurallyGeneratedTrees:{
+    imgURL:require("../assets/thumbnails/proceduraltree.gif"),
+    roles: "",
+    data: "May 2023",
+    skills: ["Unity", "C#"],
+    desc: "Customizable, procedurally generated trees generated from simple rules using Lindenburg Systems. Implemented from scratch in Unity and C#.",
+    title: "Procedural Tree Generator",
+    details: [
+      {
+        image: require("../assets/thumbnails/proceduraltree2.png"),
+        title: "Development",
+        description:
+          'For a while, I have had a huge affinity for procedural generation. A lot of research went into understanding how L-systems work, which is a commonly used to strategy to visualize procedural plant development, fractals, etc. After researching, I implemented a developer-friendly L-System generator and L-System renderer which I hope to soon publish to the Asset Store. I go into much more detail in the "Development Process" pdf above!',
+      },
+      {
+        image: require("../assets/thumbnails/proceduraltree3.png"),
+        title: "What I learned",
+        description:
+          "I became much more familiar with Unity's tools and much more comfortable implementing C#. I formed a deeper understanding of L-Systems.",
+      },
+    ],
+    buttons: [
+      { label: "Dev Process", url: require("../assets/pdfs/ProceduralTrees.pdf") },
+      {
+        label: "Source Code",
+        url: "https://github.com/hungbuiwork/ProceduralTrees/blob/main/Assets/Scripts/LSystemRenderer.cs",
+      },
+    ],
+  },
+
   toonShader: {
     imgURL: require("../assets/thumbnails/toonshader.gif"),
     roles: "",
@@ -11,7 +42,7 @@ const projects = {
         image: require("../assets/thumbnails/toonShader_scene.jpeg"),
         title: "Background",
         description:
-          "The end of fall quarter 2023 is nearing, and the final for my Introduction to Computer Science is very open-ended. So, I decided for my project that I wanted to expand on what I learned about vertex and fragment shading! I have a love for cartoon styled graphics, and make games, so why not make a shader which does just that?",
+          "The end of fall quarter 2023 is nearing, and the final for my Introduction to Computer Graphics is very open-ended -- we were asked to create something in any field of graphics! So, I decided for my project that I wanted to expand on what I learned about vertex and fragment shading! I have a love for cartoon styled graphics, and make games, so why not make a shader which does just that?",
       },
       {
         image: require("../assets/thumbnails/toonShader_house.jpeg"),

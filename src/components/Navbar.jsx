@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import ItchIoLogo from "../assets/logos/itchio-logo-textless-white.png";
 import Resume from "../assets/resumes/Bui_Hung.pdf";
@@ -8,32 +9,32 @@ const Navbar = () => {
   return (
     <div>
       <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-dark-2 bg-opacity-90 backdrop-blur-sm text-gray-300 z-50">
-        <a className="flex nameLogo hover:cursor-pointer group" href = "#top">
-          <p className="text-6xl font-bold">H</p>
+        <Link activeClass="active" className="flex nameLogo hover:cursor-pointer group" to="home" spy={true} smooth={true} offset={0} duration={500}>
+        <p className="text-6xl font-bold">H</p>
           <p className="text-6xl font-bold relative right-5 group-hover:right-0 duration-200">
             B
           </p>
-        </a>
+          </Link>
 
         {/*menu*/}
-        <ul className="hidden md:flex">
-          <li className="top-nav">
-            <a href="#home">Home</a>
-          </li>
-          <li className="top-nav">
-            <a href="#about">About</a>
-          </li>
-          <li className="top-nav">
-            <a href="#projects">Projects</a>
-          </li>
-          <li className="top-nav">
-            <a href="#art">Art</a>
-          </li>
-          <li className="top-nav border-2 border-white rounded-md">
-            <a href= "#contact">
-              Contact Me
-            </a>
-          </li>
+        <ul className="hidden md:flex">          
+          <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-90} duration={500}>
+            <li className="top-nav">Skills</li>
+          </Link>
+          <Link activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={500}>
+            <li className="top-nav">Projects</li>
+          </Link>
+          <Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500}>
+            <li className="top-nav">About</li>
+          </Link>
+
+          <Link activeClass="active" to="art" spy={true} smooth={true} offset={0} duration={500}>
+            <li className="top-nav">Art</li>
+          </Link>
+        
+          <Link activeClass="active" to="contact" spy={true} smooth={true} offset={0} duration={500}>
+            <li className="top-nav border-2 border-white rounded-md">Contact Me</li>
+          </Link>
         </ul>
 
         {/*Hamburger*/}
@@ -53,34 +54,35 @@ const Navbar = () => {
               : "absolute top-0 left-0 w-full h-screen bg-dark-2 flex flex-col justify-center items-center bg-opacity-[0.97]"
           }
         >
-          <li className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 text-2xl">
-            <a href="#home" onClick={handleClick}>
-              Home
-            </a>
+          <li className="my-4">
+            <Link activeClass="active"  className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 px-4 text-2xl" to="skills" spy={true} smooth={true} offset={-90} duration={500}>
+            Skills
+            </Link>
           </li>
-          <li className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 text-2xl">
-            <a href="#about" onClick={handleClick}>
-              About
-            </a>
+
+          <li className="my-4">
+            <Link activeClass="active"  className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 px-4 text-2xl" to="projects" spy={true} smooth={true} offset={0} duration={500}>
+            Projects
+            </Link>
           </li>
-          <li className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 text-2xl">
-            <a href="#projects" onClick={handleClick}>
-              Projects
-            </a>
+          <li className="my-4">
+            <Link activeClass="active"  className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 px-4 text-2xl" to="about" spy={true} smooth={true} offset={0} duration={500}>
+            About
+            </Link>
           </li>
-          <li className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 text-2xl">
-            <a href="#art" onClick={handleClick}>
-              Art
-            </a>
+          <li className="my-4">
+            <Link activeClass="active"  className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 px-4 text-2xl" to="art" spy={true} smooth={true} offset={0} duration={500}>
+            Art
+            </Link>
           </li>
-          <li className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 text-2xl border-2 border-white rounded-md">
-            <a href="#contact"  onClick={handleClick}>
-              Contact Me
-            </a>
+          <li className="my-4">
+            <Link activeClass="active"  className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 px-4 text-2xl" to="contact" spy={true} smooth={true} offset={0} duration={500}>
+            Contact Me
+            </Link>
           </li>
         </ul>
       </div>
-      
+
       <div
         className={
           nav ? "hidden" : "flex fixed flex-col bottom-[10%] left-0 z-50"

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef} from "react";
 import Project from "./Project";
 import gameProjects from "../data/projectdata_game.jsx";
 import softwareProjects from "../data/projectdata_software.jsx";
@@ -7,11 +7,13 @@ import ResumeSoftware from "../assets/resumes/HungBuiResumeSoftware.pdf";
 import Carousel from "./Carousel";
 import { digitalArt, threeDArt } from "../data/artdata_digital";
 import { HashRouter } from "react-router-dom";
+import { Skills } from "./Skills";
 
 const Home = () => {
   const [tabMode, settabMode] = useState(0);
   const colorProjectsGames = "";
   const colorProjectsSoftware = "";
+
 
   return (
     <div
@@ -34,6 +36,7 @@ const Home = () => {
           </h2>
         </div>
       </div>
+      <Skills></Skills>
 
       {/*Projects Section*/}
       <div id="projects" className="relative bottom-4"></div>
@@ -153,32 +156,7 @@ const Home = () => {
           </p>
         </div>
 
-        <h1 className="text-white text-center font-bold text-4xl underline decoration-pink-600 mt-24">
-          My Skills
-        </h1>
-        <div className="skills">
-          <div className="flex flex-col">
-            <h1>Languages</h1>
-            <p>Python ★</p>
-            <p>C++ ★</p>
-            <p>C# ★</p>
-            <p>HSLS</p>
-          </div>
-          <div className="flex flex-col">
-            <h1>Web Dev</h1>
-            <p>React ★</p>
-            <p>Tailwind ★</p>
-            <p>HTML,CSS, JS ★</p>
-            <p>Angular</p>
-            <p>SQL</p>
-          </div>
-          <div className="flex flex-col">
-            <h1>Game Dev</h1>
-            <p>Unity ★</p>
-            <p>Unreal</p>
-            <p>Shaderlab</p>
-          </div>
-        </div>
+
       </div>
 
       {/*Contact Me*/}
