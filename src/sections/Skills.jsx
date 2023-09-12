@@ -1,5 +1,5 @@
 import React from "react";
-import { Skill } from "./Skill";
+import { Skill } from "../components/Skill";
 
 export const Skills = () => {
   return (

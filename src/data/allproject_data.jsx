@@ -9,6 +9,10 @@ const projects = {
     title: "Procedural Tree Generator",
     details: [
       {
+        title: "If you are reading this...",
+        description: "I strongly recommend reading the Dev Process above! It goes into detail about my workflow throughout the project.",
+      },
+      {
         image: require("../assets/thumbnails/proceduraltree2.png"),
         title: "Development",
         description:
@@ -18,7 +22,7 @@ const projects = {
         image: require("../assets/thumbnails/proceduraltree3.png"),
         title: "What I learned",
         description:
-          "I became much more familiar with Unity's tools and much more comfortable implementing C#. I formed a deeper understanding of L-Systems.",
+          "I'm very proud of this projects because I was able to implement this without really looking at any tutorials or code; I purely built this off of research. I became much more familiar with Unity's tools and much more comfortable implementing C#. I refined my probem-solving skills by creating a solution for rendering foliage and animation. ",
       },
     ],
     buttons: [
@@ -38,6 +42,10 @@ const projects = {
     desc: "A toon-shader I've been developing that allows customizability of (color, size, smoothness, intensity) of (shadows, specular light, rim light). This customizability allows the user to blend between realistic/cartoony aesthetics. I hope to use this shader in future projects!",
     title: "Customizable Toon Shader",
     details: [
+      {
+        title: "If you are reading this...",
+        description: "I strongly recommend reading the Dev Process above! It goes into detail about my workflow throughout the project.",
+      },
       {
         image: require("../assets/thumbnails/toonShader_scene.jpeg"),
         title: "Background",
@@ -82,18 +90,22 @@ const projects = {
       },
       {
         image: require("../assets/thumbnails/musicalMadness_map.jpeg"),
-        description:
-          "One gigantic emphasis of this project was to create maintainable, efficient, well-structured code. I had just taken a courses on good software design and data structured & algorithms, so it seemed to be the perfect time to apply what I learned! When working through on how our procedural generation was going to work, my roommate and I took a very careful and iterative approach, diagramming, writing pseudocode, and really taking time to understand what caused bugs and how to fix them. We later optimized our dungeon-building algorithm(storage-wise) by making heavy use of bitwise operations.",
+        description: "This project focused on creating efficient, well-structured code. After completing relevant courses on software design and algorithms, we applied our knowledge. When designing our procedural generation system, my roommate and I took a careful, iterative approach. We used diagrams, pseudocode, and troubleshooting to understand and address bugs. Later, we improved our dungeon-building algorithm's memory efficiency by using bitwise operations extensively.",
         title: "Procedural Generation, Enemy AI, and Script Architecture",
       },
       {
         image: require("../assets/thumbnails/musicalMadness_architecture.jpeg"),
-        description:
-          "When it came to the overall script architecture, we figured that the player and enemies could be implemented sharing some scripts, such as stats, combat, and weapons scripts and only really differ in their input(keyboard vs AI) and their movement. Doing this allowed us to keep the code modular and reuse a lot of parts. When a new weapon was created, ANY entity could use it! This proved very useful when implementing the boss, which simply inherited from other enemy brains and used the same weapons. I further made optimizations to only spawn and update enemies in the current or adjacent room. This boosted performance a huge amount! I was the sole developer for the enemy's AI, and I created a system in which a scriptable object(the enemy's brain) which consisted of a bunch of set values, could produce very different behaviors(like the way violin enemies strafe, and the drum enemies charged before rolling toward you). This reduced the amount of code needed, and also helped when rapidly creating enemies with different behaviors.",
+        description: "When it came to designing the overall script architecture, we decided to streamline the implementation of both players and enemies by sharing certain scripts, such as those responsible for managing statistics, combat mechanics, and weapons. The key distinction between them lay in their input methods (keyboard for players, AI for enemies) and their movement patterns. This approach enabled us to maintain a modular codebase and efficiently reuse various components. An exciting benefit of this design was that any entity could seamlessly utilize newly created weapons. This flexibility proved invaluable when implementing the boss character, as it simply inherited behaviors from other enemy types and employed the same arsenal. Furthermore, I implemented optimizations to enhance performance by limiting enemy spawning and updates to the current room or adjacent ones. This optimization significantly improved our game's performance. As the sole developer responsible for the enemy AI, I devised a system that utilized scriptable objects known as 'enemy brains.' These objects comprised a set of predefined values, which in turn generated diverse behaviors. This approach not only reduced the amount of code required but also facilitated the rapid creation of enemies with distinct behaviors. For instance, it allowed us to easily differentiate the strafing behavior of violin enemies from the charging and rolling tactics of drum enemies."
+        
+        
+        
+        
+        
+        
       },
       {
         description:
-          "Leading the project proved to be challenging. I facilitated meetings where we discussed design, game-feel, assigned tasks, and reported progress. I took extra time outside of normal meetings to meet up with the sound team to help tackle challenges! In the end, we created a game that felt very fun, cohesive, and chaotic.",
+          "Leading the project proved to be challenging. I facilitated meetings where we discussed design, game-feel, assigned tasks, and reported progress. I took extra time outside of normal meetings to meet up with the sound team to help tackle challenges!  Ultimately, we developed a game that was enjoyable, cohesive, and full of fun chaos.",
         title: "Leading the Project",
       },
       {
@@ -181,10 +193,9 @@ const projects = {
     details: [
       {
         image: require("../assets/thumbnails/jokeBrowser_ui.jpeg"),
-        title: "A little bit more",
-        description:
-          'This was one my last projects in my User Interaction course! It was a very open-ended project, so I built a little web app to browse through jokes! I created a service in angular to look up these jokes from JokeAPI, and use it in conjunction with HandTrackJS to make a web application where someone can just sit back, turn on their camera, and browser through ~programming~ jokes. My focus for this project was to create a reasonably aesthetic, intuitive interface, with hand controls that were also intuitive. The web app was definitely made for non-mobile browsers, but feel free to try it out as the app is usable in the "Demo" button above!',
-      },
+        title: "A bit more",
+        description:'This project marked one of my final assignments in the User Interaction course. It was a highly flexible task, so I decided to develop a web application for browsing jokes. I designed this app using Angular, incorporating a service to fetch jokes from JokeAPI and integrating HandTrackJS for an interactive experience. Users could simply relax, activate their camera, and explore programming jokes. My primary goal was to craft an aesthetically pleasing and user-friendly interface, along with intuitive hand controls. Although the web app is more suitable for non-mobile browsers, you can still give it a try by clicking the "Demo" button above!',
+      }
     ],
     buttons: [
       {
@@ -208,9 +219,9 @@ const projects = {
     details: [
       {
         image: require("../assets/thumbnails/website.gif"),
-        title: "Why?",
+        title: "Why am I doing this?",
         description:
-          "I am programming this from scratch. No templates -- just the ReactJS framework, the TailwindCSS framework, and my two hands. I had some extra time this winter break so I decided to redo my portfolio again. My first portfolio was on Adobe Portfolio. My second was plain HTML, and CSS. Though the customizability of plain HTML and CSS was nice, adding new stuff was just repetitive, ugly, and became increasingly harder to read. I wanted to create components that I could customize, and reuse. Currently, I am writing this sentence in a file, fully separate from any HTML, and it feels nice.",
+          "I am programming this from scratch. No templates -- just the ReactJS framework, the TailwindCSS framework, and my two hands. I had some extra time this winter break so I decided to redo my portfolio again. My first portfolio was on Adobe Portfolio. My second was plain HTML, and CSS. Though the customizability of plain HTML and CSS was nice, adding new stuff was just repetitive, ugly, and became increasingly harder to read. I wanted to create components that I could customize, and reuse.",
       },
       {
         title: "What I am learning",
@@ -224,6 +235,12 @@ const projects = {
         url: "https://github.com/hungbuiwork/portfolio",
       },
     ],
+  },
+  whatCares: {
+    date: "JULY 2023 - CURRENT",
+    skills: ["React", "TailwindCSS"],
+    desc: "I independently developed this informative website for WhatCares, which stands for World Health Access Team, a nonprofit organization consisting of medical professionals conducting medical missions worldwide. The primary focus of this project was to create a website tailored towards potential donors." ,
+    title: "Freelance Website Developer | WHATCARES",
   },
 };
 

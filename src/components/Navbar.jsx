@@ -18,17 +18,20 @@ const Navbar = () => {
 
         {/*menu*/}
         <ul className="hidden md:flex">          
-          <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-90} duration={500}>
+          <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-80} duration={500}>
             <li className="top-nav my-2">Skills</li>
           </Link>
-          <Link activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={500}>
+          <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-80} duration={500}>
             <li className="top-nav my-2">Projects</li>
           </Link>
-          <Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500}>
+          <Link activeClass="active" to="experience" spy={true} smooth={true} offset={-80} duration={500}>
+            <li className="top-nav my-2">Experience</li>
+          </Link>
+          <Link activeClass="active" to="about" spy={true} smooth={true} offset={-80} duration={500}>
             <li className="top-nav my-2">About</li>
           </Link>
 
-          <Link activeClass="active" to="art" spy={true} smooth={true} offset={0} duration={500}>
+          <Link activeClass="active" to="art" spy={true} smooth={true} offset={-80} duration={500}>
             <li className="top-nav my-2">Art</li>
           </Link>
         
@@ -61,22 +64,27 @@ const Navbar = () => {
           </li>
 
           <li className="my-4">
-            <Link activeClass="active"  className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 px-4 text-2xl" to="projects" spy={true} smooth={true} offset={0} duration={500}>
+            <Link activeClass="active"  className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 px-4 text-2xl" to="projects" spy={true} smooth={true} offset={-80} duration={500}>
             Projects
             </Link>
           </li>
           <li className="my-4">
-            <Link activeClass="active"  className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 px-4 text-2xl" to="about" spy={true} smooth={true} offset={0} duration={500}>
+            <Link activeClass="active"  className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 px-4 text-2xl" to="experience" spy={true} smooth={true} offset={-80} duration={500}>
+            Experience
+            </Link>
+          </li>
+          <li className="my-4">
+            <Link activeClass="active"  className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 px-4 text-2xl" to="about" spy={true} smooth={true} offset={-80} duration={500}>
             About
             </Link>
           </li>
           <li className="my-4">
-            <Link activeClass="active"  className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 px-4 text-2xl" to="art" spy={true} smooth={true} offset={0} duration={500}>
+            <Link activeClass="active"  className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 px-4 text-2xl" to="art" spy={true} smooth={true} offset={-80} duration={500}>
             Art
             </Link>
           </li>
           <li className="my-4">
-            <Link activeClass="active"  className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 px-4 text-2xl" to="contact" spy={true} smooth={true} offset={0} duration={500}>
+            <Link activeClass="active"  className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 px-4 text-2xl" to="contact" spy={true} smooth={true} offset={-80} duration={500}>
             Contact Me
             </Link>
           </li>

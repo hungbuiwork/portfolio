@@ -53,12 +53,12 @@ const Project = (props) => {
       id={project.title}
     >
       <div className="flex flex-col md:flex-row justify-between">
-        <div className="shrink-0 grow-1 flex flex-col w-[100%] md:w-[30%] m-2 place-self-center ">
+        {project.imgURL && <div className="shrink-0 grow-1 flex flex-col w-[100%] md:w-[30%] m-2 place-self-center ">
           <img
             src={project.imgURL}
             className="h-auto w-[320px] rounded-md place-self-center aspect-square object-cover shadow-inner"
           ></img>
-        </div>
+        </div>}
         <div className="shrink-1 flex flex-col justify-evenly mx-8 place-self-center">
           <div>
             <h1 className="text-white text-4xl font-bold">{project.title}</h1>
@@ -73,7 +73,7 @@ const Project = (props) => {
             </p>
           </div>
           <p className=" text-gray-300 mt-6">{project.desc}</p>
-          <Link to= {showingDetails? project.title :project.title + "details" } spy={true} smooth={true} offset={-90} duration={500}>
+          {project.details && <Link to= {showingDetails? project.title :project.title + "details" } spy={true} smooth={true} offset={-90} duration={500}>
             <button
               className={
                 "rounded-md text-2xl px-8 py-4 mx-4  my-4 text-center border-2  text-white font-semibold hover:bg-white hover:text-slate-900 duration-300 relative top-0 " +
@@ -83,7 +83,7 @@ const Project = (props) => {
             >
               {showingDetails ? "MINIMIZE ▲" : "MORE INFO ▼"}
             </button>
-          </Link>
+          </Link>}
         </div>
       </div>
 

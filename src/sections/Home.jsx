@@ -1,14 +1,12 @@
 import React, { useState, useRef } from "react";
-import Project from "./Project";
-import gameProjects from "../data/projectdata_game.jsx";
-import softwareProjects from "../data/projectdata_software.jsx";
-import allProjects from "../data/projectdata_all.jsx";
 import ResumeGames from "../assets/resumes/HungBuiResumeGames.pdf";
-import ResumeSoftware from "../assets/resumes/HungBuiResumeSoftware.pdf";
-import Carousel from "./Carousel";
-import { digitalArt, threeDArt } from "../data/artdata_digital";
+import ResumeSoftware from "../assets/resumes/ResumeSoftware.pdf";
+import Carousel from "../components/Carousel";
 import { HashRouter } from "react-router-dom";
 import { Skills } from "./Skills";
+import { Experience } from "./Experience";
+import { Artworks } from "./Artworks";
+import { Projects } from "./Projects";
 
 const Home = () => {
   return (
@@ -49,53 +47,11 @@ const Home = () => {
       <Skills></Skills>
 
       {/*Projects Section*/}
-      <div id="projects" className="relative bottom-4"></div>
+      <Projects></Projects>
 
-      <div className="mx-auto text-center place-content-center">
-        <h1 className="text-center text-6xl font-bold text-white underline decoration-purple-700 mt-16">
-          Projects
-        </h1>
-        <h2 className="text-gray-300 text-center  mx-[10%] text-xl mt-4 mb-8">
-          Here are some select projects I've worked on that showcase my skills.
-        </h2>
+      {/*EXPERIENCE*/}
+      <Experience></Experience>
 
-        <div>
-          {allProjects.map((project) => (
-            <Project
-              project={project}
-              color=" purple-gradient"
-              key={project.title}
-            ></Project>
-          ))}
-          <h1 className="text-white font-bold text-center">
-            More projects will be added to the website soon!
-          </h1>
-        </div>
-      </div>
-
-      {/*Artwork*/}
-      <div id="art" className="relative bottom-32"></div>
-      <hr className="border-gray-800"></hr>
-      <div className="pb-16">
-        <h1 className="text-white text-center font-bold text-5xl underline decoration-blue-500 pt-16">
-          Artwork
-        </h1>
-        <h2 className="text-gray-400 text-center pt-2 pb-16 mx-[20%] text-xl">
-          Though my{" "}
-          <span className="text-white font-bold">
-            primary passion is programming
-          </span>
-          , I've familiarized myself with 3D modeling software commonly used in
-          game development. Here is some art I've created for past projects,
-          displayed with an image carousel I created from scratch!
-        </h2>
-
-        <div className="px-[0%] md:px-[15%] lg:px=[[20%]">
-          <div className="text-white font-bold text-center">
-            <Carousel artwork={threeDArt}></Carousel>
-          </div>
-        </div>
-      </div>
 
       {/*About Section*/}
       <div id="about" className="relative bottom-6"></div>
@@ -134,6 +90,9 @@ const Home = () => {
           </p>
         </div>
       </div>
+
+      {/*Artwork*/}
+      <Artworks></Artworks>
 
       {/*Contact Me*/}
       <div id="contact" className="relative bottom-20"></div>

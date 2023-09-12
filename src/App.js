@@ -1,4 +1,4 @@
-import Home from "./components/Home";
+import Home from "./sections/Home";
 import Navbar from "./components/Navbar";
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 function App() {
