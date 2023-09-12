@@ -1,7 +1,7 @@
 const projects = {
 
   procedurallyGeneratedTrees:{
-    imgURL:require("../assets/thumbnails/proceduraltree.gif"),
+    vidURL:require("../assets/thumbnails/Proceduraltree.mp4"),
     roles: "",
     data: "May 2023",
     skills: ["Unity", "C#"],
@@ -19,7 +19,7 @@ const projects = {
           'For a while, I have had a huge affinity for procedural generation. A lot of research went into understanding how L-systems work, which is a commonly used to strategy to visualize procedural plant development, fractals, etc. After researching, I implemented a developer-friendly L-System generator and L-System renderer which I hope to soon publish to the Asset Store. I go into much more detail in the "Development Process" pdf above!',
       },
       {
-        image: require("../assets/thumbnails/proceduraltree3.png"),
+        vid: require("../assets/thumbnails/Proceduraltreedemo.mp4"),
         title: "What I learned",
         description:
           "I'm very proud of this projects because I was able to implement this without really looking at any tutorials or code; I purely built this off of research. I became much more familiar with Unity's tools and much more comfortable implementing C#. I refined my probem-solving skills by creating a solution for rendering foliage and animation. ",
@@ -35,7 +35,7 @@ const projects = {
   },
 
   toonShader: {
-    imgURL: require("../assets/thumbnails/toonshader.gif"),
+    vidURL: require("../assets/thumbnails/toonshader.mp4"),
     roles: "",
     date: "NOV 2022 - DEC 2022",
     skills: ["Unity", "Shaderlab", "HSLS"],
@@ -74,7 +74,7 @@ const projects = {
   },
 
   musicalMadness: {
-    imgURL: require("../assets/thumbnails/musicalmadness.gif"),
+    vidURL: require("../assets/thumbnails/musicalmadness.m4v"),
     date: "MARCH 2022 - APRIL 2022",
     roles: "Project Lead, Programmer, 2D Art",
     size: 6,
@@ -83,7 +83,7 @@ const projects = {
     title: "Musical Madness",
     details: [
       {
-        image: require("../assets/thumbnails/musicalMadness_drum.gif"),
+        vid: require("../assets/thumbnails/musicalmadness2.mp4"),
         description:
           "After being part of several videogame projects in the past, I figured that I developed enough skills and understanding of the game development workflow. So, at the beginning of the spring quarter of 2022, my roommate and I ventured on a journey to pitch our own game to the Video Game Development Club. Inspired by other dungeon crawlers such as Binding of Isaac, I wanted the game to be thrilling, aesthetic, and to keep the gameplay fun and interesting! Also, I wanted to explore procedural generation, which has always intrigued me. So, I along with my roommate took on the challenge of leading the production of Musical Madness!",
         title: "Background",
@@ -124,7 +124,6 @@ const projects = {
   },
 
   phantomHallowsEve: {
-    imgURL: require("../assets/thumbnails/phantomhallowseve.gif"),
     roles: "2D & Technical Artist",
     date: "SEP 2022",
     skills: ["Unity", "C#", "Asesprite"],
@@ -157,7 +156,7 @@ const projects = {
       },
       {
         title: "What I implemented",
-        image: require("../assets/thumbnails/patientZero_tooltip.gif"),
+        vid: require("../assets/thumbnails/patientZero_tooltip.mp4"),
         description:
           "- A tooltip/hints 3D UI that pops up when the user picks up a tool. I tried to match the design with the aesthetics of the game. A small optimization I did was to reuse the same object, and simply hide it somewhere off the map when not in use.",
       },
@@ -208,7 +207,7 @@ const projects = {
   },
 
   thisWebsite: {
-    imgURL: require("../assets/thumbnails/website-art.gif"),
+    vidURL: require("../assets/thumbnails/website-art.mp4"),
     roles: "",
     date: "DEC 2022",
     skills: ["React", "TailwindCSS", "Javascript"],

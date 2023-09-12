@@ -72,7 +72,7 @@
     @apply text-center;
   }
   .skills h1 {
-    @apply text-white font-bold text-xl my-3;
+    @apply text-white font-bold my-3;
   }
   .skills img {
     @apply w-24;

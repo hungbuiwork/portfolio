@@ -12,7 +12,7 @@ export const Skills = () => {
           <span className="badge badge-success"></span> = more experienced in
         </h2>
       
-      <div className="skills flex justify-evenly">
+      <div className="skills flex justify-evenly sm:text-sm md:text-xl">
         <div className="flex flex-col">
           <h1>Languages</h1>
           <div className="flex flex-wrap justify-center">

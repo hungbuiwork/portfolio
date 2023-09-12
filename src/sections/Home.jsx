@@ -7,6 +7,7 @@ import { Artworks } from "./Artworks";
 import { Projects } from "./Projects";
 import { About } from "./About";
 import { Contact } from "./Contact";
+import video from "../assets/thumbnails/toonshader.mp4"
 
 const Home = () => {
   return (
@@ -39,7 +40,6 @@ const Home = () => {
       </div>
 
       {/*Background Stuff*/}
-
       <Skills></Skills>
 
       {/*Projects Section*/}
