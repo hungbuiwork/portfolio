@@ -1,0 +1,48 @@
+        <div className="flex justify-center h-16 mt-6 mx-[20%] bg-black rounded-3xl drop-shadow-2xl relative">
+          <div
+            onClick={() => settabMode(0)}
+            className={
+              "duration-200 tab rounded-l-3xl h-full w-[50%] " +
+              (tabMode == 0
+                ? "bg-purple-500"
+                : "bg-purple-500/[0.2] hover:bg-purple-500/[0.4] text-white/[0.7]")
+            }
+          >
+            <p>Game Dev</p>
+          </div>
+          <div
+            onClick={() => settabMode(1)}
+            className={
+              "duration-200 tab rounded-r-3xl h-full w-[50%] " +
+              (tabMode == 1
+                ? "bg-blue-500"
+                : "bg-blue-500/[0.2] hover:bg-blue-500/[0.4] text-white/[0.7]")
+            }
+          >
+            <p>Software</p>
+          </div>
+        </div>
+
+                <div className={tabMode == 0 ? "" : "hidden"}>
+          {gameProjects.map((project) => (
+            <Project
+              project={project}
+              color=" purple-gradient"
+              key={project.title}
+            ></Project>
+          ))}
+        </div>
+        
+        <div className={tabMode == 1 ? "" : "hidden"}>
+          {softwareProjects.map((project) => (
+            <Project
+              project={project}
+              color=" blue-gradient"
+              key={project.title}
+            ></Project>
+          ))}
+          <h1 className="text-white font-bold text-center">
+            More projects will be added to the website soon!
+          </h1>
+        </div>
+

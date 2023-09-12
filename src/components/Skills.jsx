@@ -4,9 +4,14 @@ import { Skill } from "./Skill";
 export const Skills = () => {
   return (
     <div id = "skills">
-      <h1 className="text-white text-center font-bold text-6xl underline decoration-pink-600 mt-8">
+      <h1 className="text-white text-center font-bold text-6xl underline decoration-violet-600 mt-8 ">
         Skills
       </h1>
+      <h2 className="text-gray-300 text-center  mx-[10%] text-xl mt-4 mb-8">
+          These are skills I've developed over university. <br></br>
+          <span className="badge badge-success"></span> = more experienced in
+        </h2>
+      
       <div className="skills flex justify-evenly">
         <div className="flex flex-col">
           <h1>Languages</h1>

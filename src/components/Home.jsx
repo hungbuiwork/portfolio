@@ -1,7 +1,8 @@
-import React, { useState, useRef} from "react";
+import React, { useState, useRef } from "react";
 import Project from "./Project";
 import gameProjects from "../data/projectdata_game.jsx";
 import softwareProjects from "../data/projectdata_software.jsx";
+import allProjects from "../data/projectdata_all.jsx";
 import ResumeGames from "../assets/resumes/HungBuiResumeGames.pdf";
 import ResumeSoftware from "../assets/resumes/HungBuiResumeSoftware.pdf";
 import Carousel from "./Carousel";
@@ -10,11 +11,6 @@ import { HashRouter } from "react-router-dom";
 import { Skills } from "./Skills";
 
 const Home = () => {
-  const [tabMode, settabMode] = useState(0);
-  const colorProjectsGames = "";
-  const colorProjectsSoftware = "";
-
-
   return (
     <div
       name="home"
@@ -23,69 +19,51 @@ const Home = () => {
       <div id="top"></div>
       {/*Landing Section*/}
       <div id="home" className="relative bottom-6"></div>
-      <div className="mx-full px-2 flex flex-col justify-center h-[100%] sporo bg-cover">
-        <div className="place-self-center w-[60%]">
-          <p className="text-emerald-400  text-2xl md:text-3xl font-bold text-shadow-2 text-left">
-            Hey, I'm{" "}
-          </p>
-          <h1 className="text-white text-[10vw] font-bold text-center  mb-3 place-self-center text-shadow">
-            Hung Bui
-          </h1>
-          <h2 className="text-emerald-400 font-bold text-xl md:text-3xl text-center drop-shadow-sm text-shadow-2">
-            Game Dev<br></br>Software
-          </h2>
+      <div className="mx-full px-2 flex flex-col justify-center h-[100%] bg-cover sporo">
+        {false && (
+          <div className=" absolute  z-0 right-[10%] bottom-[10%] w-[40vw] h-[40vw]  md:w-[30vw] md:h-[30vw] lg:w-[25vw] lg:h-[25vw] lg:right-[20%] me rounded-lg bg-cover  duration-300"></div>
+        )}
+        <div className="mx-auto mt-[10%] w-[80%]">
+          <div>
+            <p className="text-emerald-500  text-2xl md:text-3xl font-bold text-shadow-2 left text-shadow">
+              Hey, I'm
+            </p>
+            <h1 className="text-white text-center text-[6rem] md:text-[10vw] relative z-10 font-bold  mb-3 place-self-center text-shadow">
+              Hung Bui
+            </h1>
+            <div className="">
+              <h2 className="text-emerald-400 text-right font-extrabold text-3xl md:text-3xl  drop-shadow-sm text-shadow-2">
+                Software Engineer<br></br>Game Development
+              </h2>
+              <h2 className=" text-emerald-500 text-right text-xl md:text-2xl drop-shadow-sm text-shadow-2 mt-6">
+                University of California, Irvine<br></br>
+                SEP 2020 - JUN 2024
+              </h2>
+            </div>
+          </div>
         </div>
       </div>
+
+      {/*Background Stuff*/}
+
       <Skills></Skills>
 
       {/*Projects Section*/}
       <div id="projects" className="relative bottom-4"></div>
 
-      <div className="mx-auto  bg-dark-2 text-center place-content-center">
+      <div className="mx-auto text-center place-content-center">
         <h1 className="text-center text-6xl font-bold text-white underline decoration-purple-700 mt-16">
           Projects
         </h1>
-        <h2 className="text-gray-300 text-center pt-2 pb-8 mx-[10%] text-xl">These are some projects (mostly programming) that I've worked on! Feel free to switch between the "Game Dev" and "Software" toggles.</h2>
-        {/*Tabs*/}
-        <div className="flex justify-center h-16 mt-6 mx-[20%] bg-black rounded-3xl drop-shadow-2xl relative">
-          <div
-            onClick={() => settabMode(0)}
-            className={
-              "duration-200 tab rounded-l-3xl h-full w-[50%] " +
-              (tabMode == 0
-                ? "bg-purple-500"
-                : "bg-purple-500/[0.2] hover:bg-purple-500/[0.4] text-white/[0.7]")
-            }
-          >
-            <p>Game Dev</p>
-          </div>
-          <div
-            onClick={() => settabMode(1)}
-            className={
-              "duration-200 tab rounded-r-3xl h-full w-[50%] " +
-              (tabMode == 1
-                ? "bg-blue-500"
-                : "bg-blue-500/[0.2] hover:bg-blue-500/[0.4] text-white/[0.7]")
-            }
-          >
-            <p>Software</p>
-          </div>
-        </div>
+        <h2 className="text-gray-300 text-center  mx-[10%] text-xl mt-4 mb-8">
+          Here are some select projects I've worked on that showcase my skills.
+        </h2>
 
-        <div className={tabMode == 0 ? "" : "hidden"}>
-          {gameProjects.map((project) => (
+        <div>
+          {allProjects.map((project) => (
             <Project
               project={project}
               color=" purple-gradient"
-              key={project.title}
-            ></Project>
-          ))}
-        </div>
-        <div className={tabMode == 1 ? "" : "hidden"}>
-          {softwareProjects.map((project) => (
-            <Project
-              project={project}
-              color=" blue-gradient"
               key={project.title}
             ></Project>
           ))}
@@ -98,7 +76,7 @@ const Home = () => {
       {/*Artwork*/}
       <div id="art" className="relative bottom-32"></div>
       <hr className="border-gray-800"></hr>
-      <div className="bg-dark-2 pb-16">
+      <div className="pb-16">
         <h1 className="text-white text-center font-bold text-5xl underline decoration-blue-500 pt-16">
           Artwork
         </h1>
@@ -108,8 +86,8 @@ const Home = () => {
             primary passion is programming
           </span>
           , I've familiarized myself with 3D modeling software commonly used in
-          game development. Here is some art I've created for
-          past projects, displayed with an image carousel I created from scratch!
+          game development. Here is some art I've created for past projects,
+          displayed with an image carousel I created from scratch!
         </h2>
 
         <div className="px-[0%] md:px-[15%] lg:px=[[20%]">
@@ -155,8 +133,6 @@ const Home = () => {
             development is how I create with my love for both.
           </p>
         </div>
-
-
       </div>
 
       {/*Contact Me*/}
@@ -170,7 +146,7 @@ const Home = () => {
           I love collaboration, and am always on the hunt on projects to be a
           part of! I am also looking for opportunities/internships to apply my
           skills and learn in a professional setting! I would absolutely love to
-          connect! <br></br>The best way to reach me is through my email: 
+          connect! <br></br>The best way to reach me is through my email:
         </p>
         <h1 className="text-white text-2xl text-center font-bold">
           <a href="mailto: hungbuiwork@gmail.com ">hungbuiwork@gmail.com</a>

@@ -1,10 +1,10 @@
 import allProjects from "./allproject_data"
 
-const projects = [ 
+const projects = [
   allProjects.procedurallyGeneratedTrees,
+  allProjects.thisWebsite,
   allProjects.toonShader,
+  allProjects.jokeBrowser,
   allProjects.musicalMadness,
-  allProjects.patientZero,
-
 ];
 export default projects;

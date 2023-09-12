@@ -163,7 +163,7 @@ const projects = {
     ],
     buttons: [
       { label: "Hughes Lab & Media", url: "https://hughesmedia.bio.uci.edu" },
-      { label: "Itch.io", url: "https://amily.itch.io/patient-zero" },
+      { label: "DOWNLOAD", url: "https://amily.itch.io/patient-zero" },
       {
         label: "Source Code",
         url: "https://github.com/hungbuiwork/art-bio199_patientzero",
@@ -175,7 +175,7 @@ const projects = {
     imgURL: require("../assets/thumbnails/JokeBrowser.gif"),
     roles: "",
     date: "NOV 2022",
-    skills: ["Angular", "JS"],
+    skills: ["AngularJS", "Javascript"],
     desc: "A joke browser I created that displays funny program jokes from JokeAPI, exploring an alternative form of interaction using HandTrackjs. Simply using your camera and hands, you can control the generation, viewing, and favoriting of jokes! Check it out!",
     title: "Joke Browser & Alternative Interaction",
     details: [
@@ -202,7 +202,7 @@ const projects = {
     imgURL: require("../assets/thumbnails/website-art.gif"),
     roles: "",
     date: "DEC 2022",
-    skills: ["React", "Tailwind CSS", "JS"],
+    skills: ["React", "TailwindCSS", "Javascript"],
     desc: "A portfolio website, where I showcase my projects, and art! Developed by myself from scratch over winter break. I learned a lot about react, and responsive design!",
     title: "This Website !",
     details: [
@@ -226,4 +226,6 @@ const projects = {
     ],
   },
 };
+
+
 export default projects;

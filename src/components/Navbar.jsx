@@ -19,21 +19,21 @@ const Navbar = () => {
         {/*menu*/}
         <ul className="hidden md:flex">          
           <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-90} duration={500}>
-            <li className="top-nav">Skills</li>
+            <li className="top-nav my-2">Skills</li>
           </Link>
           <Link activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={500}>
-            <li className="top-nav">Projects</li>
+            <li className="top-nav my-2">Projects</li>
           </Link>
           <Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500}>
-            <li className="top-nav">About</li>
+            <li className="top-nav my-2">About</li>
           </Link>
 
           <Link activeClass="active" to="art" spy={true} smooth={true} offset={0} duration={500}>
-            <li className="top-nav">Art</li>
+            <li className="top-nav my-2">Art</li>
           </Link>
         
           <Link activeClass="active" to="contact" spy={true} smooth={true} offset={0} duration={500}>
-            <li className="top-nav border-2 border-white rounded-md">Contact Me</li>
+            <li className=" py-2 px-4 text-white bg-violet-600/80 rounded-md m-auto hover:bg-white hover:text-violet-600 duration-300">Contact Me</li>
           </Link>
         </ul>
 
