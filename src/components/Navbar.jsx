@@ -30,10 +30,6 @@ const Navbar = () => {
           <Link activeClass="active" to="about" spy={true} smooth={true} offset={-80} duration={500}>
             <li className="top-nav my-2">About</li>
           </Link>
-
-          <Link activeClass="active" to="art" spy={true} smooth={true} offset={-80} duration={500}>
-            <li className="top-nav my-2">Art</li>
-          </Link>
         
           <Link activeClass="active" to="contact" spy={true} smooth={true} offset={0} duration={500}>
             <li className=" py-2 px-4 text-white bg-violet-600/80 rounded-md m-auto hover:bg-white hover:text-violet-600 duration-300">Contact Me</li>
@@ -76,11 +72,6 @@ const Navbar = () => {
           <li className="my-4">
             <Link activeClass="active"  className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 px-4 text-2xl" to="about" spy={true} smooth={true} offset={-80} duration={500}>
             About
-            </Link>
-          </li>
-          <li className="my-4">
-            <Link activeClass="active"  className="hover:border-b-4 hover:text-3xl text-gray-400 hover:text-white duration-100 py-4 px-4 text-2xl" to="art" spy={true} smooth={true} offset={-80} duration={500}>
-            Art
             </Link>
           </li>
           <li className="my-4">

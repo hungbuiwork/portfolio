@@ -9,7 +9,7 @@ const projects = {
     title: "Procedural Tree Generator",
     details: [
       {
-        title: "If you are reading this...",
+        title: "Read the Dev Process",
         description: "I strongly recommend reading the Dev Process above! It goes into detail about my workflow throughout the project.",
       },
       {
@@ -43,7 +43,7 @@ const projects = {
     title: "Customizable Toon Shader",
     details: [
       {
-        title: "If you are reading this...",
+        title: "Read the Dev Process",
         description: "I strongly recommend reading the Dev Process above! It goes into detail about my workflow throughout the project.",
       },
       {
@@ -79,7 +79,7 @@ const projects = {
     roles: "Project Lead, Programmer, 2D Art",
     size: 6,
     skills: ["Unity", "C#"],
-    desc: "A top-down shooter/dungeon exploration videogame themed around music, that I pitched at UCI's videogame development club. I programmed the procedurally generated dungeon and enemy AI scripts to be maintainable, modular, and reusable. I was a middleground between programming, art, and sound in the creation of this fun, aesthetic, and cohesive experience!",
+    desc: "A music-themed top-down shooter/dungeon exploration video game that I created with UCI's Video Game Development Club. For this project, I developed the procedurally generated dungeon and enemy AI scripts with a focus on maintainability, modularity, and reusability. I played a pivotal role bridging the gap between programming, art, and sound to ensure the creation of an enjoyable, visually appealing, and cohesive gaming experience!",
     title: "Musical Madness",
     details: [
       {
@@ -140,22 +140,24 @@ const projects = {
   },
 
   patientZero: {
-    imgURL: require("../assets/thumbnails/patientzero.jpeg"),
     size: 19,
     date: "SEP 2021 - APRIL 2022",
     roles: "Programmer, VFX",
     skills: ["Unity", "C#"],
-    desc: '"an accredited project of VR puzzle, Bio-Educational game aimed to create a stimulating and educational experience for the uncovering of epidemiology in a sci-fi setting."  I fixed bugs pertaining to UI, and implemented the UI for tooltips and pause menu.',
-    title: "Hughes Media & Design Lab: Patient Zero",
+    desc:"As a Game Programmer for \"Patient Zero,\" an accredited VR bio-educational puzzle game, I collaborate with a skilled team of programmers, artists, writers, and game designers. Our aim is to offer players a captivating sci-fi experience while teaching epidemiology principles. My tasks include fixing UI bugs and implementing essential elements like tooltips and pause menus to enhance the player's experience." ,
+    title: "Game UI Programmer",
+    company: "Hughes Media & Design Lab",
+
     details: [
       {
-        image: require("../assets/thumbnails/patientZero_tooltip.gif"),
+        image: require("../assets/thumbnails/patientzero.jpeg"),
         title: "Background",
         description:
           "It was the fall quarter of 2021, my second year at UCI. I saw that Hughes Media & Design Lab was working on a VR research-based project which simulated a lab in which the player must find out what the disease is. After an interview, I was lucky enough to be able to join the team!",
       },
       {
         title: "What I implemented",
+        image: require("../assets/thumbnails/patientZero_tooltip.gif"),
         description:
           "- A tooltip/hints 3D UI that pops up when the user picks up a tool. I tried to match the design with the aesthetics of the game. A small optimization I did was to reuse the same object, and simply hide it somewhere off the map when not in use.",
       },
@@ -175,11 +177,7 @@ const projects = {
     ],
     buttons: [
       { label: "Hughes Lab & Media", url: "https://hughesmedia.bio.uci.edu" },
-      { label: "DOWNLOAD", url: "https://amily.itch.io/patient-zero" },
-      {
-        label: "Source Code",
-        url: "https://github.com/hungbuiwork/art-bio199_patientzero",
-      },
+      { label: "The Game", url: "https://amily.itch.io/patient-zero" },
     ],
   },
 
@@ -239,9 +237,28 @@ const projects = {
   whatCares: {
     date: "JULY 2023 - CURRENT",
     skills: ["React", "TailwindCSS"],
-    desc: "I independently developed this informative website for WhatCares, which stands for World Health Access Team, a nonprofit organization consisting of medical professionals conducting medical missions worldwide. The primary focus of this project was to create a website tailored towards potential donors." ,
-    title: "Freelance Website Developer | WHATCARES",
+    desc: "I am currently developing an informative website for WhatCares, which stands for World Health Access Team, a nonprofit organization comprising medical professionals actively conducting medical missions worldwide. The primary focus of this ongoing project is to create a website specifically tailored to engage potential donors and supporters. The site is not deployed as of yet, but soon check again soon!",
+    title: "Freelance Website Developer",
+    company: "WHAT Cares"
+    
   },
+  gdim: {
+    date: "FEB 2023 - CURRENT",
+    skills: ["HTML", "CSS", "Figma"],
+    desc: "In my current role as a Website Design Intern for UCI's Game Development & Interactive Media program, I collaborate closely with esteemed faculty members -- tasked with crafting user-friendly informational user interfaces and developing websites tailored to convey class-related information and a website to showcase student-made games.",
+    title: "Website Design Intern | UCI GDIM",
+    company: "UCI Game Design & Interactive Media",
+    details: [
+      {
+        image:  require("../assets/thumbnails/GDC-Flyer.png"),
+        title: "What I do",
+        description: "In my work, I collaborate with faculty to discuss tasks and projects, incorporating design feedback and iterating on designs as needed. For instance, I created a flyer in Figma for the Game Developer's Conference 2023 to boost awareness of the GDIM (Game Development & Interactive Media) major. ",
+      },
+      {
+        description: "I also create HTML and CSS syllabus websites on demand. Currently, I'm working with faculty to develop a website showcasing select student projects.",
+      }
+    ],
+  }
 };
 
 

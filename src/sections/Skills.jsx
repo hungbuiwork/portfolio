@@ -8,7 +8,7 @@ export const Skills = () => {
         Skills
       </h1>
       <h2 className="text-gray-300 text-center  mx-[10%] text-xl mt-4 mb-8">
-          These are skills I've developed over university. <br></br>
+          These are skills I've cultivate during my time in university. <br></br>
           <span className="badge badge-success"></span> = more experienced in
         </h2>
       
