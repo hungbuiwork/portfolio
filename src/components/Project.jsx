@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
+import { Reveal } from "../animations/Reveal.tsx";
 
 function Skill(skill) {
   return (
@@ -56,13 +57,14 @@ const Project = (props) => {
   return (
     <div
       className={
-        "mx-[10%] mb-[10%] rounded-md border-white p-6 drop-shadow-2xl" + color
+        "mx-[10%] mb-[10%] rounded-md border-white p-6 backdrop-blur-sm drop-shadow-2xl" +
+        color
       }
       id={project.title}
     >
       <div className="flex flex-col md:flex-row justify-between">
         {project.imgURL && (
-          <div className="shrink-0 grow-1 flex flex-col w-[100%] md:w-[30%] m-2 place-self-center ">
+          <div className="shrink-0 grow-1 flex flex-col w-[100%] md:w-[30%] m-2 place-self-center duration-300 hover:face-right">
             <img
               src={project.imgURL}
               className="h-auto w-[320px] rounded-md place-self-center aspect-square object-cover shadow-inner"
@@ -75,57 +77,63 @@ const Project = (props) => {
             loop
             autoPlay
             muted
-            className="h-auto w-[320px] rounded-md place-self-center aspect-square object-cover shadow-inner"
+            className="h-auto w-[320px] rounded-md place-self-center aspect-square object-cover shadow-inner duration-300 hover:face-right mb-6"
           >
-            <source src = {project.vidURL} type="video/mp4"></source>
+            <source src={project.vidURL} type="video/mp4"></source>
           </video>
         )}
         <div className=" shrink-1 text-center md:text-left flex flex-col justify-evenly mx-8 place-self-center">
           <div>
-            <h1 className="text-white text-4xl font-bold">{project.title}</h1>
-            {project.company && (
-              <h2 className=" text-white/90 text-lg">
-                at <span className=" italic ">{project.company}</span>
-              </h2>
-            )}
-            <div
-              className={
-                "flex flex-wrap place-content-center md:place-content-start"
-              }
-            >
-              {project.skills.map((skill, i) => (
-                <div key={i}>{Skill(skill)}</div>
-              ))}
-            </div>
-            <p className={!project.date ? "hidden" : "text-gray-300"}>
-              {project.date}
-            </p>
-            <p className={!project.roles ? "hidden" : "text-gray-300"}>
-              Roles: {project.roles}
-            </p>
-          </div>
-          <p className=" text-gray-300 text-left indent-8 mt-6">
-            {project.desc}
-          </p>
-          {project.details && (
-            <Link
-              to={showingDetails ? project.title : project.title + "details"}
-              spy={true}
-              smooth={true}
-              offset={-90}
-              duration={500}
-            >
-              <button
+            <Reveal delay={0.5}>
+              <h1 className="text-white text-4xl font-bold">{project.title}</h1>
+              {project.company && (
+                <h2 className=" text-white/90 text-lg">
+                  at <span className=" italic ">{project.company}</span>
+                </h2>
+              )}
+            </Reveal>
+            <Reveal>
+              <div
                 className={
-                  "rounded-md text-xl px-4 py-4 mx-4  my-4 text-center border-2  text-white font-semibold hover:bg-white hover:text-slate-900 duration-300 relative top-0 " +
-                  " hover:top-2"
+                  "flex flex-wrap place-content-center md:place-content-start"
                 }
-                onClick={() => setShowingDetails(!showingDetails)}
               >
-                {showingDetails ? "MINIMIZE ▲" : "MORE INFO ▼"}
-              </button>
-            </Link>
-          )}
+                {project.skills.map((skill, i) => (
+                  <div key={i}>{Skill(skill)}</div>
+                ))}
+              </div>
+              <p className={!project.date ? "hidden" : "text-gray-300"}>
+                {project.date}
+              </p>
+              <p className={!project.roles ? "hidden" : "text-gray-300"}>
+                Roles: {project.roles}
+              </p>
+            </Reveal>
+          </div>
+          <Reveal>
+            <p className=" text-gray-300 text-left indent-8 mt-6">
+              {project.desc}
+            </p>
+            {project.details && (
+              <Link
+                to={showingDetails ? project.title : project.title + "details"}
+                spy={true}
+                smooth={true}
+                offset={-90}
+                duration={500}
+              >
+                <button
+                  className={
+                    "rounded-md text-xl px-4 py-4 mx-4  my-4 text-center border-2  text-white font-semibold hover:bg-white hover:text-slate-900 md:duration-300 relative top-0 " +
+                    " md:hover:top-2"
+                  }
+                  onClick={() => setShowingDetails(!showingDetails)}
+                >
+                  {showingDetails ? "MINIMIZE ▲" : "MORE INFO ▼"}
+                </button>
+              </Link>
+            )}
+          </Reveal>
         </div>
       </div>
 
@@ -133,8 +141,8 @@ const Project = (props) => {
         id={project.title + "details"}
         className={
           (showingDetails
-            ? "text-white text-center h-auto opacity-100 rounded-lg p-4 bg-gradient-to-b from-gray-900/[0.7] to-transparent duration-300"
-            : "opacity-0 h-0 overflow-hidden duration-300") + ""
+            ? "text-white text-center h-auto opacity-100 rounded-lg p-4 bg-gradient-to-b from-gray-900/[0.7] to-transparent"
+            : "opacity-0 h-0 overflow-hidden") + ""
         }
       >
         <div className="mb-8">
@@ -167,7 +175,7 @@ const Project = (props) => {
         >
           <button
             onClick={() => setShowingDetails(!showingDetails)}
-            className="clear-both rounded-md text-xl px-4 py-4 mx-4  my-2 text-center border-2  text-white font-semibold hover:bg-white hover:text-slate-900 duration-300"
+            className="clear-both rounded-md text-xl px-4 py-4 mx-4  my-2 text-center border-2  text-white font-semibold hover:bg-white hover:text-slate-900 md:duration-300"
           >
             MINIMIZE ▲
           </button>

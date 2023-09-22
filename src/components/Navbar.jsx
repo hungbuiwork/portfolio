@@ -32,7 +32,7 @@ const Navbar = () => {
           </Link>
         
           <Link activeClass="active" to="contact" spy={true} smooth={true} offset={0} duration={500}>
-            <li className=" py-2 px-4 text-white bg-violet-600/80 rounded-md m-auto hover:bg-white hover:text-violet-600 duration-300">Contact Me</li>
+            <li className=" py-2 px-4 text-white bg-violet-600/80 rounded-md m-auto hover:bg-white hover:rounded-tr-none hover:text-violet-600 duration-300">Contact Me</li>
           </Link>
         </ul>
 

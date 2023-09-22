@@ -1,10 +1,11 @@
 import React from "react";
 import allExperience from "../data/experiencedata_all.jsx";
 import Project from "../components/Project.jsx";
+import { Slide } from "../animations/Slide.tsx";
 
 export const Experience = () => {
   return (
-    <div id = "experience">
+    <div id="experience">
       <hr className="border-gray-800"></hr>
       <h1 className="text-white text-center font-bold text-6xl underline decoration-blue-600 mt-8 ">
         Experience
@@ -13,18 +14,17 @@ export const Experience = () => {
         My experience working freelance, interning, and volunteering.
       </h2>
 
-
       <div>
-          {allExperience.map((project) => (
+        {allExperience.map((project) => (
+          <Slide>
             <Project
               project={project}
               color=" border-2 border-blue-500/25"
               key={project.title}
             ></Project>
-          ))}
-
-        </div>
+          </Slide>
+        ))}
+      </div>
     </div>
-    
   );
 };

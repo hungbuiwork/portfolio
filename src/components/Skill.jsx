@@ -7,7 +7,7 @@ export const Skill = (props) => {
     let className = props?.className;
   return (
     <div
-      className= {`indicator bg-[#040506] ${className} rounded-xl h-16 w-16 m-2 tooltip tooltip-bottom relative bottom-0 tooltip-primary hover:bottom-2 duration-500`}
+      className= {`indicator bg-[#040506] ${className} rounded-xl h-16 w-16 m-2 tooltip tooltip-bottom relative bottom-0 tooltip-primaryhover:bottom-2 duration-500`}
       data-tip= {name}
     >
       {mark && <span className="indicator-item  badge badge-success"></span>}

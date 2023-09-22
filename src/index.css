@@ -5,6 +5,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
 @layer base {
+
+  ::selection {
+    @apply bg-violet-600;
+  }
   body {
     @apply font-[Montserrat];
     @apply scroll-smooth;
@@ -86,5 +90,11 @@
   }
   .top-nav {
     @apply text-gray-400 hover:text-white hover:font-extrabold border-transparent hover:border-violet-500 border-b-4 h-8 duration-100 mx-3;
+  }
+
+  .face-right {
+    @apply border-t-8 border-l-8 border-r-[12px] border-b-[24px] rounded-lg border-white shadow-2xl;
+    transform-style: preserve-3d;
+    transform: rotateY(15deg) rotateX(15deg);
   }
 }
