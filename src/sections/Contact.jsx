@@ -1,8 +1,8 @@
 import React from "react";
 import ResumeGames from "../assets/resumes/HungBuiResumeGames.pdf";
-import ResumeSoftware from "../assets/resumes/ResumeSoftware.pdf";
+import ResumeSoftware from "../assets/resumes/HungBuiResumeSoftware.pdf";
 import { Slide } from "../animations/Slide.tsx";
-export const Contact = () => {
+export const Contact = (props) => {
   return (
     <div id="contact" className="">
       <hr className="border-gray-800"></hr>
@@ -20,11 +20,18 @@ export const Contact = () => {
           <h1 className="text-white text-2xl text-center font-bold">
             <a href="mailto: hungbuiwork@gmail.com ">hungbuiwork@gmail.com</a>
           </h1>
-          <div className="text-white place-self-center m-auto text-center w-64 py-3 text-2xl rounded-xl bg-violet-500 hover:text-gray-800 hover:bg-white duration-300 font-bold my-8 drop-shadow-2xl">
+          {(props.mode == 0 || props.mode == 1) && <div className="text-white place-self-center m-auto text-center w-64 py-3 text-2xl rounded-xl bg-violet-500 hover:text-gray-800 hover:bg-white duration-300 font-bold my-8 drop-shadow-2xl">
             <a href={ResumeSoftware} target="_blank">
               Resume
             </a>
-          </div>
+          </div>}
+          {(props.mode == 2) && <div className="text-white place-self-center m-auto text-center w-64 py-3 text-2xl rounded-xl bg-violet-500 hover:text-gray-800 hover:bg-white duration-300 font-bold my-8 drop-shadow-2xl">
+            <a href={ResumeSoftware} target="_blank">
+              Resume
+            </a>
+          </div>}
+
+          
         </div>
       </Slide>
     </div>

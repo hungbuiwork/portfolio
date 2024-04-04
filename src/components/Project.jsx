@@ -64,7 +64,7 @@ const Project = (props) => {
     >
       <div className="flex flex-col md:flex-row justify-between">
         {project.imgURL && (
-          <div className="shrink-0 grow-1 flex flex-col w-[100%] md:w-[30%] m-2 place-self-center duration-300 hover:face-right">
+          <div className="shrink-0 grow-1 flex flex-col w-[100%] md:w-[30%] m-2 place-self-center duration-300  relative bottom-0 hover:bottom-4 hover:shadow-2xl border-2 border-transparent hover:border-white rounded-md">
             <img
               src={project.imgURL}
               className="h-auto w-[320px] rounded-md place-self-center aspect-square object-cover shadow-inner"
@@ -77,22 +77,20 @@ const Project = (props) => {
             loop
             autoPlay
             muted
-            className="h-auto w-[320px] rounded-md place-self-center aspect-square object-cover shadow-inner duration-300 hover:face-right mb-6"
+            className="h-auto w-[320px] rounded-md place-self-center aspect-square object-cover shadow-inner duration-300  mb-6 relative bottom-0 hover:bottom-4  hover:shadow-2xl border-2 border-transparent hover:border-white"
           >
             <source src={project.vidURL} type="video/mp4"></source>
           </video>
         )}
         <div className=" shrink-1 text-center md:text-left flex flex-col justify-evenly mx-8 place-self-center">
-          <div>
-            <Reveal delay={0.5}>
+          <Reveal delay={0.25}>
+            <div>
               <h1 className="text-white text-4xl font-bold">{project.title}</h1>
               {project.company && (
                 <h2 className=" text-white/90 text-lg">
                   at <span className=" italic ">{project.company}</span>
                 </h2>
               )}
-            </Reveal>
-            <Reveal>
               <div
                 className={
                   "flex flex-wrap place-content-center md:place-content-start"
@@ -108,13 +106,12 @@ const Project = (props) => {
               <p className={!project.roles ? "hidden" : "text-gray-300"}>
                 Roles: {project.roles}
               </p>
-            </Reveal>
-          </div>
-          <Reveal>
+            </div>
             <p className=" text-gray-300 text-left indent-8 mt-6">
               {project.desc}
             </p>
             {project.details && (
+    
               <Link
                 to={showingDetails ? project.title : project.title + "details"}
                 spy={true}
@@ -166,6 +163,7 @@ const Project = (props) => {
         {project?.details?.map((detail) => (
           <div key={detail.title}>{Detail(detail)}</div>
         ))}
+        <div className=" w-full clear-both">
         <Link
           to={project.title}
           spy={true}
@@ -180,6 +178,7 @@ const Project = (props) => {
             MINIMIZE ▲
           </button>
         </Link>
+        </div>
       </div>
     </div>
   );

@@ -1,18 +1,32 @@
+import { createHashRouter, RouterProvider, Navigate } from "react-router-dom";
 import Home from "./sections/Home";
 import Navbar from "./components/Navbar";
-import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
+
+
+
+
+const router = createHashRouter([
+  {
+    path: "/",
+    element:  <div><Navbar></Navbar> <Home mode = {0}></Home></div>
+  },
+  {
+    path: "/GD",
+    element:  <div><Navbar></Navbar> <Home mode = {2}></Home></div>
+  },
+  {
+    path: "/SE",
+    element: <div><Navbar></Navbar> <Home mode = {1}></Home></div>
+  },
+  {
+    path: "*",
+    element: <Navigate to = "/"></Navigate>
+  },
+]);
+
 function App() {
   return (
-    <BrowserRouter>
-      <div>
-        <Navbar></Navbar>
-        <Switch>
-          <Route path="/portfolio" component={Home}></Route>
-          <Route path="/portfolio/projects.html" component={Home}></Route>
-        </Switch>
-        <Redirect to = "/portfolio"></Redirect>
-      </div>
-    </BrowserRouter>
+    <RouterProvider router = {router}></RouterProvider>
   );
 }
 

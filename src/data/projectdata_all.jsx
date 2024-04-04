@@ -1,10 +1,37 @@
-import allProjects from "./allproject_data"
+import projects from "./allproject_data"
 
-const projects = [
-  allProjects.procedurallyGeneratedTrees,
-  allProjects.thisWebsite,
-  allProjects.toonShader,
-  allProjects.jokeBrowser,
-  allProjects.musicalMadness,
+export const allProjects = [
+  projects.capstoneArchive,
+  projects.procedurallyGeneratedTrees,
+  projects.musicalMadness,
+  projects.toonShader,
+  projects.jokeBrowser,
+  projects.wartorn,
+  projects.zotDev,
+  projects.thisWebsite,
+
 ];
-export default projects;
+
+export const softProjects = [
+  projects.capstoneArchive,
+  projects.procedurallyGeneratedTrees,
+  projects.jokeBrowser,
+  projects.musicalMadness,
+  projects.toonShader,
+  projects.thisWebsite,
+  projects.wartorn,
+
+
+]
+
+export const gameProjects = [
+  projects.musicalMadness,
+  projects.procedurallyGeneratedTrees,
+  projects.toonShader,
+  projects.wartorn,
+  projects.capstoneArchive,
+  projects.jokeBrowser,
+  projects.thisWebsite,
+]
+
+

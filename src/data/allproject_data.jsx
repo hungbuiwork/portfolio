@@ -206,6 +206,32 @@ const projects = {
     ],
   },
 
+  zotDev: {
+    imgURL: require("../assets/thumbnails/zotdev_thumbnail.png"),
+    roles: "Gameplay Programmer & UI Programmer",
+    date: "MAR 2023 - JUN 2023",
+    skills: ["Unity", "C#"],
+    desc: "Arriving as a freshman college student, you are excited to start the program of your dreams entering the Game Development Major and the Video Game Development Club.",
+    title: "Zot Dev",
+    details: [
+      {
+        image: require("../assets/thumbnails/zotdev_sleep.png"),
+        title: "To Do",
+        description:'in progress...',
+      }
+    ],
+    buttons: [
+      {
+        label: "Source Code",
+        url: "https://github.com/Dg155/UCIGameDevTycoon",
+      },
+      {
+        label: "Play",
+        url: "https://dg155.itch.io/zot-dev",
+      },
+    ],
+  },
+
   thisWebsite: {
     vidURL: require("../assets/thumbnails/website-art.mp4"),
     roles: "",
@@ -233,6 +259,65 @@ const projects = {
       },
     ],
   },
+
+  capstoneArchive: {
+    date: "SEP 2023 - JAN 2024",
+    skills: ["ReactJS", "TailwindCSS", "Typescript", "Jira"],
+    roles: ["Scrum Master", "Full-Stack Developer"],
+    size: 5,
+    title: "UCI Capstone Archive v1",
+    desc: "New archival system for UCI Capstone Projects built from scratch, with upload, display, and search features, geared towards attracting to UCI's Capstone program.  UCI faculty assigned us this project and is to be worked on by future students to implement into the official UCI website.",
+    vidURL: require('../assets/thumbnails/capstoneArchive.mp4'),
+    company: "UCI Informatics Dpt.",
+    details: [
+      {
+        title: "Backlog Creation & Planning",
+        description: "Starting the project from scratch involved having in-depth discussions with stakeholders to grasp their expectations. I took the lead in discussions with faculty members, noting down their requirements and preferences. Before each meeting, I prepared a set of relevant questions, covering use cases, user stories, and trade-offs between project thoroughness and ease of use. These discussions were then compiled into a comprehensive requirements document, serving as a practical guide for implementation."
+       },
+       {
+        title: "Use cases",
+        description: "Adopting a software engineering mindset involved placing myself in the shoes of potential users. Deliberations revolved around crucial decisions, such as prioritizing the display of company name or project image. Understanding the needs of industry partners, faculty members,  and students, I delved into questions regarding the amount of information preferred in each project. This perspective played a pivotal role in shaping the user-centric aspects of the project."
+       },
+       {
+       title: "Project Leading",
+       description: "Navigating the challenges of project leadership provided invaluable learning experiences. Assessing evolving requirements, organizing them into a backlog, and strategically assigning tasks based on skills and availability were crucial responsibilities. Extensive planning was employed to mitigate merge conflicts and task overlap, emphasizing the importance of robust communication. Despite the complexities, the team successfully implemented numerous features within a single quarter.",
+       },
+       {
+        title: "Implementation",
+        description: "Contributing to the project's development, I personally implemented key features such as the responsive project search page, project component, routing, individual project page, upload form CSS, and the suggested projects tab for searching adjacent projects. Breaking down the front-end and back-end into organized components facilitated a cohesive and efficient coding process."
+       },
+       {
+        title: "Learning Points",
+        description: "Overall, I found it important to learn various aspects. Regarding the agile process, I found it important to plan early, ask a lot of clarifying questions, assess your team's skills, and approximate the time of tasks. Concerning the software design process, I found it important to make use of user stories, plan out the structure of the code before implementing, and talk to multiple stakeholders, as some had differing opinions. In terms of implementation, I found it important to break code down into components and document what you write.",
+       }
+    ],
+    buttons: [
+      {
+        label: "Live Demo",
+        url: "https://hungbuiwork.github.io/capstone-archive/",
+      },
+      {
+        label: "Requirements Document",
+        url: "https://docs.google.com/document/d/10vIFHweKmLg4ncYmA97udMbRj0zmnqgtXvflhPrLlLE/edit?usp=sharing",
+      }
+    ]
+  },
+
+  wartorn: {
+    date: "SEP 2023 - CURRENT",
+    skills: ["Unreal", "VFX", "Agile"],
+    roles: ["Art Lead", "Lighting Artist", "VFX & Shader Artist"],
+    title: "Wartorn",
+    size: 19,
+    desc: "A 3D narrative game where players take on the role of a young girl navigating the aftermath of a war attack. Through the use of lighting, visual effects, and dialogue, the game skillfully tells a story that explores themes of early maturing.",
+    details: [
+      {
+        title: "IN PROGRESS, check back again later for a full report as well as the DEMO link!",
+       },
+    ],
+
+  },
+
   whatCares: {
     date: "JULY 2023 - CURRENT",
     skills: ["React", "TailwindCSS"],
@@ -242,7 +327,7 @@ const projects = {
     
   },
   gdim: {
-    date: "FEB 2023 - CURRENT",
+    date: "FEB 2023 - JUN 2023",
     skills: ["HTML", "CSS", "Figma"],
     desc: "In my current role as a Website Design Intern for UCI's Game Development & Interactive Media program, I collaborate closely with esteemed faculty members -- tasked with crafting user-friendly informational user interfaces and developing websites tailored to convey class-related information and a website to showcase student-made games.",
     title: "Website Design Intern | UCI GDIM",
