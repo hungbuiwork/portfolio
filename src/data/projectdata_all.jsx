@@ -25,10 +25,10 @@ export const softProjects = [
 ]
 
 export const gameProjects = [
+  projects.wartorn,
   projects.musicalMadness,
   projects.procedurallyGeneratedTrees,
   projects.toonShader,
-  projects.wartorn,
   projects.capstoneArchive,
   projects.jokeBrowser,
   projects.thisWebsite,

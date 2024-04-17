@@ -304,16 +304,33 @@ const projects = {
   },
 
   wartorn: {
-    date: "SEP 2023 - CURRENT",
+    date: "SEP 2023 - MAR 2024",
     skills: ["Unreal", "VFX", "Agile"],
-    roles: ["Art Lead", "Lighting Artist", "VFX & Shader Artist"],
+    vidURL: require('../assets/thumbnails/WartornShader.mp4'),
+    roles: ["Art Lead, Lighting, Postprocess, Shader Artist"],
     title: "Wartorn",
     size: 19,
-    desc: "A 3D narrative game where players take on the role of a young girl navigating the aftermath of a war attack. Through the use of lighting, visual effects, and dialogue, the game skillfully tells a story that explores themes of early maturing.",
+    desc: "A 3D narrative game where players take on the role of a young girl navigating the aftermath of a war attack. Through the use of lighting, visual effects, and dialogue, our game tells a story that explores themes of early maturing.",
     details: [
       {
-        title: "IN PROGRESS, check back again later for a full report as well as the DEMO link!",
+        title: "Material Shaders",
+        vid: require('../assets/thumbnails/WartornShader.mp4'),
+        description:"I created, in Unreal's Material's Editor, a custom material shader that blends toon-shading with the default texture, with parameters to adjust over blending, shadow and highlight color, as well as some degree of atmospheric fog. These gave me a lot of control over the color scheme and atmosphere created in each level. By adjusting these levels, I was able to start with a more colorful, warm, cheerful aesthetic that became darker, and more realistic as time continue -- reflecting the game theme of early maturation and perception."
        },
+       {
+        description: "I also created a fog shader, with parameters to adjust strength, color, which combined with noise, was able to achieve some movement that felt natural and realistic. I used the fog shader in vastly different ways -- to conceal forbidden areas/out-of-bounds, to fake god rays and dust, and to convey air pollution post-attack.",
+        image: require('../assets/thumbnails/WartornShader2.png'),
+       },
+       {
+        description: "With a mix of my shaders, and tweaking Unreal's built-in postprocessing pipeline, I adjusted levels and lighting to convey the feeling that the MC was supposed to feel. I utilized the contrast between cool/warm colors to convey safety and danger, darkness to convey loneliness, and saturation to convey homeliness. ",
+        title: "Postprocessing",
+        image: require('../assets/thumbnails/Wartorn1.png'),
+       },
+       {
+        title: "Leading the art team",
+        image: require('../assets/thumbnails/WartornLead.png'),
+        description: "Apart from my contributions directly into the game, I led a 4-person art department, utilizing Jira and google spreadsheets to assign and track progress of each for each sprint (we used an Agile approach). I acted as a quality check to all the art imported. One thing I learned leading a department, is that establishing a consistent and concise workflow makes work so much more efficient, so I established a document with the producer during the second half of production that streamlined everyone's workflow. Proud of the outcome!"
+      },
     ],
 
   },
