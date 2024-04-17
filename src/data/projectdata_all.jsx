@@ -4,9 +4,9 @@ export const allProjects = [
   projects.capstoneArchive,
   projects.procedurallyGeneratedTrees,
   projects.musicalMadness,
+  projects.wartorn,
   projects.toonShader,
   projects.jokeBrowser,
-  projects.wartorn,
   projects.zotDev,
   projects.thisWebsite,
 
