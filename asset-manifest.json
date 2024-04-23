@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.e89898c4.css",
-    "main.js": "/portfolio/static/js/main.63ea3baf.js",
+    "main.js": "/portfolio/static/js/main.a2a00fd3.js",
     "static/media/sporo.gif": "/portfolio/static/media/sporo.c36911667986e02acf42.gif",
     "static/media/website.gif": "/portfolio/static/media/website.73c18bb57cf2c6f9c7e7.gif",
     "static/media/ProceduralTrees.pdf": "/portfolio/static/media/ProceduralTrees.891308b957eb6e5c6e7d.pdf",
@@ -12,6 +12,7 @@
     "static/media/Gravestone.png": "/portfolio/static/media/Gravestone.88420d0391bdf6e98134.png",
     "static/media/WartornShader.mp4": "/portfolio/static/media/WartornShader.85a08992455b78f69d80.mp4",
     "static/media/zotdev_thumbnail.png": "/portfolio/static/media/zotdev_thumbnail.0391f114b88c15abcd8d.png",
+    "static/media/Partyify1.mp4": "/portfolio/static/media/Partyify1.80f13aac77b7321d0b28.mp4",
     "static/media/Wartorn1.png": "/portfolio/static/media/Wartorn1.78fac8033b56619a98e2.png",
     "static/media/GDC-Flyer.png": "/portfolio/static/media/GDC-Flyer.2e027c8dddf68a1fc4cd.png",
     "static/media/Toon_Shader.pdf": "/portfolio/static/media/Toon_Shader.1956bd6e276b67c37d7e.pdf",
@@ -46,10 +47,10 @@
     "static/media/musicalMadness_map.jpeg": "/portfolio/static/media/musicalMadness_map.29532625c9c6d4d1dd7c.jpeg",
     "index.html": "/portfolio/index.html",
     "main.e89898c4.css.map": "/portfolio/static/css/main.e89898c4.css.map",
-    "main.63ea3baf.js.map": "/portfolio/static/js/main.63ea3baf.js.map"
+    "main.a2a00fd3.js.map": "/portfolio/static/js/main.a2a00fd3.js.map"
   },
   "entrypoints": [
     "static/css/main.e89898c4.css",
-    "static/js/main.63ea3baf.js"
+    "static/js/main.a2a00fd3.js"
   ]
 }
