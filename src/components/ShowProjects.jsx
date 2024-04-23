@@ -5,12 +5,12 @@ import Project from "./Project";
 import allProjects from "../data/projectdata_all.jsx";
 
 export const ShowProjects = (props) => {
-  const [visibleProjects, setVisibleProjects] = useState(3);
+  const [visibleProjects, setVisibleProjects] = useState(4);
   const projects = props.projects || [];
 
   const loadMoreProjects = () => {
     // Increase the number of visible projects by 4
-    setVisibleProjects((prevVisibleProjects) => prevVisibleProjects + 3);
+    setVisibleProjects((prevVisibleProjects) => prevVisibleProjects + 4);
   };
 
   return (

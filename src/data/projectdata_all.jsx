@@ -1,10 +1,11 @@
 import projects from "./allproject_data"
 
 export const allProjects = [
-  projects.capstoneArchive,
-  projects.procedurallyGeneratedTrees,
-  projects.musicalMadness,
+  projects.Partyify,
   projects.wartorn,
+  projects.procedurallyGeneratedTrees,
+  projects.capstoneArchive,
+  projects.musicalMadness,
   projects.toonShader,
   projects.jokeBrowser,
   projects.zotDev,
@@ -13,6 +14,7 @@ export const allProjects = [
 ];
 
 export const softProjects = [
+  projects.Partyify,
   projects.capstoneArchive,
   projects.procedurallyGeneratedTrees,
   projects.jokeBrowser,
@@ -20,8 +22,6 @@ export const softProjects = [
   projects.toonShader,
   projects.thisWebsite,
   projects.wartorn,
-
-
 ]
 
 export const gameProjects = [
@@ -29,6 +29,7 @@ export const gameProjects = [
   projects.musicalMadness,
   projects.procedurallyGeneratedTrees,
   projects.toonShader,
+  projects.Partyify,
   projects.capstoneArchive,
   projects.jokeBrowser,
   projects.thisWebsite,

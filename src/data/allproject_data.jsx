@@ -332,7 +332,47 @@ const projects = {
         description: "Apart from my contributions directly into the game, I led a 4-person art department, utilizing Jira and google spreadsheets to assign and track progress of each for each sprint (we used an Agile approach). I acted as a quality check to all the art imported. One thing I learned leading a department, is that establishing a consistent and concise workflow makes work so much more efficient, so I established a document with the producer during the second half of production that streamlined everyone's workflow. Proud of the outcome!"
       },
     ],
+    buttons: [
+      {
+        label: "Itch.io Page",
+        url: "https://dnajerab.itch.io/wartorn",
+      },]
 
+  },
+
+  Partyify: {
+    data: "APRIL 2024",
+    skills: ["React", "TailwindCSS", "SpotifyAPI"],
+    title: "Party-ify (Spotify App)",
+    desc: "Used at parties and gatherings, Partyify allows people to queue music to the party's playlist with just the scan of a QRCode. Only the host needs a spotify account.",
+    vidURL: require('../assets/thumbnails/Partyify1.mp4'),
+    buttons: [
+      {
+        label: "Try it out",
+        url: "https://hungbuiwork.github.io/PartySpotify/"
+      }
+    ],
+    details: [
+      {
+        title: "Why make this?",
+        description: "I noticed at parties and gatherings in Uni, that usually one person has control of the entire playlist. This is because Spotify's implementation of shared song sessions has many limitations: each user needs a spotify account, and the number of users in the sessions stays limited, and setup takes time, and rejoining/leaving a session is tedious",
+      },
+      {
+
+      },
+      {
+        title: "Learning the SpotifyAPI",
+        description: "I spent time going through the Spotify API documentation, reading and learning about how it works. I implemented Spotify OAuth to make sure everything was secure and users could interact smoothly. With React.js, I set up the routing so users could go directly to their Spotify accounts using specific URLs, and turned those URLs into QR codes using a library. Using the info passed through the URL routing, I made fetch calls to the Spotify API accordingly to implement queuing, searching, playing, seeking, and skipping to next/previous songs."
+      },
+      {
+        title: "Designing UI",
+        description: "I created a user interface that's sleek and adaptable, catering to both large screens like TVs and smaller mobile displays, perfect for in-car use. Each page is crafted with simplicity in mind, featuring intuitive controls and a clear visual hierarchy for easy navigation. By blending modern design elements, I achieved a fresh look while staying true to Spotify's recognizable color palette and branding."
+      },
+      {
+        title: "Testing, Improving",
+        description: "Right now, I'm trying out the app with friends and at parties, getting their thoughts and feedback. They're helping me see what works and what needs tweaking, like how well the recommendation system is doing. So far, the app has been very useful, and I plan to make iterative improvements as time goes on!"
+      }
+    ]
   },
 
   whatCares: {
