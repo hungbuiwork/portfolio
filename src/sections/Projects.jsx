@@ -6,7 +6,7 @@ import {
 } from "../data/projectdata_all.jsx";
 import { Slide } from "../animations/Slide.tsx";
 import { ShowProjects } from "../components/ShowProjects.jsx";
-export const Projects = (props) => {
+const Projects = (props) => {
   let projects = [];
   if (props.mode === 1) {
     projects = softProjects;
@@ -22,16 +22,21 @@ export const Projects = (props) => {
           Projects
         </h1>
         <div className=" flex justify-center">
-        <Slide x={0} y={200}>
-          <h2 className="text-gray-300 text-center  mx-[10%] text-xl mt-4 mb-8">
-            Below, you'll find a few specific projects I've been involved in! My
-            primary areas of concentration include full-stack web development
-            and game programming.
-          </h2>
-        </Slide>
+          <Slide x={0} y={200}>
+            <h2 className="text-gray-300 text-center  mx-[10%] text-xl mt-4 mb-8">
+              Below, you'll find a few specific projects I've been involved in!
+              My primary areas of concentration include full-stack web
+              development and game programming.
+            </h2>
+          </Slide>
         </div>
-        <ShowProjects projects={projects}></ShowProjects>
+        <ShowProjects
+          projects={projects}
+          className="purple-gradient"
+        ></ShowProjects>
       </div>
     </div>
   );
 };
+
+export default Projects;

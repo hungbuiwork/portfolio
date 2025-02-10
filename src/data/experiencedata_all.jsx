@@ -1,8 +1,9 @@
-import allProjects from "./allproject_data"
+import allProjects from "./allproject_data";
 
-const experience= [
+const experience = [
+  allProjects.sharpify,
   allProjects.whatCares,
+  allProjects.patientZero,
   allProjects.gdim,
-  allProjects.patientZero
 ];
 export default experience;

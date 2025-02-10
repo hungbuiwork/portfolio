@@ -12,7 +12,7 @@ export const Reveal = ({
   delay = 0.25,
 }: Props) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false });
+  const isInView = useInView(ref, { once: true });
 
   const mainControls = useAnimation();
 
@@ -26,12 +26,12 @@ export const Reveal = ({
     <div ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
       <motion.div
         variants={{
-          hidden: { left: "0", opacity: 1 },
-          visible: { left: "100%", opacity: 0 },
+          hidden: { x: "0", opacity: 1 },
+          visible: { x: "100%", opacity: 0 },
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 1, delay: delay }}
+        transition={{ duration: 0.7, delay: delay }}
         className="bg-white h-full w-full absolute z-10 overflow-hidden rounded-sm"
       ></motion.div>
       <div className=" z-10">{children}</div>

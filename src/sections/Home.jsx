@@ -1,14 +1,11 @@
-import React, { useState, useRef } from "react";
-import Carousel from "../components/Carousel";
-import { HashRouter } from "react-router-dom";
-import { Skills } from "./Skills";
-import { Experience } from "./Experience";
-import { Artworks } from "./Artworks";
-import { Projects } from "./Projects";
-import { About } from "./About";
-import { Contact } from "./Contact";
+import React, { Suspense } from "react";
 import { Slide } from "../animations/Slide.tsx";
-import video from "../assets/thumbnails/toonshader.mp4";
+const Skills = React.lazy(() => import("./Skills"));
+const Experience = React.lazy(() => import("./Experience"));
+const Artworks = React.lazy(() => import("./Artworks"));
+const Projects = React.lazy(() => import("./Projects"));
+const About = React.lazy(() => import("./About"));
+const Contact = React.lazy(() => import("./Contact"));
 
 const Home = (props) => {
   const mode = props.mode; //0: Full portfolio, 1: Software, 2: Game Dev
@@ -80,25 +77,26 @@ const Home = (props) => {
       </div>
       <div className=" z-0 fixed text-white text-[20rem] top-[50%] right-[50%]"></div>
 
-      <div className=" z-10">
-        {/*Background Stuff*/}
-        <Skills></Skills>
+      <Suspense fallback={<div></div>}>
+        <div className=" z-10">
+          {/*Background Stuff*/}
+          <Skills></Skills>
 
-        {/*Projects Section*/}
-        <Projects mode={mode}></Projects>
+          {/*EXPERIENCE*/}
+          <Experience></Experience>
+          {/*Projects Section*/}
+          <Projects mode={mode}></Projects>
 
-        {/*EXPERIENCE*/}
-        <Experience></Experience>
+          {/*About Section*/}
+          <About mode={mode}></About>
 
-        {/*About Section*/}
-        <About mode = {mode}></About>
+          {/*Artwork*/}
+          <Artworks></Artworks>
 
-        {/*Artwork*/}
-        <Artworks></Artworks>
-
-        {/*Contact Me*/}
-        <Contact mode = {mode}></Contact>
-      </div>
+          {/*Contact Me*/}
+          <Contact mode={mode}></Contact>
+        </div>
+      </Suspense>
     </div>
   );
 };

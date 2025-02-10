@@ -1,4 +1,4 @@
-import projects from "./allproject_data"
+import projects from "./allproject_data";
 
 export const allProjects = [
   projects.Partyify,
@@ -10,29 +10,25 @@ export const allProjects = [
   projects.jokeBrowser,
   projects.zotDev,
   projects.thisWebsite,
-
 ];
 
 export const softProjects = [
   projects.Partyify,
   projects.capstoneArchive,
+  projects.musicalMadness,
   projects.procedurallyGeneratedTrees,
   projects.jokeBrowser,
-  projects.musicalMadness,
   projects.toonShader,
-  projects.thisWebsite,
   projects.wartorn,
-]
+];
 
 export const gameProjects = [
   projects.wartorn,
   projects.musicalMadness,
   projects.procedurallyGeneratedTrees,
   projects.toonShader,
+  projects.zotDev,
   projects.Partyify,
   projects.capstoneArchive,
   projects.jokeBrowser,
-  projects.thisWebsite,
-]
-
-
+];

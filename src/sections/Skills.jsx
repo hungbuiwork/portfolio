@@ -2,14 +2,15 @@ import React from "react";
 import { Skill } from "../components/Skill";
 import { Slide } from "../animations/Slide.tsx";
 
-export const Skills = () => {
+const Skills = () => {
   return (
-    <div id="skills" className="">
+    <div id="skills" className="mb-20">
       <h1 className="text-white text-center font-bold text-6xl underline decoration-violet-600 mt-8 ">
         Skills
       </h1>
       <h2 className="text-gray-300 text-center mx-[10%] text-xl mt-4 mb-8">
-        These are skills I've cultivate during my time in university. <br></br>
+        These are some skills I've cultivated throughout my experiences in
+        software. <br></br>
         <span className="badge badge-success"></span> = more experienced in
       </h2>
       <div className="flex justify-center">
@@ -45,6 +46,7 @@ export const Skills = () => {
                 ></Skill>
                 <Skill
                   name="Javascript"
+                  mark="T"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                 ></Skill>
                 <Skill
@@ -69,7 +71,11 @@ export const Skills = () => {
                 <Skill
                   name="TailwindCSS"
                   mark="T"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                ></Skill>
+                <Skill
+                  name="Fastapi"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg"
                 ></Skill>
               </div>
               <h1>Game Engines</h1>
@@ -116,3 +122,5 @@ export const Skills = () => {
     </div>
   );
 };
+
+export default Skills;

@@ -3,7 +3,7 @@ import Carousel from "../components/Carousel";
 import { digitalArt, threeDArt } from "../data/artdata_digital";
 import { Slide } from "../animations/Slide.tsx";
 
-export const Artworks = () => {
+const Artworks = () => {
   return (
     <div>
       <div className="pb-16 ">
@@ -16,7 +16,6 @@ export const Artworks = () => {
           created from scratch.
         </h2>
         <div className="px-[0%] md:px-[15%] lg:px=[[20%]">
-
           <div className="text-white font-bold text-center">
             <div class="collapse collapse-arrow bg-black/70 my-4">
               <input type="checkbox" />
@@ -36,11 +35,10 @@ export const Artworks = () => {
                 <Carousel artwork={digitalArt}></Carousel>
               </div>
             </div>
-
-
           </div>
         </div>
       </div>
     </div>
   );
 };
+export default Artworks;

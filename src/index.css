@@ -5,7 +5,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
 @layer base {
-
   ::selection {
     @apply bg-violet-600;
   }
@@ -21,54 +20,58 @@
 }
 
 @layer components {
-  .tooltip:hover{
+  .tooltip:hover {
     z-index: 999;
   }
 
-  .carousel-side{
-    filter: drop-shadow(0 0 16px rgb(0, 0, 0)) brightness(70%)
+  .carousel-side {
+    filter: drop-shadow(0 0 16px rgb(0, 0, 0)) brightness(70%);
   }
-  .carousel-active{
-    filter: drop-shadow(0 0 32px rgb(119, 119, 237))
+  .carousel-active {
+    filter: drop-shadow(0 0 32px rgb(119, 119, 237));
   }
-  .text-shadow{
-    text-shadow: 0 0 32px #485bbc,  0 0 16px #8997dc;
+  .text-shadow {
+    text-shadow: 0 0 32px #485bbc, 0 0 16px #8997dc;
   }
 
-.text-shadow-2{
-  text-shadow: 0 0 16px rgb(25, 6, 46);
-}
-  .me{
-    background-image: url('./assets/art/me_2.jpg');
+  .text-shadow-2 {
+    text-shadow: 0 0 16px rgb(25, 6, 46);
+  }
+  .me {
+    background-image: url("./assets/art/me.png");
     box-shadow: 16 16 64px #0000003f;
-
   }
-  .sporo{
-    background-image: linear-gradient(to top, rgba(8, 1, 38, 0.169), rgba(24, 9, 70, 0.855)), url('./assets/thumbnails/sporo.gif');
+  .sporo {
+    background-image: linear-gradient(
+        to top,
+        rgba(8, 1, 38, 0.169),
+        rgba(24, 9, 70, 0.855)
+      ),
+      url("./assets/thumbnails/sporo.gif");
     background-position: left;
     backdrop-filter: brightness(0);
   }
-  .bg-dark-2{
-    @apply bg-[#090b0f]
+  .bg-dark-2 {
+    @apply bg-[#090b0f];
   }
-  .bg-dark-1{
-    @apply bg-[#0e1016]
+  .bg-dark-1 {
+    @apply bg-[#0e1016];
   }
 
   .tab {
-    @apply w-[50%] text-white table
+    @apply w-[50%] text-white table;
   }
-  .tab p{
-    @apply font-bold text-xl h-full w-full table-cell align-middle text-center shadow-2xl
+  .tab p {
+    @apply font-bold text-xl h-full w-full table-cell align-middle text-center shadow-2xl;
   }
-  .purple-gradient{
-    @apply bg-gradient-to-b from-purple-700 to-transparent 
+  .purple-gradient {
+    @apply bg-gradient-to-b from-purple-700 to-transparent;
   }
-  .blue-gradient{
-    @apply bg-gradient-to-b from-blue-500 to-transparent
+  .blue-gradient {
+    @apply bg-gradient-to-b from-blue-500 to-transparent;
   }
-  .skills{
-    @apply  mx-[5%] flex flex-row justify-center border-gray-900 border-4 rounded-md mt-4
+  .skills {
+    @apply mx-[5%] flex flex-row justify-center border-gray-900 border-4 rounded-md mt-4;
   }
 
   .skills .flex-col {

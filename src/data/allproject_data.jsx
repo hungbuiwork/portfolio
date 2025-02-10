@@ -1,7 +1,6 @@
 const projects = {
-
-  procedurallyGeneratedTrees:{
-    vidURL:require("../assets/thumbnails/Proceduraltree.mp4"),
+  procedurallyGeneratedTrees: {
+    vidURL: require("../assets/thumbnails/Proceduraltree.mp4"),
     roles: "",
     data: "May 2023",
     skills: ["Unity", "C#"],
@@ -10,7 +9,8 @@ const projects = {
     details: [
       {
         title: "Read the Dev Process",
-        description: "I strongly recommend reading the Dev Process above! It goes into detail about my workflow throughout the project.",
+        description:
+          "I strongly recommend reading the Dev Process above! It goes into detail about my workflow throughout the project.",
       },
       {
         image: require("../assets/thumbnails/proceduraltree2.png"),
@@ -26,7 +26,10 @@ const projects = {
       },
     ],
     buttons: [
-      { label: "Dev Process", url: require("../assets/pdfs/ProceduralTrees.pdf") },
+      {
+        label: "Dev Process",
+        url: require("../assets/pdfs/ProceduralTrees.pdf"),
+      },
       {
         label: "Source Code",
         url: "https://github.com/hungbuiwork/ProceduralTrees/blob/main/Assets/Scripts/LSystemRenderer.cs",
@@ -44,7 +47,8 @@ const projects = {
     details: [
       {
         title: "Read the Dev Process",
-        description: "I strongly recommend reading the Dev Process above! It goes into detail about my workflow throughout the project.",
+        description:
+          "I strongly recommend reading the Dev Process above! It goes into detail about my workflow throughout the project.",
       },
       {
         image: require("../assets/thumbnails/toonShader_scene.jpeg"),
@@ -90,18 +94,14 @@ const projects = {
       },
       {
         image: require("../assets/thumbnails/musicalMadness_map.jpeg"),
-        description: "This project focused on creating efficient, well-structured code. After completing relevant courses on software design and algorithms, we applied our knowledge. When designing our procedural generation system, my roommate and I took a careful, iterative approach. We used diagrams, pseudocode, and troubleshooting to understand and address bugs. Later, we improved our dungeon-building algorithm's memory efficiency by using bitwise operations extensively.",
+        description:
+          "This project focused on creating efficient, well-structured code. After completing relevant courses on software design and algorithms, we applied our knowledge. When designing our procedural generation system, my roommate and I took a careful, iterative approach. We used diagrams, pseudocode, and troubleshooting to understand and address bugs. Later, we improved our dungeon-building algorithm's memory efficiency by using bitwise operations extensively.",
         title: "Procedural Generation, Enemy AI, and Script Architecture",
       },
       {
         image: require("../assets/thumbnails/musicalMadness_architecture.jpeg"),
-        description: "When it came to designing the overall script architecture, we decided to streamline the implementation of both players and enemies by sharing certain scripts, such as those responsible for managing statistics, combat mechanics, and weapons. The key distinction between them lay in their input methods (keyboard for players, AI for enemies) and their movement patterns. This approach enabled us to maintain a modular codebase and efficiently reuse various components. An exciting benefit of this design was that any entity could seamlessly utilize newly created weapons. This flexibility proved invaluable when implementing the boss character, as it simply inherited behaviors from other enemy types and employed the same arsenal. Furthermore, I implemented optimizations to enhance performance by limiting enemy spawning and updates to the current room or adjacent ones. This optimization significantly improved our game's performance. As the sole developer responsible for the enemy AI, I devised a system that utilized scriptable objects known as 'enemy brains.' These objects comprised a set of predefined values, which in turn generated diverse behaviors. This approach not only reduced the amount of code required but also facilitated the rapid creation of enemies with distinct behaviors. For instance, it allowed us to easily differentiate the strafing behavior of violin enemies from the charging and rolling tactics of drum enemies."
-        
-        
-        
-        
-        
-        
+        description:
+          "When it came to designing the overall script architecture, we decided to streamline the implementation of both players and enemies by sharing certain scripts, such as those responsible for managing statistics, combat mechanics, and weapons. The key distinction between them lay in their input methods (keyboard for players, AI for enemies) and their movement patterns. This approach enabled us to maintain a modular codebase and efficiently reuse various components. An exciting benefit of this design was that any entity could seamlessly utilize newly created weapons. This flexibility proved invaluable when implementing the boss character, as it simply inherited behaviors from other enemy types and employed the same arsenal. Furthermore, I implemented optimizations to enhance performance by limiting enemy spawning and updates to the current room or adjacent ones. This optimization significantly improved our game's performance. As the sole developer responsible for the enemy AI, I devised a system that utilized scriptable objects known as 'enemy brains.' These objects comprised a set of predefined values, which in turn generated diverse behaviors. This approach not only reduced the amount of code required but also facilitated the rapid creation of enemies with distinct behaviors. For instance, it allowed us to easily differentiate the strafing behavior of violin enemies from the charging and rolling tactics of drum enemies.",
       },
       {
         description:
@@ -143,7 +143,7 @@ const projects = {
     date: "SEP 2021 - APRIL 2022",
     roles: "Programmer, VFX",
     skills: ["Unity", "C#"],
-    desc:"As a Game Programmer for \"Patient Zero,\" an accredited VR bio-educational puzzle game, I collaborate with a skilled team of programmers, artists, writers, and game designers. Our aim is to offer players a captivating sci-fi experience while teaching epidemiology principles. My tasks include fixing UI bugs and implementing essential elements like tooltips and pause menus to enhance the player's experience." ,
+    desc: 'As a Game Programmer for "Patient Zero," an accredited VR bio-educational puzzle game, I collaborate with a skilled team of programmers, artists, writers, and game designers. Our aim is to offer players a captivating sci-fi experience while teaching epidemiology principles. My tasks include fixing UI bugs and implementing essential elements like tooltips and pause menus to enhance the player\'s experience.',
     title: "Game UI Programmer",
     company: "Hughes Media & Design Lab",
 
@@ -157,16 +157,24 @@ const projects = {
       {
         title: "What I implemented",
         vid: require("../assets/thumbnails/patientZero_tooltip.mp4"),
-        description:
-          "- A tooltip/hints 3D UI that pops up when the user picks up a tool. I tried to match the design with the aesthetics of the game. A small optimization I did was to reuse the same object, and simply hide it somewhere off the map when not in use.",
-      },
-      {
-        description:
-          "- I also implemented the game's post-processing to make the world feel more atmospheric and moody. This was especially important as the game is in VR.",
-      },
-      {
-        description:
-          "- A pause menu 3D UI that pops up when the pause button is pressed.",
+        description: (
+          <div className=" flex flex-col gap-8">
+            <p>
+              A tooltip/hints 3D UI that pops up when the user picks up a tool.
+              I tried to match the design with the aesthetics of the game. A
+              small optimization I did was to reuse the same object, and simply
+              hide it somewhere off the map when not in use."
+            </p>
+            <p>
+              I also implemented the game's post-processing to make the world
+              feel more atmospheric and moody. This was especially important as
+              the game is in VR.
+            </p>
+            <p>
+              A pause menu 3D UI that pops up when the pause button is pressed.
+            </p>
+          </div>
+        ),
       },
       {
         title: "Challenges/Takeaways",
@@ -191,8 +199,9 @@ const projects = {
       {
         image: require("../assets/thumbnails/jokeBrowser_ui.jpeg"),
         title: "A bit more",
-        description:'This project marked one of my final assignments in the User Interaction course. It was a highly flexible task, so I decided to develop a web application for browsing jokes. I designed this app using Angular, incorporating a service to fetch jokes from JokeAPI and integrating HandTrackJS for an interactive experience. Users could simply relax, activate their camera, and explore programming jokes. My primary goal was to craft an aesthetically pleasing and user-friendly interface, along with intuitive hand controls. Although the web app is more suitable for non-mobile browsers, you can still give it a try by clicking the "Demo" button above!',
-      }
+        description:
+          'This project marked one of my final assignments in the User Interaction course. It was a highly flexible task, so I decided to develop a web application for browsing jokes. I designed this app using Angular, incorporating a service to fetch jokes from JokeAPI and integrating HandTrackJS for an interactive experience. Users could simply relax, activate their camera, and explore programming jokes. My primary goal was to craft an aesthetically pleasing and user-friendly interface, along with intuitive hand controls. Although the web app is more suitable for non-mobile browsers, you can still give it a try by clicking the "Demo" button above!',
+      },
     ],
     buttons: [
       {
@@ -217,8 +226,8 @@ const projects = {
       {
         image: require("../assets/thumbnails/zotdev_sleep.png"),
         title: "To Do",
-        description:'in progress...',
-      }
+        description: "in progress...",
+      },
     ],
     buttons: [
       {
@@ -267,29 +276,34 @@ const projects = {
     size: 5,
     title: "UCI Capstone Archive v1",
     desc: "New archival system for UCI Capstone Projects built from scratch, with upload, display, and search features, geared towards attracting to UCI's Capstone program.  UCI faculty assigned us this project and is to be worked on by future students to implement into the official UCI website.",
-    vidURL: require('../assets/thumbnails/capstoneArchive.mp4'),
+    vidURL: require("../assets/thumbnails/capstoneArchive.mp4"),
     company: "UCI Informatics Dpt.",
     details: [
       {
         title: "Backlog Creation & Planning",
-        description: "Starting the project from scratch involved having in-depth discussions with stakeholders to grasp their expectations. I took the lead in discussions with faculty members, noting down their requirements and preferences. Before each meeting, I prepared a set of relevant questions, covering use cases, user stories, and trade-offs between project thoroughness and ease of use. These discussions were then compiled into a comprehensive requirements document, serving as a practical guide for implementation."
-       },
-       {
+        description:
+          "Starting the project from scratch involved having in-depth discussions with stakeholders to grasp their expectations. I took the lead in discussions with faculty members, noting down their requirements and preferences. Before each meeting, I prepared a set of relevant questions, covering use cases, user stories, and trade-offs between project thoroughness and ease of use. These discussions were then compiled into a comprehensive requirements document, serving as a practical guide for implementation.",
+      },
+      {
         title: "Use cases",
-        description: "Adopting a software engineering mindset involved placing myself in the shoes of potential users. Deliberations revolved around crucial decisions, such as prioritizing the display of company name or project image. Understanding the needs of industry partners, faculty members,  and students, I delved into questions regarding the amount of information preferred in each project. This perspective played a pivotal role in shaping the user-centric aspects of the project."
-       },
-       {
-       title: "Project Leading",
-       description: "Navigating the challenges of project leadership provided invaluable learning experiences. Assessing evolving requirements, organizing them into a backlog, and strategically assigning tasks based on skills and availability were crucial responsibilities. Extensive planning was employed to mitigate merge conflicts and task overlap, emphasizing the importance of robust communication. Despite the complexities, the team successfully implemented numerous features within a single quarter.",
-       },
-       {
+        description:
+          "Adopting a software engineering mindset involved placing myself in the shoes of potential users. Deliberations revolved around crucial decisions, such as prioritizing the display of company name or project image. Understanding the needs of industry partners, faculty members,  and students, I delved into questions regarding the amount of information preferred in each project. This perspective played a pivotal role in shaping the user-centric aspects of the project.",
+      },
+      {
+        title: "Project Leading",
+        description:
+          "Navigating the challenges of project leadership provided invaluable learning experiences. Assessing evolving requirements, organizing them into a backlog, and strategically assigning tasks based on skills and availability were crucial responsibilities. Extensive planning was employed to mitigate merge conflicts and task overlap, emphasizing the importance of robust communication. Despite the complexities, the team successfully implemented numerous features within a single quarter.",
+      },
+      {
         title: "Implementation",
-        description: "Contributing to the project's development, I personally implemented key features such as the responsive project search page, project component, routing, individual project page, upload form CSS, and the suggested projects tab for searching adjacent projects. Breaking down the front-end and back-end into organized components facilitated a cohesive and efficient coding process."
-       },
-       {
+        description:
+          "Contributing to the project's development, I personally implemented key features such as the responsive project search page, project component, routing, individual project page, upload form CSS, and the suggested projects tab for searching adjacent projects. Breaking down the front-end and back-end into organized components facilitated a cohesive and efficient coding process.",
+      },
+      {
         title: "Learning Points",
-        description: "Overall, I found it important to learn various aspects. Regarding the agile process, I found it important to plan early, ask a lot of clarifying questions, assess your team's skills, and approximate the time of tasks. Concerning the software design process, I found it important to make use of user stories, plan out the structure of the code before implementing, and talk to multiple stakeholders, as some had differing opinions. In terms of implementation, I found it important to break code down into components and document what you write.",
-       }
+        description:
+          "Overall, I found it important to learn various aspects. Regarding the agile process, I found it important to plan early, ask a lot of clarifying questions, assess your team's skills, and approximate the time of tasks. Concerning the software design process, I found it important to make use of user stories, plan out the structure of the code before implementing, and talk to multiple stakeholders, as some had differing opinions. In terms of implementation, I found it important to break code down into components and document what you write.",
+      },
     ],
     buttons: [
       {
@@ -299,14 +313,14 @@ const projects = {
       {
         label: "Requirements Document",
         url: "https://docs.google.com/document/d/10vIFHweKmLg4ncYmA97udMbRj0zmnqgtXvflhPrLlLE/edit?usp=sharing",
-      }
-    ]
+      },
+    ],
   },
 
   wartorn: {
     date: "SEP 2023 - MAR 2024",
     skills: ["Unreal", "VFX", "Agile"],
-    vidURL: require('../assets/thumbnails/WartornShader.mp4'),
+    vidURL: require("../assets/thumbnails/WartornShader.mp4"),
     roles: ["Art Lead, Lighting, Postprocess, Shader Artist"],
     title: "Wartorn",
     size: 19,
@@ -314,30 +328,34 @@ const projects = {
     details: [
       {
         title: "Material Shaders",
-        vid: require('../assets/thumbnails/WartornShader.mp4'),
-        description:"I created, in Unreal's Material's Editor, a custom material shader that blends toon-shading with the default texture, with parameters to adjust over blending, shadow and highlight color, as well as some degree of atmospheric fog. These gave me a lot of control over the color scheme and atmosphere created in each level. By adjusting these levels, I was able to start with a more colorful, warm, cheerful aesthetic that became darker, and more realistic as time continue -- reflecting the game theme of early maturation and perception."
-       },
-       {
-        description: "I also created a fog shader, with parameters to adjust strength, color, which combined with noise, was able to achieve some movement that felt natural and realistic. I used the fog shader in vastly different ways -- to conceal forbidden areas/out-of-bounds, to fake god rays and dust, and to convey air pollution post-attack.",
-        image: require('../assets/thumbnails/WartornShader2.png'),
-       },
-       {
-        description: "With a mix of my shaders, and tweaking Unreal's built-in postprocessing pipeline, I adjusted levels and lighting to convey the feeling that the MC was supposed to feel. I utilized the contrast between cool/warm colors to convey safety and danger, darkness to convey loneliness, and saturation to convey homeliness. ",
+        vid: require("../assets/thumbnails/WartornShader.mp4"),
+        description:
+          "I created, in Unreal's Material's Editor, a custom material shader that blends toon-shading with the default texture, with parameters to adjust over blending, shadow and highlight color, as well as some degree of atmospheric fog. These gave me a lot of control over the color scheme and atmosphere created in each level. By adjusting these levels, I was able to start with a more colorful, warm, cheerful aesthetic that became darker, and more realistic as time continue -- reflecting the game theme of early maturation and perception.",
+      },
+      {
+        description:
+          "I also created a fog shader, with parameters to adjust strength, color, which combined with noise, was able to achieve some movement that felt natural and realistic. I used the fog shader in vastly different ways -- to conceal forbidden areas/out-of-bounds, to fake god rays and dust, and to convey air pollution post-attack.",
+        image: require("../assets/thumbnails/WartornShader2.png"),
+      },
+      {
+        description:
+          "With a mix of my shaders, and tweaking Unreal's built-in postprocessing pipeline, I adjusted levels and lighting to convey the feeling that the MC was supposed to feel. I utilized the contrast between cool/warm colors to convey safety and danger, darkness to convey loneliness, and saturation to convey homeliness. ",
         title: "Postprocessing",
-        image: require('../assets/thumbnails/Wartorn1.png'),
-       },
-       {
+        image: require("../assets/thumbnails/Wartorn1.png"),
+      },
+      {
         title: "Leading the art team",
-        image: require('../assets/thumbnails/WartornLead.png'),
-        description: "Apart from my contributions directly into the game, I led a 4-person art department, utilizing Jira and google spreadsheets to assign and track progress of each for each sprint (we used an Agile approach). I acted as a quality check to all the art imported. One thing I learned leading a department, is that establishing a consistent and concise workflow makes work so much more efficient, so I established a document with the producer during the second half of production that streamlined everyone's workflow. Proud of the outcome!"
+        image: require("../assets/thumbnails/WartornLead.png"),
+        description:
+          "Apart from my contributions directly into the game, I led a 4-person art department, utilizing Jira and google spreadsheets to assign and track progress of each for each sprint (we used an Agile approach). I acted as a quality check to all the art imported. One thing I learned leading a department, is that establishing a consistent and concise workflow makes work so much more efficient, so I established a document with the producer during the second half of production that streamlined everyone's workflow. Proud of the outcome!",
       },
     ],
     buttons: [
       {
         label: "Itch.io Page",
         url: "https://dnajerab.itch.io/wartorn",
-      },]
-
+      },
+    ],
   },
 
   Partyify: {
@@ -345,62 +363,95 @@ const projects = {
     skills: ["React", "TailwindCSS", "SpotifyAPI"],
     title: "Party-ify (Spotify App)",
     desc: "Used at parties and gatherings, Partyify allows people to queue music to the party's playlist with just the scan of a QRCode. Only the host needs a spotify account.",
-    vidURL: require('../assets/thumbnails/Partyify1.mp4'),
+    vidURL: require("../assets/thumbnails/Partyify1.mp4"),
     buttons: [
       {
         label: "Try it out",
-        url: "https://hungbuiwork.github.io/PartySpotify/"
-      }
+        url: "https://hungbuiwork.github.io/PartySpotify/",
+      },
     ],
     details: [
       {
         title: "Why make this?",
-        description: "I noticed at parties and gatherings in Uni, that usually one person has control of the entire playlist. This is because Spotify's implementation of shared song sessions has many limitations: each user needs a spotify account, and the number of users in the sessions stays limited, and setup takes time, and rejoining/leaving a session is tedious",
+        description:
+          "I noticed at parties and gatherings in Uni, that usually one person has control of the entire playlist. This is because Spotify's implementation of shared song sessions has many limitations: each user needs a spotify account, and the number of users in the sessions stays limited, and setup takes time, and rejoining/leaving a session is tedious",
       },
-      {
-
-      },
+      {},
       {
         title: "Learning the SpotifyAPI",
-        description: "I spent time going through the Spotify API documentation, reading and learning about how it works. I implemented Spotify OAuth to make sure everything was secure and users could interact smoothly. With React.js, I set up the routing so users could go directly to their Spotify accounts using specific URLs, and turned those URLs into QR codes using a library. Using the info passed through the URL routing, I made fetch calls to the Spotify API accordingly to implement queuing, searching, playing, seeking, and skipping to next/previous songs."
+        description:
+          "I spent time going through the Spotify API documentation, reading and learning about how it works. I implemented Spotify OAuth to make sure everything was secure and users could interact smoothly. With React.js, I set up the routing so users could go directly to their Spotify accounts using specific URLs, and turned those URLs into QR codes using a library. Using the info passed through the URL routing, I made fetch calls to the Spotify API accordingly to implement queuing, searching, playing, seeking, and skipping to next/previous songs.",
       },
       {
         title: "Designing UI",
-        description: "I created a user interface that's sleek and adaptable, catering to both large screens like TVs and smaller mobile displays, perfect for in-car use. Each page is crafted with simplicity in mind, featuring intuitive controls and a clear visual hierarchy for easy navigation. By blending modern design elements, I achieved a fresh look while staying true to Spotify's recognizable color palette and branding."
+        description:
+          "I created a user interface that's sleek and adaptable, catering to both large screens like TVs and smaller mobile displays, perfect for in-car use. Each page is crafted with simplicity in mind, featuring intuitive controls and a clear visual hierarchy for easy navigation. By blending modern design elements, I achieved a fresh look while staying true to Spotify's recognizable color palette and branding.",
       },
       {
         title: "Testing, Improving",
-        description: "Right now, I'm trying out the app with friends and at parties, getting their thoughts and feedback. They're helping me see what works and what needs tweaking, like how well the recommendation system is doing. So far, the app has been very useful, and I plan to make iterative improvements as time goes on!"
-      }
-    ]
+        description:
+          "Right now, I'm trying out the app with friends and at parties, getting their thoughts and feedback. They're helping me see what works and what needs tweaking, like how well the recommendation system is doing. So far, the app has been very useful, and I plan to make iterative improvements as time goes on!",
+      },
+    ],
   },
 
   whatCares: {
-    date: "JULY 2023 - CURRENT",
-    skills: ["React", "TailwindCSS"],
+    date: "JULY 2023 - AUG 2024",
+    skills: ["ReactJS", "TailwindCSS"],
     desc: "I am currently developing an informative website for WhatCares, which stands for World Health Access Team, a nonprofit organization comprising medical professionals actively conducting medical missions worldwide. The primary focus of this ongoing project is to create a website specifically tailored to engage potential donors and supporters. The site is not deployed as of yet, but soon check again soon!",
     title: "Freelance Website Developer",
-    company: "WHAT Cares"
-    
+    company: "WHAT Cares",
   },
   gdim: {
     date: "FEB 2023 - JUN 2023",
     skills: ["HTML", "CSS", "Figma"],
-    desc: "In my current role as a Website Design Intern for UCI's Game Development & Interactive Media program, I collaborate closely with esteemed faculty members -- tasked with crafting user-friendly informational user interfaces and developing websites tailored to convey class-related information and a website to showcase student-made games.",
-    title: "Website Design Intern | UCI GDIM",
+    desc: "In my role as a Website Design Intern for UCI's Game Development & Interactive Media program, I collaborate closely with esteemed faculty members -- tasked with crafting user-friendly informational user interfaces and developing websites tailored to convey class-related information and a website to showcase student-made games.",
+    title: "Website Design Intern",
     company: "UCI Game Design & Interactive Media",
     details: [
       {
-        image:  require("../assets/thumbnails/GDC-Flyer.png"),
-        title: "What I do",
-        description: "In my work, I collaborate with faculty to discuss tasks and projects, incorporating design feedback and iterating on designs as needed. For instance, I created a flyer in Figma for the Game Developer's Conference 2023 to boost awareness of the GDIM (Game Development & Interactive Media) major. ",
+        image: require("../assets/thumbnails/GDC-Flyer.png"),
+        title: "",
+        description:
+          "In my work, I collaborate with faculty to discuss tasks and projects, incorporating design feedback and iterating on designs as needed. For instance, I created a flyer in Figma for the Game Developer's Conference 2023 to boost awareness of the GDIM (Game Development & Interactive Media) major. I also create HTML and CSS syllabus websites when needed",
+      },
+    ],
+  },
+  sharpify: {
+    imgURL: require("../assets/thumbnails/sharpifyIcon.svg").default,
+    date: "AUG 2024 - PRESENT",
+    skills: ["ReactJS", "Python", "FastAPI", "PostgreSQL", "TailwindCSS"],
+    desc: "Sharpify is a financial tech startup, which provides a secure platform for users to make predictions on stocks and cryptos, which are then validated, scored by accuracy, and ranked. I developed and implemented multiple core backend and frontend features, working closely with the CEO and a small team of engineers to create a secure, reliable, and user-friendly platform.",
+    title: "Full Stack Engineer Intern",
+    company: "SharpifyAI",
+    buttons: [
+      {
+        label: "Sharpify.AI",
+        url: "https://sharpify.ai/",
+      },
+    ],
+    details: [
+      {
+        title: "Responsibilities [More info soon ...] ",
       },
       {
-        description: "I also create HTML and CSS syllabus websites on demand. Currently, I'm working with faculty to develop a website showcasing select student projects.",
-      }
+        title: "Implementing a sophisticated ranking algorithm",
+        detail: "",
+      },
+      {
+        title: "Creating a compelling landing page",
+        detail: "",
+      },
+      {
+        title: "Jira, Agile, Pitching ideas",
+        detail: "",
+      },
+      {
+        title: "QA Testing and resolving bugs",
+        detail: "",
+      },
     ],
-  }
+  },
 };
-
 
 export default projects;

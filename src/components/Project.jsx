@@ -44,7 +44,7 @@ function Detail(detail) {
             className=" rounded-md object-cover w-[50%] md:w-[40%] lg:w-[35%] xl:w-[30%] float-left mx-4 mb-2"
           ></video>
         )}
-        <div className="text-left indent-8">{detail?.description}</div>
+        <div className="text-left">{detail?.description}</div>
       </div>
     </div>
   );
@@ -52,19 +52,20 @@ function Detail(detail) {
 
 const Project = (props) => {
   const project = props.project;
-  const color = props.color;
+  const className = props.className;
   const [showingDetails, setShowingDetails] = useState(false);
   return (
     <div
       className={
         "mx-[10%] mb-[10%] rounded-md border-white p-6 backdrop-blur-sm drop-shadow-2xl" +
-        color
+        " " +
+        className
       }
       id={project.title}
     >
       <div className="flex flex-col md:flex-row justify-between">
         {project.imgURL && (
-          <div className="shrink-0 grow-1 flex flex-col w-[100%] md:w-[30%] m-2 place-self-center duration-300  relative bottom-0 hover:bottom-4 hover:shadow-2xl border-2 border-transparent hover:border-white rounded-md">
+          <div className="shrink-0 grow-1 flex flex-col w-[100%] md:w-[30%] m-2 place-self-center duration-300  relative   border-2 border-transparent rounded-md hover:scale-105">
             <img
               src={project.imgURL}
               className="h-auto w-[320px] rounded-md place-self-center aspect-square object-cover shadow-inner"
@@ -77,7 +78,7 @@ const Project = (props) => {
             loop
             autoPlay
             muted
-            className="h-auto w-[320px] rounded-md place-self-center aspect-square object-cover shadow-inner duration-300  mb-6 relative bottom-0 hover:bottom-4  hover:shadow-2xl border-2 border-transparent hover:border-white"
+            className="h-auto w-[320px] rounded-md place-self-center aspect-square object-cover shadow-inner duration-300  mb-6 relative  hover:shadow-2xl hover:scale-105 border-2 border-transparent hover:border-white"
           >
             <source src={project.vidURL} type="video/mp4"></source>
           </video>
@@ -107,11 +108,8 @@ const Project = (props) => {
                 Roles: {project.roles}
               </p>
             </div>
-            <p className=" text-gray-300 text-left indent-8 mt-6">
-              {project.desc}
-            </p>
+            <p className=" text-gray-300 text-left  mt-6">{project.desc}</p>
             {project.details && (
-    
               <Link
                 to={showingDetails ? project.title : project.title + "details"}
                 spy={true}
@@ -164,20 +162,20 @@ const Project = (props) => {
           <div key={detail.title}>{Detail(detail)}</div>
         ))}
         <div className=" w-full clear-both">
-        <Link
-          to={project.title}
-          spy={true}
-          smooth={true}
-          offset={-90}
-          duration={500}
-        >
-          <button
-            onClick={() => setShowingDetails(!showingDetails)}
-            className="clear-both rounded-md text-xl px-4 py-4 mx-4  my-2 text-center border-2  text-white font-semibold hover:bg-white hover:text-slate-900 md:duration-300"
+          <Link
+            to={project.title}
+            spy={true}
+            smooth={true}
+            offset={-90}
+            duration={500}
           >
-            MINIMIZE ▲
-          </button>
-        </Link>
+            <button
+              onClick={() => setShowingDetails(!showingDetails)}
+              className="clear-both rounded-md text-xl px-4 py-4 mx-4  my-2 text-center border-2  text-white font-semibold hover:bg-white hover:text-slate-900 md:duration-300"
+            >
+              MINIMIZE ▲
+            </button>
+          </Link>
         </div>
       </div>
     </div>

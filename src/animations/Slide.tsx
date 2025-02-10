@@ -14,7 +14,7 @@ export const Slide = ({
   y = 0,
 }: Props) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false });
+  const isInView = useInView(ref, { once: true });
 
   const mainControls = useAnimation();
 

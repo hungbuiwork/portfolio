@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 import { Slide } from "../animations/Slide.tsx";
 
-export const About = (props) => {
+const About = (props) => {
   return (
     <div id="about" className=" mx-20">
       <hr className="border-gray-800"></hr>
@@ -13,7 +13,7 @@ export const About = (props) => {
         <div className="flex flex-col md:flex-row">
           <Slide x={0} y={200}>
             <div className=" text-white text-xl text-left ml-[10%] mr-[5%] w-[80%] md:w-[40%] md:max-w-[50%]">
-              <div className="mx-auto w-48 h-48 me rounded-full bg-cover mb-6 hover:w-52 hover:h-52 hover:shadow-xl duration-300"></div>
+              <div className="mx-auto w-64 h-80 me  bg-cover mb-6 hover:scale-110 duration-300"></div>
               <p>
                 <span className="text-2xl md:text-3xl font-extrabold text-rose-500">
                   University of California, Irvine
@@ -21,7 +21,7 @@ export const About = (props) => {
                 <br></br>
                 Computer Science (B.S.) & Computer Game Science (B.S.)<br></br>
                 <br></br>
-                <span className=" font-bold  text-rose-500">GPA: 3.97</span>
+                <span className=" font-bold  text-rose-500">GPA: 3.94</span>
                 <br></br>
                 Sep 2020 - <span>Jun 2024</span>
                 <br></br>
@@ -44,13 +44,13 @@ export const About = (props) => {
             <Slide>
               <h1 className=" text-2xl text-white">Who am I?</h1>
               <p className=" indent-8">
-                I am a fourth-year student at the University of California,
-                Irvine. I'm passionate about creation, whether through art,
-                programming, or other means. I channel this passion into
-                font-end development and game development. I am a
-                detail-oriented programmer, with several collaborative
-                experiences, with a focus on writing well-structured code and
-                visually appealing user interfaces.
+                I am recent graduate from the University of California, Irvine.
+                I'm passionate about creation, whether through art, programming,
+                or other means. I channel this passion into front-end
+                development and game development. I am a detail-oriented
+                programmer, with several collaborative experiences, with a focus
+                on writing well-structured code and visually appealing user
+                interfaces.
               </p>
               <h1 className=" text-2xl text-white mt-8">What's the goal?</h1>
               {props.mode == 1 && (
@@ -93,13 +93,12 @@ export const About = (props) => {
                 </p>
               )}
 
-              <h1 className=" text-2xl text-white mt-8">Working with me, you'll notice </h1>
-              <p> - My passion for exploring & learning new things
-              </p>
-              <p> - Strong interdisciplinary skills & versatility
-              </p>
-              <p> - Quality in design & implementation of code
-              </p>
+              <h1 className=" text-2xl text-white mt-8">
+                Working with me, you'll notice{" "}
+              </h1>
+              <p> - My passion for exploring & learning new things</p>
+              <p> - Strong interdisciplinary skills & versatility</p>
+              <p> - Quality in design & implementation of code</p>
 
               <h1 className=" text-2xl text-white mt-8">
                 What are my interests outside of work?
@@ -122,14 +121,11 @@ export const About = (props) => {
               smooth={true}
               offset={0}
               duration={500}
-            >
-              <li className=" w-auto mt-5 center inline-block list-none  hover:rounded-tr-none text-center py-2 px-4 text-white bg-rose-600/80 rounded-md m-auto hover:bg-white hover:text-rose-600 duration-300">
-                To my contact page
-              </li>
-            </Link>
+            ></Link>
           </div>
         </div>
       </div>
     </div>
   );
 };
+export default About;
