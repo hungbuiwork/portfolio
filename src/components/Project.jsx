@@ -24,7 +24,7 @@ function Button(button) {
 function Detail(detail) {
   return (
     <div className="mb-10 clear-both md:text-lg">
-      <h1 className="font-bold text-xl mb-4">{detail?.title}</h1>
+      <h1 className="font-bold text-xl mb-4 text-left">{detail?.title}</h1>
       <div className=" text-gray-300">
         <img
           src={detail?.image}
@@ -44,7 +44,7 @@ function Detail(detail) {
             className=" rounded-md object-cover w-[50%] md:w-[40%] lg:w-[35%] xl:w-[30%] float-left mx-4 mb-2"
           ></video>
         )}
-        <div className="text-left">{detail?.description}</div>
+        <div className="text-left pl-8">{detail?.description}</div>
       </div>
     </div>
   );
@@ -57,7 +57,7 @@ const Project = (props) => {
   return (
     <div
       className={
-        "mx-[10%] mb-[10%] rounded-md border-white p-6 backdrop-blur-sm drop-shadow-2xl" +
+        "mx-8 lg:mx-[10%] mb-8  rounded-md px-0 py-4  lg:p-6 border-none  drop-shadow-2xl" +
         " " +
         className
       }
@@ -88,7 +88,7 @@ const Project = (props) => {
             <div>
               <h1 className="text-white text-4xl font-bold">{project.title}</h1>
               {project.company && (
-                <h2 className=" text-white/90 text-lg">
+                <h2 className=" text-Mwhite/90 text-lg">
                   at <span className=" italic ">{project.company}</span>
                 </h2>
               )}
@@ -118,10 +118,9 @@ const Project = (props) => {
                 duration={500}
               >
                 <button
-                  className={
-                    "rounded-md text-xl px-4 py-4 mx-4  my-4 text-center border-2  text-white font-semibold hover:bg-white hover:text-slate-900 md:duration-300 relative top-0 " +
-                    " md:hover:top-2"
-                  }
+                  className={` ${
+                    showingDetails ? "hidden" : ""
+                  } rounded-md text-xl px-4 py-4  my-4 text-center border-2  text-white font-semibold hover:bg-white hover:text-slate-900 md:duration-300 relative top-0  md:hover:top-2`}
                   onClick={() => setShowingDetails(!showingDetails)}
                 >
                   {showingDetails ? "MINIMIZE ▲" : "MORE INFO ▼"}
@@ -136,32 +135,29 @@ const Project = (props) => {
         id={project.title + "details"}
         className={
           (showingDetails
-            ? "text-white text-center h-auto opacity-100 rounded-lg p-4 bg-gradient-to-b from-gray-900/[0.7] to-transparent"
+            ? "text-white  mt-8 text-center h-auto opacity-100 rounded-lg p-4 bg-gradient-to-b from-black to-slate-900/50 pt-12"
             : "opacity-0 h-0 overflow-hidden") + ""
         }
       >
-        <div className="mb-8">
-          <h1 className=" font-extrabold text-2xl">{`"${project.title}"`}</h1>
-          {project.company && (
-            <h2 className=" text-white/90 text-lg">
-              at <span className=" italic ">{project.company}</span>
-            </h2>
+        <div className=" w-[min(80vw,800px)] mx-auto">
+          {project.buttons && (
+            <div className="flex flex-wrap   mb-8">
+              {project.buttons?.map((button, i) => (
+                <a
+                  className="text-black bg-white py-4 px-6 rounded-xl hover:bg-transparent border-2 transition-all duration-300 hover:text-white rounded-tr-none font-bold text-2xl"
+                  target="blank"
+                  href={button.url}
+                >
+                  {button.label}
+                </a>
+              ))}
+            </div>
           )}
-          <h2
-            className={!project.size ? "hidden" : ""}
-          >{`Team size: ${project.size}`}</h2>
-          <h2 className={project.size ? "hidden" : ""}>Solo</h2>
+          {project?.details?.map((detail) => (
+            <div key={detail.title}>{Detail(detail)}</div>
+          ))}
         </div>
-        {project.buttons && (
-          <div className="flex flex-wrap place-content-center mb-8">
-            {project.buttons?.map((button, i) => Button(button))}
-          </div>
-        )}
-
-        {project?.details?.map((detail) => (
-          <div key={detail.title}>{Detail(detail)}</div>
-        ))}
-        <div className=" w-full clear-both">
+        <div className=" w-full clear-both  flex">
           <Link
             to={project.title}
             spy={true}

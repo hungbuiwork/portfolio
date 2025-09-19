@@ -452,6 +452,53 @@ const projects = {
       },
     ],
   },
+  kernvascular: {
+    date: "JAN 2024 - MAY 2025",
+    skills: [
+      "NextJS",
+      "Typescript",
+      "PostgreSQL",
+      "TailwindCSS",
+      "OpenAI GPT API",
+      "Microsoft Azure Cognitive Services (Speech)",
+    ],
+    desc: "At Kern Vascular, I worked as a Software Engineer focused on AI integrations, building custom tools to optimize clinical workflows. My role blended IT and full-stack development, identifying inefficiencies in patient care and office operations, then delivering solutions that improved both staff efficiency and patient satisfaction.",
+    title: "Software Engineer – AI Integrations (Contract)",
+    company: "Kern Vascular",
+    buttons: [
+      {
+        label: "Company Website",
+        url: "https://kernvascular.com/", // replace with actual if different
+      },
+    ],
+    details: [
+      {
+        title: "Responsibilities",
+        description:
+          "Worked directly with clinicians and staff to identify bottlenecks and iteratively build solutions for real-world effectiveness.",
+      },
+      {
+        title: "AI-Powered Clinical Documentation",
+        description:
+          "Developed a full-stack application that listens to doctor–patient interactions, auto-generates documentation, proposes differential diagnoses, and suggests follow-up questions.",
+      },
+      {
+        title: "Patient Queue Coordination",
+        description:
+          "Built a cross-team patient queue service that improved collaboration, reduced wait times, and enhanced patient satisfaction.",
+      },
+      {
+        title: "Phone System Redesign",
+        description:
+          "Triaged, re-engineered, and fixed the office phone system to resolve accessibility issues and significantly improve call handling rates.",
+      },
+      {
+        title: "Agile Development & QA",
+        description:
+          "Collaborated in an iterative workflow, shadowing patient interactions, testing features, and refining tools to meet operational needs.",
+      },
+    ],
+  },
 };
 
 export default projects;

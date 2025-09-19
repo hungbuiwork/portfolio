@@ -17,7 +17,7 @@ const Home = (props) => {
     >
       <div id="top" className=" z-50"></div>
       {/*Landing Section*/}
-      <div id="home" className="relative bottom-6"></div>
+      {/* <div id="home" className="relative bottom-6"></div>
       <div className="mx-full px-2 flex flex-col justify-center h-[100%] bg-cover sporo">
         {false && (
           <div className=" absolute  z-0 right-[10%] bottom-[10%] w-[40vw] h-[40vw]  md:w-[30vw] md:h-[30vw] lg:w-[25vw] lg:h-[25vw] lg:right-[20%] me rounded-lg bg-cover  duration-300"></div>
@@ -74,8 +74,8 @@ const Home = (props) => {
             )}
           </div>
         </div>
-      </div>
-      <div className=" z-0 fixed text-white text-[20rem] top-[50%] right-[50%]"></div>
+      </div> */}
+      <div className=" h-24"></div>
 
       <Suspense fallback={<div></div>}>
         <div className=" z-10">

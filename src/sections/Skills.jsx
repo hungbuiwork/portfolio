@@ -8,16 +8,16 @@ const Skills = () => {
       <h1 className="text-white text-center font-bold text-6xl underline decoration-violet-600 mt-8 ">
         Skills
       </h1>
-      <h2 className="text-gray-300 text-center mx-[10%] text-xl mt-4 mb-8">
+      <h2 className="text-gray-300 text-center mx-[10%] text-lg mt-4 mb-8">
         These are some skills I've cultivated throughout my experiences in
         software. <br></br>
         <span className="badge badge-success"></span> = more experienced in
       </h2>
       <div className="flex justify-center">
         <Slide x={0} y={200} className="m-auto">
-          <div className="skills flex justify-evenly sm:text-sm md:text-xl">
+          <div className="skills  flex justify-evenly sm:text-sm md:text-xl">
             <div className="flex flex-col">
-              <h1>Languages</h1>
+              <h1 className=" leading-loose">Languages</h1>
               <div className="flex flex-wrap justify-center">
                 <Skill
                   name="Python"
@@ -27,11 +27,6 @@ const Skills = () => {
                 <Skill
                   name="C#"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
-                  mark="T"
-                ></Skill>
-                <Skill
-                  name="C++"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
                   mark="T"
                 ></Skill>
                 <Skill
@@ -50,20 +45,31 @@ const Skills = () => {
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                 ></Skill>
                 <Skill
-                  name="MySQL"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
+                  name="Typescript"
+                  mark="T"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
                 ></Skill>
-                <Skill name="HLSL"></Skill>
+                <Skill
+                  name="C++"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                  mark=""
+                ></Skill>
               </div>
             </div>
             <div className="flex flex-col">
-              <h1>Frameworks</h1>
+              <h1 className=" leading-loose">Frameworks</h1>
               <div className="flex flex-wrap j justify-center mx-4">
                 <Skill
                   name="React"
                   mark="T"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                 ></Skill>
+                <Skill
+                  name="NextJS"
+                  mark="T"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+                ></Skill>
+
                 <Skill
                   name="AngularJS"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
@@ -78,7 +84,7 @@ const Skills = () => {
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg"
                 ></Skill>
               </div>
-              <h1>Game Engines</h1>
+              <h1 className=" leading-loose">Game Engines</h1>
               <div className="flex flex-wrap j justify-center mx-4">
                 <Skill
                   name="Unity"
@@ -94,7 +100,7 @@ const Skills = () => {
               </div>
             </div>
             <div className="flex flex-col">
-              <h1>Other</h1>
+              <h1 className=" leading-loose">Other</h1>
               <div className="flex flex-wrap j justify-center mx-4">
                 <Skill
                   name="Git"
@@ -107,7 +113,12 @@ const Skills = () => {
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg"
                 ></Skill>
                 <Skill
+                  name="Jira"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original-wordmark.svg"
+                ></Skill>
+                <Skill
                   name="Trello"
+                  mark="T"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain-wordmark.svg"
                 ></Skill>
                 <Skill
