@@ -1,9 +1,10 @@
 import allProjects from "./allproject_data";
 
 const experience = [
+  allProjects.everlaw,
   allProjects.kernvascular,
   allProjects.sharpify,
-  allProjects.whatCares,
+  // allProjects.whatCares,
   allProjects.patientZero,
   allProjects.gdim,
 ];

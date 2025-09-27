@@ -6,6 +6,10 @@ const projects = {
     skills: ["Unity", "C#"],
     desc: "Customizable, procedurally generated trees generated from simple rules using Lindenburg Systems. Implemented from scratch in Unity and C#.",
     title: "Procedural Tree Generator",
+    media: [
+      require("../assets/thumbnails/proceduraltree2.png"),
+      require("../assets/thumbnails/Proceduraltreedemo.mp4"),
+    ],
     details: [
       {
         title: "Read the Dev Process",
@@ -13,13 +17,11 @@ const projects = {
           "I strongly recommend reading the Dev Process above! It goes into detail about my workflow throughout the project.",
       },
       {
-        image: require("../assets/thumbnails/proceduraltree2.png"),
         title: "Development",
         description:
           'For a while, I have had a huge affinity for procedural generation. A lot of research went into understanding how L-systems work, which is a commonly used to strategy to visualize procedural plant development, fractals, etc. After researching, I implemented a developer-friendly L-System generator and L-System renderer which I hope to soon publish to the Asset Store. I go into much more detail in the "Development Process" pdf above!',
       },
       {
-        vid: require("../assets/thumbnails/Proceduraltreedemo.mp4"),
         title: "What I learned",
         description:
           "I'm very proud of this projects because I was able to implement this without really looking at any tutorials or code; I purely built this off of research. I became much more familiar with Unity's tools and much more comfortable implementing C#. I refined my probem-solving skills by creating a solution for rendering foliage and animation. ",
@@ -44,6 +46,10 @@ const projects = {
     skills: ["Unity", "Shaderlab", "HSLS"],
     desc: "A toon-shader I've been developing that allows customizability of (color, size, smoothness, intensity) of (shadows, specular light, rim light). This customizability allows the user to blend between realistic/cartoony aesthetics. I hope to use this shader in future projects!",
     title: "Customizable Toon Shader",
+    media: [
+      require("../assets/thumbnails/toonShader_scene.jpeg"),
+      require("../assets/thumbnails/toonShader_house.jpeg"),
+    ],
     details: [
       {
         title: "Read the Dev Process",
@@ -51,13 +57,11 @@ const projects = {
           "I strongly recommend reading the Dev Process above! It goes into detail about my workflow throughout the project.",
       },
       {
-        image: require("../assets/thumbnails/toonShader_scene.jpeg"),
         title: "Background",
         description:
           "The end of fall quarter 2023 is nearing, and the final for my Introduction to Computer Graphics is very open-ended -- we were asked to create something in any field of graphics! So, I decided for my project that I wanted to expand on what I learned about vertex and fragment shading! I have a love for cartoon styled graphics, and make games, so why not make a shader which does just that?",
       },
       {
-        image: require("../assets/thumbnails/toonShader_house.jpeg"),
         title: "Development",
         description:
           'I implemented diffuse shading, specular light, rim light, outlines, and shadowmapping. I took a very iterative approach, sitting down and taking time to REALLY understand the techniques behind how these affects are attained. I go into much more detail in the "Development Process" pdf above!',
@@ -85,15 +89,17 @@ const projects = {
     skills: ["Unity", "C#"],
     desc: "A music-themed top-down shooter/dungeon exploration video game that I created with UCI's Video Game Development Club. For this project, I developed the procedurally generated dungeon and enemy AI scripts with a focus on maintainability, modularity, and reusability. I played a pivotal role bridging the gap between programming, art, and sound to ensure the creation of an enjoyable, visually appealing, and cohesive gaming experience!",
     title: "Musical Madness",
+    media: [
+      require("../assets/thumbnails/musicalmadness2.mp4"),
+      require("../assets/thumbnails/musicalMadness_map.jpeg"),
+    ],
     details: [
       {
-        vid: require("../assets/thumbnails/musicalmadness2.mp4"),
         description:
           "After being part of several videogame projects in the past, I figured that I developed enough skills and understanding of the game development workflow. So, at the beginning of the spring quarter of 2022, my roommate and I ventured on a journey to pitch our own game to the Video Game Development Club. Inspired by other dungeon crawlers such as Binding of Isaac, I wanted the game to be thrilling, aesthetic, and to keep the gameplay fun and interesting! Also, I wanted to explore procedural generation, which has always intrigued me. So, I along with my roommate took on the challenge of leading the production of Musical Madness!",
         title: "Background",
       },
       {
-        image: require("../assets/thumbnails/musicalMadness_map.jpeg"),
         description:
           "This project focused on creating efficient, well-structured code. After completing relevant courses on software design and algorithms, we applied our knowledge. When designing our procedural generation system, my roommate and I took a careful, iterative approach. We used diagrams, pseudocode, and troubleshooting to understand and address bugs. Later, we improved our dungeon-building algorithm's memory efficiency by using bitwise operations extensively.",
         title: "Procedural Generation, Enemy AI, and Script Architecture",
@@ -139,6 +145,7 @@ const projects = {
   },
 
   patientZero: {
+    imgURL: require("../assets/thumbnails/hughestmediadesignlabIcon.png"),
     size: 19,
     date: "SEP 2021 - APRIL 2022",
     roles: "Programmer, VFX",
@@ -146,17 +153,19 @@ const projects = {
     desc: 'As a Game Programmer for "Patient Zero," an accredited VR bio-educational puzzle game, I collaborate with a skilled team of programmers, artists, writers, and game designers. Our aim is to offer players a captivating sci-fi experience while teaching epidemiology principles. My tasks include fixing UI bugs and implementing essential elements like tooltips and pause menus to enhance the player\'s experience.',
     title: "Game UI Programmer",
     company: "Hughes Media & Design Lab",
+    media: [
+      require("../assets/thumbnails/patientzero.jpeg"),
+      require("../assets/thumbnails/patientZero_tooltip.mp4"),
+    ],
 
     details: [
       {
-        image: require("../assets/thumbnails/patientzero.jpeg"),
         title: "Background",
         description:
           "It was the fall quarter of 2021, my second year at UCI. I saw that Hughes Media & Design Lab was working on a VR research-based project which simulated a lab in which the player must find out what the disease is. After an interview, I was lucky enough to be able to join the team!",
       },
       {
         title: "What I implemented",
-        vid: require("../assets/thumbnails/patientZero_tooltip.mp4"),
         description: (
           <div className=" flex flex-col gap-8">
             <p>
@@ -195,9 +204,9 @@ const projects = {
     skills: ["AngularJS", "Javascript"],
     desc: "A joke browser I created that displays funny program jokes from JokeAPI, exploring an alternative form of interaction using HandTrackjs. Simply using your camera and hands, you can control the generation, viewing, and favoriting of jokes! Check it out!",
     title: "Joke Browser & Alternative Interaction",
+    media: [require("../assets/thumbnails/jokeBrowser_ui.jpeg")],
     details: [
       {
-        image: require("../assets/thumbnails/jokeBrowser_ui.jpeg"),
         title: "A bit more",
         description:
           'This project marked one of my final assignments in the User Interaction course. It was a highly flexible task, so I decided to develop a web application for browsing jokes. I designed this app using Angular, incorporating a service to fetch jokes from JokeAPI and integrating HandTrackJS for an interactive experience. Users could simply relax, activate their camera, and explore programming jokes. My primary goal was to craft an aesthetically pleasing and user-friendly interface, along with intuitive hand controls. Although the web app is more suitable for non-mobile browsers, you can still give it a try by clicking the "Demo" button above!',
@@ -222,9 +231,9 @@ const projects = {
     skills: ["Unity", "C#"],
     desc: "Arriving as a freshman college student, you are excited to start the program of your dreams entering the Game Development Major and the Video Game Development Club.",
     title: "Zot Dev",
+    media: [require("../assets/thumbnails/zotdev_sleep.png")],
     details: [
       {
-        image: require("../assets/thumbnails/zotdev_sleep.png"),
         title: "To Do",
         description: "in progress...",
       },
@@ -248,9 +257,9 @@ const projects = {
     skills: ["React", "TailwindCSS", "Javascript"],
     desc: "A portfolio website, where I showcase my projects, and art! Developed by myself from scratch over winter break. I learned a lot about react, and responsive design!",
     title: "This Website !",
+    media: [require("../assets/thumbnails/website.gif")],
     details: [
       {
-        image: require("../assets/thumbnails/website.gif"),
         title: "Why am I doing this?",
         description:
           "I am programming this from scratch. No templates -- just the ReactJS framework, the TailwindCSS framework, and my two hands. I had some extra time this winter break so I decided to redo my portfolio again. My first portfolio was on Adobe Portfolio. My second was plain HTML, and CSS. Though the customizability of plain HTML and CSS was nice, adding new stuff was just repetitive, ugly, and became increasingly harder to read. I wanted to create components that I could customize, and reuse.",
@@ -277,7 +286,7 @@ const projects = {
     title: "UCI Capstone Archive v1",
     desc: "New archival system for UCI Capstone Projects built from scratch, with upload, display, and search features, geared towards attracting to UCI's Capstone program.  UCI faculty assigned us this project and is to be worked on by future students to implement into the official UCI website.",
     vidURL: require("../assets/thumbnails/capstoneArchive.mp4"),
-    company: "UCI Informatics Dpt.",
+    company: "UCI Informatics Department",
     details: [
       {
         title: "Backlog Creation & Planning",
@@ -325,27 +334,29 @@ const projects = {
     title: "Wartorn",
     size: 19,
     desc: "A 3D narrative game where players take on the role of a young girl navigating the aftermath of a war attack. Through the use of lighting, visual effects, and dialogue, our game tells a story that explores themes of early maturing.",
+    media: [
+      require("../assets/thumbnails/WartornShader.mp4"),
+      require("../assets/thumbnails/WartornShader2.png"),
+      require("../assets/thumbnails/Wartorn1.png"),
+      require("../assets/thumbnails/WartornLead.png"),
+    ],
     details: [
       {
         title: "Material Shaders",
-        vid: require("../assets/thumbnails/WartornShader.mp4"),
         description:
           "I created, in Unreal's Material's Editor, a custom material shader that blends toon-shading with the default texture, with parameters to adjust over blending, shadow and highlight color, as well as some degree of atmospheric fog. These gave me a lot of control over the color scheme and atmosphere created in each level. By adjusting these levels, I was able to start with a more colorful, warm, cheerful aesthetic that became darker, and more realistic as time continue -- reflecting the game theme of early maturation and perception.",
       },
       {
         description:
           "I also created a fog shader, with parameters to adjust strength, color, which combined with noise, was able to achieve some movement that felt natural and realistic. I used the fog shader in vastly different ways -- to conceal forbidden areas/out-of-bounds, to fake god rays and dust, and to convey air pollution post-attack.",
-        image: require("../assets/thumbnails/WartornShader2.png"),
       },
       {
         description:
           "With a mix of my shaders, and tweaking Unreal's built-in postprocessing pipeline, I adjusted levels and lighting to convey the feeling that the MC was supposed to feel. I utilized the contrast between cool/warm colors to convey safety and danger, darkness to convey loneliness, and saturation to convey homeliness. ",
         title: "Postprocessing",
-        image: require("../assets/thumbnails/Wartorn1.png"),
       },
       {
         title: "Leading the art team",
-        image: require("../assets/thumbnails/WartornLead.png"),
         description:
           "Apart from my contributions directly into the game, I led a 4-person art department, utilizing Jira and google spreadsheets to assign and track progress of each for each sprint (we used an Agile approach). I acted as a quality check to all the art imported. One thing I learned leading a department, is that establishing a consistent and concise workflow makes work so much more efficient, so I established a document with the producer during the second half of production that streamlined everyone's workflow. Proud of the outcome!",
       },
@@ -396,21 +407,23 @@ const projects = {
   },
 
   whatCares: {
+    image: require("../assets/thumbnails/logo.ico"),
     date: "JULY 2023 - AUG 2024",
     skills: ["ReactJS", "TailwindCSS"],
     desc: "I am currently developing an informative website for WhatCares, which stands for World Health Access Team, a nonprofit organization comprising medical professionals actively conducting medical missions worldwide. The primary focus of this ongoing project is to create a website specifically tailored to engage potential donors and supporters. The site is not deployed as of yet, but soon check again soon!",
     title: "Freelance Website Developer",
-    company: "WHAT Cares",
+    company: "WhatCares nonprofit",
   },
   gdim: {
+    imgURL: require("../assets/thumbnails/gdim.jpeg"),
     date: "FEB 2023 - JUN 2023",
     skills: ["HTML", "CSS", "Figma"],
     desc: "In my role as a Website Design Intern for UCI's Game Development & Interactive Media program, I collaborate closely with esteemed faculty members -- tasked with crafting user-friendly informational user interfaces and developing websites tailored to convey class-related information and a website to showcase student-made games.",
     title: "Website Design Intern",
     company: "UCI Game Design & Interactive Media",
+    media: [require("../assets/thumbnails/GDC-Flyer.png")],
     details: [
       {
-        image: require("../assets/thumbnails/GDC-Flyer.png"),
         title: "",
         description:
           "In my work, I collaborate with faculty to discuss tasks and projects, incorporating design feedback and iterating on designs as needed. For instance, I created a flyer in Figma for the Game Developer's Conference 2023 to boost awareness of the GDIM (Game Development & Interactive Media) major. I also create HTML and CSS syllabus websites when needed",
@@ -419,6 +432,7 @@ const projects = {
   },
   sharpify: {
     imgURL: require("../assets/thumbnails/sharpifyIcon.svg").default,
+    company: "Sharpify.AI",
     date: "AUG 2024 - PRESENT",
     skills: ["ReactJS", "Python", "FastAPI", "PostgreSQL", "TailwindCSS"],
     desc: "Sharpify is a financial tech startup, which provides a secure platform for users to make predictions on stocks and cryptos, which are then validated, scored by accuracy, and ranked. I developed and implemented multiple core backend and frontend features, working closely with the CEO and a small team of engineers to create a secure, reliable, and user-friendly platform.",
@@ -430,30 +444,11 @@ const projects = {
         url: "https://sharpify.ai/",
       },
     ],
-    details: [
-      {
-        title: "Responsibilities [More info soon ...] ",
-      },
-      {
-        title: "Implementing a sophisticated ranking algorithm",
-        detail: "",
-      },
-      {
-        title: "Creating a compelling landing page",
-        detail: "",
-      },
-      {
-        title: "Jira, Agile, Pitching ideas",
-        detail: "",
-      },
-      {
-        title: "QA Testing and resolving bugs",
-        detail: "",
-      },
-    ],
   },
   kernvascular: {
-    date: "JAN 2024 - MAY 2025",
+    imgURL: require("../assets/thumbnails/kernvascularIcon.png"),
+    date: "MAY 2025 - SEP 2025",
+    company: "Kern Vascular Center",
     skills: [
       "NextJS",
       "Typescript",
@@ -470,6 +465,16 @@ const projects = {
         label: "Company Website",
         url: "https://kernvascular.com/", // replace with actual if different
       },
+      {
+        label: "AI Scribe",
+        url: "https://hbai-scribe.vercel.app/about",
+      },
+    ],
+    media: [
+      require("../assets/thumbnails/scribe/Dictate.webm"),
+      require("../assets/thumbnails/scribe/Generate.webm"),
+      require("../assets/thumbnails/scribe/Diagnosis.webm"),
+      require("../assets/thumbnails/patientQueue.png"),
     ],
     details: [
       {
@@ -498,6 +503,14 @@ const projects = {
           "Collaborated in an iterative workflow, shadowing patient interactions, testing features, and refining tools to meet operational needs.",
       },
     ],
+  },
+  everlaw: {
+    imgURL: require("../assets/thumbnails/everlaw.jpg"),
+    date: "SEP 2025 - PRESENT",
+    skills: ["ReactJS", "TailwindCSS"],
+    desc: "My current job! Full stack engineering building eDiscovery tools for legal teams. Working closely with product managers and designers to build features that help lawyers do their jobs more efficiently.",
+    title: "Software Engineer ",
+    company: "Everlaw - Oakland Office",
   },
 };
 

@@ -2,11 +2,12 @@ import projects from "./allproject_data";
 
 export const allProjects = [
   projects.Partyify,
-  projects.wartorn,
+
   projects.procedurallyGeneratedTrees,
   projects.capstoneArchive,
   projects.musicalMadness,
   projects.toonShader,
+  projects.wartorn,
   projects.jokeBrowser,
   projects.zotDev,
   projects.thisWebsite,
