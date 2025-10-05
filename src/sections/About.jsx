@@ -4,16 +4,13 @@ import { Slide } from "../animations/Slide.tsx";
 
 const About = (props) => {
   return (
-    <div id="about" className=" mx-20">
+    <div id="about" className=" w-[min(90vw,1200px)] mx-auto">
       <hr className="border-gray-800"></hr>
       <div className=" mr-2  mt-16">
-        <h1 className="text-white decoration-rose-500 underline font-extrabold text-6xl text-center mb-8 underline-offset-2">
-          About Me
-        </h1>
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col md:flex-row gap-4">
           <Slide x={0} y={200}>
-            <div className=" text-white text-xl text-left ml-[10%] mr-[5%] w-[80%] md:w-[40%] md:max-w-[50%]">
-              <div className="mx-auto w-64 h-80 me  bg-cover mb-6 hover:scale-110 duration-300"></div>
+            <div className=" text-white bg-pink-600/10 border-pink-900 text-left border-2 p-4 rounded-l-lg">
+              <div className="mx-auto w-full rounded-lg  h-80 me  bg-cover mb-6 hover:scale-110 duration-300"></div>
               <p>
                 <span className="text-2xl md:text-3xl font-extrabold text-rose-500">
                   University of California, Irvine
@@ -42,76 +39,48 @@ const About = (props) => {
           </Slide>
           <div className="text-gray-400 mr-[5%] text-xl place-self-center mb-16 drop-shadow-2xl w-[80%] md:w-[90%]">
             <Slide>
+              <h1 className="text-white decoration-rose-500 underline font-extrabold text-6xl  mb-8 underline-offset-2">
+                About Me
+              </h1>
               <h1 className=" text-2xl text-white">Who am I?</h1>
               <p className=" indent-8">
-                I am recent graduate from the University of California, Irvine.
-                I'm passionate about creation, whether through art, programming,
-                or other means. I channel this passion into front-end
-                development and game development. I am a detail-oriented
-                programmer, with several collaborative experiences, with a focus
-                on writing well-structured code and visually appealing user
-                interfaces.
+                At my core, I love to create. Whether its through code, art,
+                music, I love to bring ideas to life. I am extremely passionate
+                about creating software that makes an impact in people's lives,
+                whether its through improving productivity, or creating
+                memorable experiences. I thrive in collaborative environments,
+                where I can work with others to achieve common goals and create
+                something truly special.
               </p>
               <h1 className=" text-2xl text-white mt-8">What's the goal?</h1>
-              {props.mode == 1 && (
-                <p className=" indent-8">
-                  Initially, I harbored a strong interest in game development.
-                  However, I have since broadened my focus to encompass web
-                  development, aspiring to become a full-stack developer. I am
-                  deeply passionate about exploring new technologies and
-                  venturing beyond my comfort zone. My primary objective is to
-                  immerse myself in the industry, gaining firsthand experience
-                  and understanding the intricacies of software production
-                  within expansive teams.
-                </p>
-              )}
-              {props.mode == 2 && (
-                <p className=" indent-8">
-                  I have a deep love for game development, and the production
-                  process of a game. As someone who is skilled in both artistic
-                  creations and programming, technical art has been the subfield
-                  of game development that I am most passionate about, where I
-                  can apply my skills the best. My primary objective is to
-                  immerse myself in the industry, gaining firsthand experience
-                  and understanding the intricacies of game development within
-                  expansive teams.
-                </p>
-              )}
-              {props.mode == 0 && (
-                <p>
-                  I harbor a deep love for both software and game development
-                  and the production process behind it. As someone skilled in
-                  both visual design and programming, front-end and full-stack
-                  development as ell as technical art within game development
-                  are two fields of work that resonates most with my passions,
-                  offering me the ideal platform to apply my skills. I am deeply
-                  passionate about exploring new technologies and stepping out
-                  of my comfort zone. My primary objective is to immerse myself
-                  in the industry, gaining firsthand experience and
-                  understanding the intricacies of software or game development
-                  within expansive teams.
-                </p>
-              )}
-
+              <p>
+                My goals as of right now are to learn as much as I can about new
+                technology, and refine my skills as a software engineer. As a
+                software engineer, I am someone who is really process-driven,
+                and loves to learn a large scope of what I am working on --
+                feeling connected to the project, the user, impact, as well as
+                gaining perspective working with different disciplines is what I
+                love about this industry.
+              </p>
               <h1 className=" text-2xl text-white mt-8">
                 Working with me, you'll notice{" "}
               </h1>
-              <p> - My passion for exploring & learning new things</p>
-              <p> - Strong interdisciplinary skills & versatility</p>
-              <p> - Quality in design & implementation of code</p>
-
+              <p> • My passion for exploring & learning new things</p>
+              <p>
+                {" "}
+                • Strong interdisciplinary skills when it comes to engineering
+                as well as design
+              </p>
+              <p> • Strong attention to detail, focusing on code quality </p>
+              <p> • A love to hear new perspectives by collaborating!</p>
               <h1 className=" text-2xl text-white mt-8">
-                What are my interests outside of work?
+                Do I have interests outside of programming?
               </h1>
               <p className=" indent-8">
-                Outside of programming, I love to create digital art and paint.
-                I also have a deep love for singing, and have competing in my
-                collegiate acapella group. I also love growing and collecting
-                tropical plant species. I love to incorporate these things I
-                love: art, music, plants into what I create on my free time,
-                such as in my procedural plant generator in the projects
-                section, as well as the website/social media design in my
-                acapella group!
+                Heck yeah I do! I love to create digital art and paint. I also
+                sing R&B, and was competitively singing throughout college.
+                Also, ask me any questios about plant care, and I got you!
+                Buying and selling plants is my side hustle.
               </p>
             </Slide>
             <Link

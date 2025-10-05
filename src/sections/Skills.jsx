@@ -5,7 +5,7 @@ import { Slide } from "../animations/Slide.tsx";
 const Skills = () => {
   return (
     <div id="skills" className="mb-20">
-      <h1 className="text-white text-center font-bold text-6xl underline decoration-violet-600 mt-8 ">
+      <h1 className="text-white text-center font-bold text-6xl underline decoration-success mt-8 ">
         Skills
       </h1>
       <h2 className="text-gray-300 text-center mx-[10%] text-lg mt-4 mb-8">

@@ -21,7 +21,7 @@ export const ShowProjects = (props) => {
       <div className=" flex justify-center">
         <div className="w-[min(90vw,1200px)] flex flex-col gap-12">
           {projects.slice(0, visibleProjects).map((project) => (
-            <Slide x={200} y={0} key={project.title}>
+            <Slide x={0} y={200} key={project.title}>
               <Project project={project} className={props.className}></Project>
             </Slide>
           ))}

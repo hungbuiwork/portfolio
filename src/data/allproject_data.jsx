@@ -507,7 +507,7 @@ const projects = {
   everlaw: {
     imgURL: require("../assets/thumbnails/everlaw.jpg"),
     date: "SEP 2025 - PRESENT",
-    skills: ["ReactJS", "TailwindCSS"],
+    skills: ["ReactJS", "Typescript", "Java", "AWS"],
     desc: "My current job! Full stack engineering building eDiscovery tools for legal teams. Working closely with product managers and designers to build features that help lawyers do their jobs more efficiently.",
     title: "Software Engineer ",
     company: "Everlaw - Oakland Office",

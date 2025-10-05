@@ -8,12 +8,7 @@ const Artworks = () => {
     <div>
       <div className="pb-16 ">
         <h2 className="text-gray-400 text-center  pt-2 pb-16 mx-[20%] text-xl">
-          My{" "}
-          <span className="text-white font-bold">
-            primary passion is definitely programming
-          </span>
-          , but here is some of the artwork i've made, displayed in a carousel I
-          created from scratch.
+          For example, here is some of the art I've created!
         </h2>
         <div className="px-[0%] md:px-[15%] lg:px=[[20%]">
           <div className="text-white font-bold text-center">

@@ -34,6 +34,10 @@
     text-shadow: 0 0 32px #485bbc, 0 0 16px #8997dc;
   }
 
+  .glass-bento {
+    @apply text-white text-shadow backdrop-blur-xl border-white/80 border-2 bg-white/10;
+  }
+
   .text-shadow-2 {
     text-shadow: 0 0 16px rgb(25, 6, 46);
   }
@@ -99,5 +103,26 @@
     @apply border-t-8 border-l-8 border-r-[12px] border-b-[24px] rounded-lg border-white shadow-2xl;
     transform-style: preserve-3d;
     transform: rotateY(15deg) rotateX(15deg);
+  }
+
+  .fade-edges {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent
+    );
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
   }
 }

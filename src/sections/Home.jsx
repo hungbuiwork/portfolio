@@ -1,5 +1,6 @@
 import React, { Suspense } from "react";
 import { Slide } from "../animations/Slide.tsx";
+import Bento from "./Bento.jsx";
 const Skills = React.lazy(() => import("./Skills"));
 const Experience = React.lazy(() => import("./Experience"));
 const Artworks = React.lazy(() => import("./Artworks"));
@@ -16,6 +17,7 @@ const Home = (props) => {
       className="w-full h-screen bg-gradient-to-t from-[#090b0f] to-[#0e1016]"
     >
       <div id="top" className=" z-50"></div>
+
       {/*Landing Section*/}
       <div id="home" className="relative bottom-6"></div>
       <div className=" px-2 flex flex-col justify-center h-[100%] bg-cover sporo">
@@ -38,6 +40,7 @@ const Home = (props) => {
       </div>
 
       <div className=" h-24"></div>
+      <Bento></Bento>
 
       <Suspense fallback={<div></div>}>
         <div className=" z-10">

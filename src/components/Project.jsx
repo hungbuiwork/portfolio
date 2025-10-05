@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import { Reveal } from "../animations/Reveal.tsx";
 
 function Skill(skill) {
   return (
@@ -66,9 +65,7 @@ const Project = (props) => {
   return (
     <div
       className={
-        "  rounded-md px-0 py-4  lg:p-6 border-none  drop-shadow-2xl" +
-        " " +
-        className
+        "  rounded-md px-0 py-4  lg:p-6  drop-shadow-2xl" + " " + className
       }
       id={project.title}
     >
@@ -86,6 +83,7 @@ const Project = (props) => {
           <video
             loop
             autoPlay
+            playsInline
             muted
             className="h-auto w-[320px] rounded-md place-self-center aspect-square object-cover shadow-inner duration-300  mb-6 relative  hover:shadow-2xl hover:scale-105 border-2 border-transparent hover:border-white"
           >
@@ -93,50 +91,48 @@ const Project = (props) => {
           </video>
         )}
         <div className=" shrink-1 text-center md:text-left flex flex-col justify-evenly mx-8 place-self-center">
-          <Reveal delay={0.25}>
-            <div>
-              <h1 className="text-white text-4xl font-bold">{project.title}</h1>
-              {project.company && (
-                <h2 className=" text-white/90 text-lg">
-                  at <span className=" italic ">{project.company}</span>
-                </h2>
-              )}
-              <div
-                className={
-                  "flex flex-wrap place-content-center md:place-content-start"
-                }
-              >
-                {project.skills.map((skill, i) => (
-                  <div key={i}>{Skill(skill)}</div>
-                ))}
-              </div>
-              <p className={!project.date ? "hidden" : "text-gray-300"}>
-                {project.date}
-              </p>
-              <p className={!project.roles ? "hidden" : "text-gray-300"}>
-                Roles: {project.roles}
-              </p>
-            </div>
-            <p className=" text-gray-300 text-left  mt-6">{project.desc}</p>
-            {project.details && (
-              <Link
-                to={showingDetails ? project.title : project.title + "details"}
-                spy={true}
-                smooth={true}
-                offset={-90}
-                duration={500}
-              >
-                <button
-                  className={` ${
-                    showingDetails ? "hidden" : ""
-                  } rounded-md text-xl px-4 py-4  my-4 text-center border-2  text-white font-semibold hover:bg-white hover:text-slate-900 md:duration-300 relative top-0  md:hover:top-2`}
-                  onClick={() => setShowingDetails(!showingDetails)}
-                >
-                  {showingDetails ? "MINIMIZE ▲" : "MORE INFO ▼"}
-                </button>
-              </Link>
+          <div>
+            {project.company && (
+              <h2 className=" text-white/90 text-lg">
+                <span className=" italic ">{project.company}</span>
+              </h2>
             )}
-          </Reveal>
+            <h1 className="text-white text-4xl font-bold">{project.title}</h1>
+            <div
+              className={
+                "flex flex-wrap place-content-center md:place-content-start"
+              }
+            >
+              {project.skills.map((skill, i) => (
+                <div key={i}>{Skill(skill)}</div>
+              ))}
+            </div>
+            <p className={!project.date ? "hidden" : "text-gray-300"}>
+              {project.date}
+            </p>
+            <p className={!project.roles ? "hidden" : "text-gray-300"}>
+              Roles: {project.roles}
+            </p>
+          </div>
+          <p className=" text-gray-300 text-left  mt-6">{project.desc}</p>
+          {project.details && (
+            <Link
+              to={showingDetails ? project.title : project.title + "details"}
+              spy={true}
+              smooth={true}
+              offset={-90}
+              duration={500}
+            >
+              <button
+                className={` ${
+                  showingDetails ? "hidden" : ""
+                } rounded-md text-xl px-4 py-4  my-4 text-center border-2  text-white font-semibold hover:bg-white hover:text-slate-900 md:duration-300 relative top-0  md:hover:top-2`}
+                onClick={() => setShowingDetails(!showingDetails)}
+              >
+                {showingDetails ? "MINIMIZE ▲" : "MORE INFO ▼"}
+              </button>
+            </Link>
+          )}
         </div>
       </div>
 
@@ -150,7 +146,7 @@ const Project = (props) => {
       >
         <div className="  mx-auto">
           <div className=" grid grid-cols-3 gap-x-8">
-            <div className="col-span-full flex  justify-between gap-4 px-8 border-b-2 border-purple-700 pb-4 mb-4">
+            <div className="col-span-full flex flex-col md:flex-row  justify-between gap-4 px-8 border-b-2 border-purple-700 pb-4 mb-4">
               <h3 className=" font-bold text-4xl text-left">
                 More Info on {project.title}
               </h3>

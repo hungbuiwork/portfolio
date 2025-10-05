@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   allProjects,
   gameProjects,
@@ -32,7 +33,7 @@ const Projects = (props) => {
         </div>
         <ShowProjects
           projects={projects}
-          className="purple-gradient"
+          className="border-2 bg-purple-600/10 border-purple-700 "
         ></ShowProjects>
       </div>
     </div>

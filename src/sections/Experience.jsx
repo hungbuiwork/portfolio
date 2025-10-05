@@ -13,7 +13,7 @@ const Experience = () => {
       <ShowProjects
         projects={allExperience}
         amount={3}
-        className="border-2 my-8 border-blue-500/25"
+        className="border-2 my-8 bg-blue-700/10 border-blue-900/50"
       ></ShowProjects>
     </div>
   );
